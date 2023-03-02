@@ -1,6 +1,6 @@
 import React from "react";
 // import Logo from "../../../public/images/AVNI-logo.svg";
-import Logo from "../../../public/images/just-logo.png"
+import Logo from "../../../public/images/just-logo.webp"
 import Link from "next/link";
 import Image from 'next/image'
 

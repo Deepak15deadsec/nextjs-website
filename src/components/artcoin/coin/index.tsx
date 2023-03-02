@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Coin from "../../../../public/images/coin22.png";
+import Coin from "../../../../public/images/coin221.webp";
 import shapes from '../../../../public/images/artcoin.svg'
 
 const index = () => {

@@ -15,7 +15,7 @@ const index = () => {
     await router.push(googleUrl);
   };
   return (
-    <div className="w-full  mt-[-8rem] bg-[url('/images/trust-bg.png')]">
+    <div className="w-full  mt-[-8rem] bg-[url('/images/trust-bg.webp')]">
       <div className="my-[8rem] w-full xl:px-[22rem] lg:px-[7rem] md:px-[4rem] px-[3rem] flex justify-between">
         <div className="space-y-[1rem] mb-[4rem] mt-[6rem]">
           <div className="flex justify-start  items-left">

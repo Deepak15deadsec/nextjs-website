@@ -1,7 +1,7 @@
 import React from "react";
 import Link from 'next/link'
 // import Logo from "../../../public/images/AVNI-logo.svg";
-import Logo from "../../../public/images/avni-logo2.png"
+import Logo from "../../../public/images/avni-logo2.webp"
 import { FcGoogle } from "react-icons/fc";
 import { useRouter } from "next/router";
 import { useGetGoogleOAuthURL } from "../../google";
