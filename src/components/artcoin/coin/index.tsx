@@ -26,7 +26,7 @@ const index = () => {
                     < Image
                         height={914}
                         width={700}
-                        src={Coin.src}
+                        src="https://res.cloudinary.com/dbe1sz6wb/image/upload/v1678032948/coin22_aw1t9l.png"
                         alt="Avni Hero"
                         className="object-contain"
                     />
