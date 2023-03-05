@@ -18,7 +18,7 @@ const index = () => {
                     </p>
 
                     <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                        $600 billion digital adverting industry is failing adverisers and users with privacy, transperency, and efficiency. we are building a
+                        $600 billion digital adverting industry is failing adverisers and users with privacy, transperency, and efficiency. 
                     </p>
                 </div>
 

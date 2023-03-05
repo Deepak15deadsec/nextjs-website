@@ -17,14 +17,14 @@ const index = () => {
 
     <div className="bg-[#434343] py-[13rem] flex flex-col justify-center items-center xl:px-[22rem] lg:px-[12rem] md:px-[10rem] px-[8rem]  space-y-7">
       <p className="text-center font-[800] lg:text-[10rem] lg:leading-[10.5rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
-        reward for<br/>proof of shopping
+        Rewards for<br/>proof of shopping
       </p>
       
       <p className=" text-center font-[500] pt-[1rem] lg:text-[3.8rem] lg:leading-[4.2rem] md:text-[2.2rem] md:leading-[2.5rem] leading-[1.8rem] text-[1.5rem] text-[#FFFFFF]">
-      receive crypto rewards with every shopping receipts and personalised offers from brands
+      Earn crypto rewards with every shopping receipt with personalized brand offers
       </p>
 
-      <p className="pt-[3rem] pb-[1rem] lg:text-[1.75rem] md:text-[1.5rem] text-[0.8rem] font-Open-Sans font-[400] tracking-normal leading-[2.5rem]   text-[#57CC99]">join 10K+ members who are already joined our pre launch program for earning rewards and offers everyday</p>
+      <p className="pt-[3rem] pb-[1rem] lg:text-[1.75rem] md:text-[1.5rem] text-[0.8rem] font-Open-Sans font-[400] tracking-normal leading-[2.5rem]   text-[#57CC99]">Join 10K+ members who are already joined our pre launch program for earning rewards and offers everyday</p>
 
       <button
         onClick={google}

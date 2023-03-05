@@ -6,7 +6,7 @@ import Cardx from "./Cardx";
 import Sr from "../../../../public/images/reward.png";
 import Er from "../../../../public/images/receipt.png";
 import If from "../../../../public/images/add-group.png";
-import Od from "../../../../public/images/add-group.png";
+import Od from "../../../../public/images/tap.png";
 
 const index = () => {
   const router = useRouter();
@@ -22,7 +22,7 @@ const index = () => {
 
             <div className="grid xs:grid-cols-1 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-[3rem] mb-[4rem]">
               
-              <Cardx img={Sr.src} content="50 $ART" title="Signup Reward" />
+              <Cardx img={Sr.src} content="50 $ART" title="Signup" />
               <Cardx img={Er.src} content="2 $ART" title="Shopping Receipt" />
               <Cardx img={If.src} content="50 $ART" title="Invite a friend" />
               <Cardx img={Od.src} content="upto 200 $ART" title="Opt-in data" />
@@ -36,14 +36,14 @@ const index = () => {
         </div>
         <div className="  mb-[4rem] w-[44%] xl:mt-[5rem] lg:mt-[4rem] justify-right ">
           <p className="text-right font-[800] lg:mt-[3rem] md:mt-[15rem] mt-[38rem] xl:text-[9em] lg:text-[9rem] lg:leading-[8.5rem] xl:leading-[8.5rem] md:text-[4rem] md:leading-[4.2rem] text-[2rem] text-[#FFFFFF]">
-          earn from your data
+          Earn from your data
           </p>
           <p className="text-right font-[500] mt-[2rem] md:mt-[4rem] lg:text-[3.6rem] lg:leading-[4rem] md:text-[2rem] md:leading-[2.5rem] text-[#FFFFFF]">
-            sound too good to be true?
+          Sounds too good to be true?
 
           </p>
           <p className="text-right font-[400] md:pt-[4rem] pt-[1rem] lg:text-[1.75rem] lg:leading-[2.5rem] md:text-[1.2rem] md:leading-[1.8rem] text-[#FFFFFF]">
-            we bring brand offers truly personalized, every time you accept a brand offer we share a portion of advertising revenue as ART coin
+          We bring brand offers truly personalized! <br/> Every time you accept one, we share a portion of advertising revenue as token.”
           </p>
         </div>
       </div>

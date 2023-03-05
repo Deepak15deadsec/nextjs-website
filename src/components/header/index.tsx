@@ -14,6 +14,11 @@ const Header = () => {
   const { googleUrl } = useGetGoogleOAuthURL()
   const links = [
     {
+      name: "Ambassador",
+      href: "/ambassador"
+    },
+
+    {
       name: "$ART",
       href: "/artcoin"
     },

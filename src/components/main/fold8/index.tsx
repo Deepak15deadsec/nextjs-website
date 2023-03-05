@@ -12,11 +12,11 @@ const index = () => {
       <div className=" w-full xl:px-[22rem] px-[7rem] flex justify-between">
         <div className="space-y-[2.5rem] w-[65%] mt-[10rem] ">
           <p className="text-left font-[800]  lg:text-[9rem] lg:leading-[9rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-          Its your time  
+          It's your time.
           </p>
           <p className="text-left font-[500] w-[90%] mt-[3rem] lg:text-[3.8rem] lg:leading-[4.1rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-          companies using your data to generate billion of dollers for them, do you want to earn for you data?
-                    </p>
+          Large companies use your data to generate billions of dollars, don't you want to earn for you data?
+          </p>
         </div>
         <div className="space-y-[8rem] mt-[8rem] ">
           <Video />
