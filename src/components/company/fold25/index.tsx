@@ -42,24 +42,9 @@ const index = () => {
             />
 
             <p className="text-[1.875rem] mt-[3rem] font-sans font-[400] text-left tracking-normal leading-[2.5rem] text-[#333333]">“Advertising in the coming days world will be less about interrupting audiences and more about engaging with communities. It will require a shift from centralized control to decentralized collaboration, where brands earn trust by delivering authentic, value-driven experiences and empowering consumers to co-create the narrative of their brand story.”</p>
-            <p className="text-[1.5rem] mt-[3rem] font-sans font-[400] text-left tracking-normal leading-[2rem] text-[#333333]">Griffin Dore, CEO</p>
+            <p className="text-[1.5rem] mt-[3rem] font-sans font-[400] text-left tracking-normal leading-[2rem] text-[#333333]">Pradeep Vallat, CEO</p>
 
-            <div className="flex space-x-5">
-              <img
-                src={Left.src}
-                alt="Fortune"
-                height="40px"
-                width="40px"
-                className=" xs:h-10 ipadPro:h-10 object-contain v-lazy-image v-lazy-image-loaded"
-              />
-              <img
-                src={Right.src}
-                alt="Fortune"
-                height="40px"
-                width="40px"
-                className=" xs:h-10 ipadPro:h-10 object-contain v-lazy-image v-lazy-image-loaded"
-              />
-            </div>
+            
           </div>
         </div>
 

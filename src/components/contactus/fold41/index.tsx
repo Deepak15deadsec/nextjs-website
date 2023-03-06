@@ -91,14 +91,14 @@ const Fold41 = () => {
   switch (nextScreen) {
     case 1:
       return (
-        <div className="w-full bg-grey">
+        <div className="w-full bg-[#434343]">
           <div className=" flex flex-col justify-center items-center ">
             <div className="my-[2rem] w-full xl:px-[22rem] lg:px-[8rem] px-[4rem] flex justify-center ">
               <div className="space-y-[1.5rem]  mb-[4rem] mt-[2rem]">
-                <p className="text-[4.75rem]  font-sans font-[600] text-center tracking-normal leading-[4rem] text-[#333333]">
+                <p className="text-[4.75rem]  font-sans font-[600] text-center tracking-normal leading-[4rem] text-[#FFFFFF]">
                   Contact Us
                 </p>
-                <p className="text-[1.5rem]  font-sans font-[400] text-center tracking-normal leading-[2rem] text-[#333333]">
+                <p className="text-[1.5rem]  font-sans font-[400] text-center tracking-normal leading-[2rem] text-[#FFFFFF]">
                   Our friendly team would love to hear from you
                 </p>
 
@@ -106,7 +106,7 @@ const Fold41 = () => {
                   <form onSubmit={onSubmit}>
                     <div className="grid gap-2 mb-6 md:grid-cols-1">
                       <div>
-                        <label className="block mb-2 text-[1.5rem] font-[400] text-gray-900 ">
+                        <label className="block mb-2 text-[1.5rem] font-[400] text-[#FFFFFF] ">
                           Name
                         </label>
                         <input
@@ -119,12 +119,12 @@ const Fold41 = () => {
                         />
                       </div>
                       <div>
-                        <label className="block mb-2 text-[1.5rem] font-[400] text-gray-900 ">
+                        <label className="block mb-2 text-[1.5rem] font-[400] text-[#FFFFFF]">
                           Email
                         </label>
                         <input
                           className={`${errorState["email"] && "bg-bgerror border-error"
-                            } bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4`}
+                            } bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[50rem] p-4`}
                           type="email"
                           onChange={(e) => onChangeHandler(e.target.value, "email")}
                           value={input.email}
@@ -133,19 +133,19 @@ const Fold41 = () => {
                       </div>
 
                       <div>
-                        <label className="block mb-2 text-[1.5rem] font-[400] text-gray-900 ">
+                        <label className="block mb-2 text-[1.5rem] font-[400] text-[#FFFFFF] ">
                           Message
                         </label>
                         <textarea
                           className={`${errorState["message"] && "bg-bgerror border-error"
-                            } block p-11 w-full h-[18rem] text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 `}
+                            } block p-11 w-[50rem] h-[18rem] text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 `}
                           onChange={(e) => onChangeHandler(e.target.value, "message")}
                           value={input.message}
                           placeholder="Write your thoughts here..."
                         />
                       </div>
 
-                      <button type="submit" className="rounded-[1rem] bg-[#01A4EF] mt-[1rem] p-3 space-y-5 w-[8.6rem] h-[5rem] text-[1.5rem] ml-[43rem] font-sans font-[700] text-center tracking-normal leading-[2rem] text-[#FFFFFF]">
+                      <button type="submit" className="rounded-[1rem] bg-[#01A4EF] mt-[1rem] p-3 space-y-5 w-[8.6rem] h-[5rem] text-[1.5rem] ml-[41.5rem] font-sans font-[700] text-center tracking-normal leading-[2rem] text-[#FFFFFF]">
                         Submit
                       </button>
                     </div>

@@ -38,7 +38,7 @@ const index = () => {
                             </p>
                         </div>
 
-                        <p className="text-left font-[300]  lg:text-[1.5rem] lg:leading-[2rem] md:text-[2rem] md:leading-[3rem] text-[#eccdcd]">
+                        <p className="text-left font-[300] w-[75%] lg:text-[1.5rem] lg:leading-[2rem] md:text-[2rem] md:leading-[3rem] text-[#eccdcd]">
                         Users privacy is maintained while serving ads and offers as they earn ART for ad engagement.
                         </p>
                         {/* <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] p-3 font-lettera-medium font-[700] px-[2rem] lg:text-[1.5rem] md:text-[1rem] text-[#353dab] tracking-normal leading-[1.33rem]">
@@ -100,15 +100,15 @@ const index = () => {
                                 className="object-contain"
                             />
                             <p className="text-left font-[400]  lg:text-[1.75rem] lg:leading-[2rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                            Advertisers get a better return
+                            Advertiser get better efficiency, transparency & ROI
                             </p>
                         </div>
 
                         <p className="text-left font-[300] w-[75%] lg:text-[1.5rem] lg:leading-[2rem] md:text-[2rem] md:leading-[3rem] text-[#eccdcd]">
-                        Brave’s anonymous accounting lets advertisers know their ads’ effectiveness without violating privacy.
+                        Avni's  transactions settlement system allows advertisers to measure each ad-units. 
                         </p>
                         <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] p-3 font-lettera-medium font-[700] px-[2rem] lg:text-[1.5rem] md:text-[1rem] text-[#353dab] tracking-normal leading-[1.33rem]">
-                           Learn More
+                           Get Started
                         </button>
                     </div>
 

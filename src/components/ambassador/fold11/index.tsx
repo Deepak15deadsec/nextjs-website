@@ -6,7 +6,7 @@ const index = () => {
 
     return (
 
-        <div className="bg-[#30cfd0] pt-[15rem]  ">
+        <div className="bg-[#434343] pt-[15rem]  ">
 
             <div className="flex justify-between mb-[18rem] xl:px-[22rem] lg:px-[7rem] px-[3rem]">
                 <div className="w-[60%] space-y-[5rem] pt-[5rem]">
