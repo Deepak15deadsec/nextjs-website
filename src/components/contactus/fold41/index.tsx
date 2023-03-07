@@ -91,9 +91,10 @@ const Fold41 = () => {
   switch (nextScreen) {
     case 1:
       return (
-        <div className="w-full bg-[#434343]">
+        <div className=" bg-[#434343] ">
+        <div className="w-1/2 ">
           <div className=" flex flex-col justify-center items-center ">
-            <div className="my-[2rem] w-full xl:px-[22rem] lg:px-[8rem] px-[4rem] flex justify-center ">
+            <div className="my-[2rem] w-full xl:px-[22rem] lg:px-[8rem]  flex justify-center ">
               <div className="space-y-[1.5rem]  mb-[4rem] mt-[2rem]">
                 <p className="text-[4.75rem]  font-sans font-[600] text-center tracking-normal leading-[4rem] text-[#FFFFFF]">
                   Contact Us
@@ -157,6 +158,7 @@ const Fold41 = () => {
           </div>
 
           
+        </div>
         </div>
       );
 

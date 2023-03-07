@@ -8,7 +8,7 @@ const index = () => {
 
         <div className="bg-[#434343] pt-[15rem]  ">
 
-            <div className="flex justify-between mb-[18rem] xl:px-[22rem] lg:px-[7rem] px-[3rem]">
+            <div className="flex justify-items mb-[5rem] xl:px-[22rem] lg:px-[7rem] px-[3rem]">
                 <div className="w-[60%] space-y-[5rem] pt-[5rem]">
                     <p className="text-left font-[700] lg:text-[6rem] lg:leading-[6rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
                         Join the AVNI Brand Ambassador family and get featured here.
