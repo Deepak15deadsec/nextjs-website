@@ -1,5 +1,5 @@
-import Fold11 from "./fold11";
-import Fold12 from "./fold12";
-import Fold13 from "./fold13";
+import Fold51 from "./fold51";
+import Fold52 from "./fold52";
+import Fold53 from "./fold53";
 
-export{Fold11, Fold12, Fold13}
+export{Fold51, Fold52, Fold53}
