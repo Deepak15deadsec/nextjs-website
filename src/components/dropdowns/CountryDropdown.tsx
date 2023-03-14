@@ -9,10 +9,10 @@ export default function CountryCode(props:any) {
 
 
     return (
-        <div className=" w-92 h-full">
+        <div className="w-[130px] h-full">
             <Listbox value={props?.country} onChange={props?.setCountry}>
-                <div className="relative mt-1">
-                    <Listbox.Button className="relative w-full h-full cursor-default bg-black rounded-l-[3rem] border-black opacity-80 bg-transparent py-2 pl-3 pr-10 text-left shadow-md focus:outline-none text-2xl">
+                <div className="relative">
+                    <Listbox.Button className="relative w-full cursor-default rounded-l-[3rem] border border-black  border-opacity-10 bg-transparent h-12 px-3 text-left  focus:outline-none text-2xl">
                         <span className="block truncate">{props.country.dial_code}</span>
                         <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
