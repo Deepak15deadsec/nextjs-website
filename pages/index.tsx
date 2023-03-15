@@ -1,6 +1,6 @@
 import Head from "next/head";
 // import Group from "../public/images/Mask-group.webp";
-import Group from "../public/images/partners.webp";
+import Group from "../public/images/partners.png";
 import { Fold1, Fold2, Fold4, Fold6, Fold8, Fold9, Chair, Money } from "../src/components/main"
 import Image from "next/image";
 import GreenCard from "../src/components/GreenCard";

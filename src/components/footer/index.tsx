@@ -59,7 +59,12 @@ const Footer = () => {
         // },
       ],
     },
-  ];
+      {
+        name: "Company",
+        links: [
+          { name: "About Us", href: "/" },],
+        },
+      ];
   return (
     <div className="bg-[#EEEEEE] mt-[5rem] ">
       <div className="my-[0rem] w-full xl:px-[22rem] lg:px-[7rem] md:px-[2rem] px-[1.5rem] flex justify-between ">

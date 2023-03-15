@@ -20,7 +20,7 @@ const GreenCard = ({ content, src }: any) => {
                 <div className="flex space-x-4 justify-center">
 
                     <div className="space-y-[0.15rem] ">
-                        <p className="text-[3rem]  font-[700] text-center tracking-normal leading-[3rem] text-[#333333]">Join our pre-launch program today and<br />make every shopping</p>
+                        <p className="text-[3rem]  font-[700] text-center tracking-normal leading-[3.5rem] text-[#333333]">Join our pre-launch program today and<br />make every shopping count!</p>
                     </div>
                 </div>
 

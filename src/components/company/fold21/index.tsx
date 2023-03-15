@@ -13,9 +13,9 @@ const index = () => {
   };
   return (
     <div className="bg-[#434343] py-[20rem] flex flex-col justify-center items-center xl:px-[22rem] lg:px-[12rem] px-[3rem]">
-      <p className="text-[3.8rem]  font-sans w-[94%] font-[500] text-center tracking-normal leading-[4rem] text-[#FFFFFF] ">Build a global brand that connects consumers with advertisers in engaging way with unbeatable value</p>
+      <p className="text-[3.8rem]  font-sans w-[94%] font-[500] text-center tracking-normal leading-[4rem] text-[#FFFFFF] ">Build a Brand to connect with Consumers through Ads that make Sense with Real value</p>
 
-      <p className="text-[3rem] mt-[4rem] font-sans font-[500] text-center w-[80%] tracking-normal leading-[3rem] text-[#AAAAAA]">We are building an easy-to-use, trusted and compliant gateway for digital advertising </p>
+      <p className="text-[3rem] mt-[4rem] font-sans font-[500] text-center w-[80%] tracking-normal leading-[3.5rem] text-[#AAAAAA]">Building an Easy-to-Use, Trusted & Compliant gateway for the world of Digital Advertising. </p>
 
       <button
       onClick={google}

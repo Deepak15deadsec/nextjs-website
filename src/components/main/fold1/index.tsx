@@ -21,10 +21,10 @@ const index = () => {
       </p>
 
       <p className=" text-center font-[500] pt-[1rem] lg:text-[3.8rem] lg:leading-[4.2rem] md:text-[2.2rem] md:leading-[2.5rem] leading-[1.8rem] text-[1.5rem] text-[#FFFFFF]">
-        Earn crypto rewards with every shopping receipt with personalized brand offers
+        Earn crypto rewards for every shopping receipt with personalized brand offers
       </p>
 
-      <p className="pt-[3rem] pb-[1rem] lg:text-[1.75rem] md:text-[1.5rem] text-[0.8rem] font-Open-Sans font-[400] tracking-normal leading-[2.5rem]   text-[#57CC99]">Join 10K+ members who are already joined our pre launch program for earning rewards and offers everyday</p>
+      <p className="pt-[3rem] pb-[1rem] lg:text-[1.75rem] md:text-[1.5rem] text-[0.8rem] font-Open-Sans font-[400] tracking-normal leading-[2.5rem]   text-[#57CC99]">Join 10K+ members of our pre-launch program & earn rewards and offers everyday</p>
 
       <button
         onClick={() => setIsOpen(true)}

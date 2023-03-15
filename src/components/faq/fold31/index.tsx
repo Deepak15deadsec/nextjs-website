@@ -18,7 +18,7 @@ const index = () => {
             Help Desk
           </p>
           <p className="font-sans text-[#333333] font-[400] text-[1.5rem] text-left tracking-normal leading-[2rem]">
-            Lorem Ipsum is simply dummy text of the printing and<br />typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          Get instant support for all your needs with our reliable Help Desk services to keep you connected and productive.
           </p>
 
         </div>

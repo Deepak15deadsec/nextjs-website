@@ -14,11 +14,11 @@ const index = () => {
             <div className="flex justify-between mb-[18rem] xl:px-[22rem] lg:px-[7rem] px-[3rem]">
                 <div className="w-[60%] space-y-[5rem] pt-[5rem]">
                     <p className="text-left font-[700] lg:text-[6rem] lg:leading-[6rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                        ART – Making advertising benificial for everyone with the power of web3
+                    Making advertising cost effective & beneficial for everyone. 
                     </p>
 
                     <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                        $600 billion digital adverting industry is failing adverisers and users with privacy, transperency, and efficiency. 
+                    The $600 Billion Digital Advertising Industry is failing advertisers & users with Privacy, Transparency, and Efficiency concerns!
                     </p>
                 </div>
 
@@ -49,7 +49,7 @@ const index = () => {
                     </p>
 
                     <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                        with Ad Fraud, Ad Blockers, Ad Overload, Lack of Transparency, and Data Privacy Concerns
+                    With Ad Blockers, Overload, Lack of Transparency, and Data Privacy Concerns
                     </p>
                 </div>
                 <div>
@@ -76,11 +76,11 @@ const index = () => {
 
                 <div className="w-[50%] space-y-[5rem] pt-[5rem]">
                     <p className="text-left font-[700] lg:text-[6rem] lg:leading-[6rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                        adopting changes for efficiency
+                    Web3 for a CHANGE!
                     </p>
 
                     <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                        bringing  targeted and personalized approach, prioritizing transparency and accountability, and respecting user privacy and consent
+                    Bringing the Targeted, Transparent & Pro-user approach! Keeping user privacy and consent intact.
                     </p>
                 </div>
 

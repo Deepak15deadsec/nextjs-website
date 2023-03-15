@@ -35,16 +35,16 @@ const Faq = () => {
                         />
                         <div className="flex flex-col justify-center">
                             <p className="font-sans text-[#333333] font-[400] text-[1.875rem] text-left tracking-normal leading-[2rem]">
-                                Still have questions?
+                            Still got questions?
                             </p>
                             <p className="font-sans text-[#333333] font-[400] text-[1.25rem] text-left tracking-normal leading-[2rem]">
-                                Can’t find answer you’re looking for? Please chat to our friendly team.
+                            Can’t find the answer you’re looking for? Please chat with our friendly team.
                             </p>
                         </div>
                     </div>
 
                     <div>
-                        <button className="p-7 font-[700] text-[1.5rem] leading-[24px] rounded-[1.25rem] bg-[#01A4EF] text-white">Get Touch</button>
+                        <button className="p-7 font-[700] text-[1.5rem] leading-[24px] rounded-[1.25rem] bg-[#01A4EF] text-white">Get in Touch</button>
                     </div>
                 </div>
             </div>

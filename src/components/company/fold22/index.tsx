@@ -16,9 +16,11 @@ const index = () => {
       <div className="my-[5rem] w-full xl:px-[22rem] lg:px-[8rem] px-[3rem] flex justify-between ">
         <div className="space-y-[2rem] w-3/4 mb-[4rem] mt-[5rem]">
 
-          <p className="text-[3.75rem] mt-[6rem] font-sans font-[600] text-left tracking-normal leading-[4.2rem] text-[#333333]">We build bridges between companies $ customers</p>
+          <p className="text-[3.75rem] mt-[6rem] font-sans font-[600] text-left tracking-normal leading-[4.2rem] text-[#333333]">We build Bridges between Brands & Consumers</p>
 
-          <p className="text-[1.5rem] w-[80%] mt-[3rem] font-sans font-[400] text-left tracking-normal leading-[2.2rem] text-[#333333]">a rewarding platform,that bridges gap between advertisers and users</p>
+          <p className="text-[2rem] mt-[6rem] font-sans font-[450] text-left tracking-normal leading-[3.2rem] text-[#333333]">Get in touch with users through a rewarding platform like AVNI with personalized offers, they reap rewards, you reap ROI</p>          
+
+          <p className="text-[1.5rem] w-[80%] mt-[3rem] font-sans font-[400] text-left tracking-normal leading-[2.2rem] text-[#333333]">A rewarding platform, that bridges gap between advertisers and users</p>
 
 
 

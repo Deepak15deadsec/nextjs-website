@@ -22,7 +22,7 @@ const index = () => {
                 <div className="w-[60%]  pt-[1rem]">
 
                     <p className="text-left font-[600]  lg:text-[3rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                    ART adverting platform
+                    ART Advertising platform
                     </p>
                     <div className='space-y-[1rem] mt-[5rem]'>
                         <div className='flex space-x-[1rem]'>
@@ -34,19 +34,19 @@ const index = () => {
                                 className="object-contain"
                             />
                             <p className="text-left font-[400]  lg:text-[1.75rem] lg:leading-[2rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                            Users earn for the data and permission
+                            Users Earn for Consent & Data
                             </p>
                         </div>
 
                         <p className="text-left font-[300] w-[75%] lg:text-[1.5rem] lg:leading-[2rem] md:text-[2rem] md:leading-[3rem] text-[#eccdcd]">
-                        Users privacy is maintained while serving ads and offers as they earn ART for ad engagement.
+                        Keeping the privacy intact while serving offers & ads, as they earn ART for <br/> ad-engagement.
                         </p>
                         {/* <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] p-3 font-lettera-medium font-[700] px-[2rem] lg:text-[1.5rem] md:text-[1rem] text-[#353dab] tracking-normal leading-[1.33rem]">
                             Sign up for Brave Rewards
                         </button> */}
                         <button
                             onClick={google}
-                             className="h-[38px] flex justify-center items-center text-white shadow-lg font-lettera-medium font-[500] text-[1.2rem] tracking-normal leading-[2rem]"
+                             className="h-[45px] flex justify-center items-center text-white shadow-lg font-lettera-medium font-[700] text-[1.4rem] tracking-normal leading-[2rem]"
                                 >
                         {/* <button
                             onClick={google}
@@ -62,7 +62,7 @@ const index = () => {
                              <FcGoogle size={35} />
                          </div> */}
                         <div className="h-full lg:flex md:flex hidden text-[#353dab] justify-left items-center bg-[#FFFFFF] px-[1rem] rounded-[3.2rem] ">
-                        <FcGoogle size={35} /> <p className='ml-[0.5rem]'>Sign up for Brave Rewards</p>
+                        <FcGoogle size={35} /> <p className='ml-[0.5rem] '>Sign up for Brave Rewards</p>
                         </div>
                         
                         </button>
@@ -100,14 +100,14 @@ const index = () => {
                                 className="object-contain"
                             />
                             <p className="text-left font-[400]  lg:text-[1.75rem] lg:leading-[2rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                            Advertiser get better efficiency, transparency & ROI
+                            ROI based Efficient approach for Advertisers
                             </p>
                         </div>
 
                         <p className="text-left font-[300] w-[75%] lg:text-[1.5rem] lg:leading-[2rem] md:text-[2rem] md:leading-[3rem] text-[#eccdcd]">
-                        Avni's  transactions settlement system allows advertisers to measure each ad-units. 
+                        Avni's transaction settlement system allows Advertisers to measure each <br/> ad-unit.<br/> To help you get started with Avni Ads, we will give you 1000 transaction <br/> ad credit. Give it a try for free.
                         </p>
-                        <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] p-3 font-lettera-medium font-[700] px-[2rem] lg:text-[1.5rem] md:text-[1rem] text-[#353dab] tracking-normal leading-[1.33rem]">
+                        <button className="bg-[#FFFFFF] mt-[3.5rem] rounded-[3.2rem] p-3 font-lettera-medium font-[700] px-[2rem] lg:text-[1.5rem] md:text-[1rem] text-[#353dab] tracking-normal leading-[1.33rem]">
                            Get Started
                         </button>
                     </div>
