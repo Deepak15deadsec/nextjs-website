@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 import { useGetGoogleOAuthURL } from "../../google";
 import NavLink from "../ActiveLink"
 import Image from 'next/image'
+import { addSyntheticLeadingComment } from "typescript";
 
 
 const Header = () => {
@@ -16,6 +17,11 @@ const Header = () => {
     {
       name: "Ambassador",
       href: "/ambassador"
+    },
+
+    {
+      name: "Advertiser",
+      href: "https://ads.avniads.com"
     },
 
     {
