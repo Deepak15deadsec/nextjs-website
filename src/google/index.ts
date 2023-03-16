@@ -1,17 +1,16 @@
 import useStore from "../../zustand/useStore";
 
 export const useGetGoogleOAuthURL = () => {
-
-  const referrer = useStore((state) => state.referrer)
+  const {referrer, phone} = useStore((state) => state)
   const rootUrl = `https://accounts.google.com/o/oauth2/v2/auth`;
 
-  const options = {
+  const options= {
     redirect_uri: process.env.NEXT_PUBLIC_GOOGLE_OAUTH_REDIRECT_URL || '',
     client_id: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID || '',
     access_type: "offline",
     response_type: "code",
     prompt: "consent",
-    state: referrer,
+    state: JSON.stringify({"referrer": referrer, "phone": phone}),
     scope: [
       "https://www.googleapis.com/auth/userinfo.profile",
       "https://www.googleapis.com/auth/userinfo.email",
@@ -20,7 +19,6 @@ export const useGetGoogleOAuthURL = () => {
   };
 
   const qs = new URLSearchParams(options);
-
   return {
     googleUrl: `${rootUrl}?${qs.toString()}`
   }

@@ -5,6 +5,7 @@ const useStore = create(
   persist(
     (set: any, get: any) => ({
       referrer: "",
+      phone:"",
       updateReferrer: (id: string) => {
         set((state: any) => ({
           referrer: id,
