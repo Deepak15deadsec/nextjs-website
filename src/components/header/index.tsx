@@ -71,7 +71,10 @@ const Header = () => {
             {name}
           </NavLink>
         ))}
-        <button
+
+
+        
+        {/* <button
           onClick={google}
           className="h-[38px] flex justify-center items-center text-white shadow-lg font-lettera-medium font-[500] text-[1.2rem] tracking-normal leading-[2rem]"
         >
@@ -81,7 +84,7 @@ const Header = () => {
           <div className="h-full lg:flex md:flex hidden  justify-center items-center bg-blue-500 px-2 rounded-r">
             <p>Sign in with Google</p>
           </div>
-        </button>
+        </button> */}
 
 
         {/* <img

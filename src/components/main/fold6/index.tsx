@@ -44,7 +44,7 @@ const index = () => {
 
     <div className="bg-[#FF6154] flex py-[2rem] justify-between xl:px-[22rem] lg:px-[7rem] md:px-[4rem] px-[2rem]">
 
-      <div className="grid xs:grid-cols-1 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-[7rem] mb-[9rem]">
+      <div className="grid xs:grid-cols-1 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-[7rem] ">
         {/* <Cardx img={Box.src} content=" Avni is committed to consumer privacy. We never have and we never will sell you data to business or third parties. Period" title="We don't Sell your Data" /> */}
         <Cardx img={Boxx.src} content="We take your privacy and security seriously to ensure that all your personal data and transactions are encrypted, and no data is shared with any agencies or advertisers, leaving no room for mistakes." title="What's yours, remains only yours." />
         <Cardx img={Boxxx.src} content=" We use bank level security(256 bit encryption) to ensure your information is safe and secure. We use Multi-Factor and Two-Factor Authentication to prevent unauthorized access, so your data and  wallet is safe." title="Avni is Secure" />

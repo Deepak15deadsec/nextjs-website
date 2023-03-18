@@ -6,7 +6,7 @@ const index = () => {
 
     return (
 
-        <div className=" py-[18rem] xl:px-[22rem] mt-[-8rem] lg:px-[7rem] px-[3rem] bg-[url('/images/sky1.webp')] bg-cover bg-center">
+        <div className=" py-[18rem] xl:px-[22rem] mt-[-8rem] lg:px-[7rem] px-[3rem] bg-[url('/images/sky-min.webp')] bg-cover bg-center">
 
 
 

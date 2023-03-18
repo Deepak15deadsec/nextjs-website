@@ -8,6 +8,8 @@ import { useGetGoogleOAuthURL } from "../../google";
 import axios from "axios";
 import useStore from "../../../zustand/useStore";
 
+
+let currentOTPIndex: number = 0;
 const JoinModal = (props: any) => {
     const [country, setCountry] = useState(countries[0])
     const [value, setValue] = useState("")
@@ -15,7 +17,6 @@ const JoinModal = (props: any) => {
     const [activeOTPIndex, setActiveOTPIndex] = useState<number>(0);
     const inputRef = useRef<HTMLInputElement>(null)
     const [step, setStep] = useState(1)
-    let currentOTPIndex: number = 0;
     const router = useRouter()
     const setPhone = useStore((state: any) => state.setPhone)
     const { googleUrl } = useGetGoogleOAuthURL()
@@ -39,7 +40,7 @@ const JoinModal = (props: any) => {
         index: number
     ) => {
         currentOTPIndex = index;
-        if (key === 'Backspace') setActiveOTPIndex(currentOTPIndex - 1);
+        if (key === "Backspace") setActiveOTPIndex(currentOTPIndex - 1);
     };
 
 
@@ -111,9 +112,9 @@ const JoinModal = (props: any) => {
         switch (step) {
             case 1:
                 return (
-                    <div className="flex flex-col space-y-12 px-[3rem]">
+                    <div className="flex flex-col space-y-12 px-[5rem]">
                         <Dialog.Title
-                            className="text-[#333333] text-[3rem]  font-[600]"
+                            className="text-[#333333] text-[3rem] pl-[1rem] font-[600]"
                         >
                             Enter your phone number to join via SMS
                         </Dialog.Title >
@@ -140,7 +141,7 @@ const JoinModal = (props: any) => {
                                 <img
                                     src={`${value.length == 10 ? "/images/mverify.png" : "/images/rverify.png"}`}
                                     alt="Sandeep Nailwal"
-                                    className="h-[2rem] w-[2rem] mr-[1rem] object-contain"
+                                    className="h-[3rem] w-[3rem] mr-[2.5rem] object-contain"
                                 />
                             </button>
                         </div>

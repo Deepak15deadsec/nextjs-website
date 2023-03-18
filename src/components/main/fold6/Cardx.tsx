@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Cardx = ({img, content, title }:{img:string, content:string, title:string}) => {
   return (
-    <div className="rounded-[1.75rem] bg-[#FFFFFF] p-8 space-y-2 w-auto">
+    <div className="rounded-[1.75rem] bg-[#FFFFFF] p-8 space-y-2 h-[26rem] w-auto">
       <div className="flex space-x-4 items-center">
         <img
           src={img}

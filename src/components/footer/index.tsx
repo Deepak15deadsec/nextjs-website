@@ -14,14 +14,14 @@ const Footer = () => {
     //     { name: "Careers", href: "" },
     //   ],
     // },
-    // {
-    //   name: "Learn",
-    //   links: [
-    //     { name: "Blog", href: "/" },
-    //     { name: "Guides", href: "/" },
-    //     { name: "Help Center", href: "/" },
-    //   ],
-    // },
+    {
+      name: "Learn",
+      links: [
+        { name: "Blog", href: "/" },
+        { name: "Guides", href: "/" },
+        { name: "Help Center", href: "/" },
+      ],
+    },
     // {
     //   name: "Resources",
     //   links: [
@@ -59,24 +59,29 @@ const Footer = () => {
         // },
       ],
     },
-      {
-        name: "Company",
-        links: [
-          { name: "About Us", href: "/" },],
-        },
-      ];
+    {
+      name: "Company",
+      links: [
+        { name: "About Us", href: "/" },],
+    },
+  ];
   return (
     <div className="bg-[#EEEEEE] mt-[5rem] ">
       <div className="my-[0rem] w-full xl:px-[22rem] lg:px-[7rem] md:px-[2rem] px-[1.5rem] flex justify-between ">
         <div className="space-y-[1rem] w-3/4 mb-[4rem] mt-[2rem]">
 
-        <Image
-          alt="Avni Logo"
-          src={Logo.src}
-          height={28}
-          width={87}
-          className="object-contain"
+          <Image
+            alt="Avni Logo"
+            src={Logo.src}
+            height={28}
+            width={87}
+            className="object-contain"
           />
+
+          <p className="text-left font-[400] text-[1rem] leading-[1.4rem] ">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br /> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br /> when an unknown printer took a galley of type and scrambled it to make a type <br />  specimen book.
+
+          </p>
 
         </div>
         <div className=" w-3/4 justify-center mb-[2rem] lg:mt-[6rem] md:mt-[6rem] mt-[3.5rem]">
@@ -87,13 +92,13 @@ const Footer = () => {
 
             {footerLinks.map(({ name, links }: any, index: number) => (
               <div key={index} >
-                <p className="font-lettera-bold font-[700] text-[1rem] tracking-normal leading-[1.33rem] mt-[2rem] lg:mt-[0rem] md:mt-[0rem] text-[#333333] ">
+                <p className="font-lettera-bold font-[500] text-[1.5rem] tracking-normal leading-[1.5rem] mt-[2rem] lg:mt-[0rem] md:mt-[0rem] text-[#333333] ">
                   {name}
                 </p>
                 <div className="flex flex-col space-y-3 mt-[1rem]">
                   {links.map(({ name, href }: { name: string; href: string }) => (
                     <Link
-                      className="font-lettera-regular font-[400] text-[0.875rem] tracking-normal leading-[1rem] text-[#333333]  "
+                      className="font-lettera-regular font-[400] text-[1rem] tracking-normal leading-[1rem] text-[#333333]  "
                       href={href}
                       key={name}
                     >
