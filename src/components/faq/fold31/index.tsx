@@ -1,7 +1,7 @@
 import React from "react";
 import { useGetGoogleOAuthURL } from "../../../google";
 import { useRouter } from "next/router";
-import Video from '../../../../public/images/video.svg'
+import Faq from '../../../../public/images/faq.svg'
 import Image from 'next/image'
 
 const index = () => {
@@ -25,10 +25,10 @@ const index = () => {
         <div className="space-y-[8rem] w-3/4 ">
           <div className="flex justify-center items-center mt-[4rem]">
             <Image
-              src={Video.src}
+              src={Faq.src}
               alt="Fortune"
               height={493}
-              width={881}
+              width={400}
               className=" xs:h-10 ipadPro:h-10 object-contain v-lazy-image v-lazy-image-loaded"
             />
           </div>

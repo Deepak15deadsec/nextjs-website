@@ -22,7 +22,7 @@ const Card = () => {
 
       </div>
       <p className=" text-[1.25rem] font-lettera-regular font-[400] text-center tracking-normal leading-[1.5rem] text-[#FFFFFF]">
-      Co-founder & CEO
+      Co-founder & CMO
       </p>
 
     </div>
