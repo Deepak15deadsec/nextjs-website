@@ -5,8 +5,16 @@ import { Fold1, Fold2, Fold4, Fold6, Fold8, Fold9, Chair, Money } from "../src/c
 import Image from "next/image";
 import GreenCard from "../src/components/GreenCard";
 import Logo from '../public/images/google.svg';
+import useStore from "../zustand/useStore";
+import { useEffect } from 'react'
 
 export default function Home() {
+  
+  const updateReferror = useStore((state) => state.updateReferrer)
+  useEffect(() => {
+    updateReferror("")
+  }, [])
+
   return (
     <div>
       <Head>

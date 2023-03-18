@@ -49,7 +49,7 @@ const Header = () => {
   return (
     <div className="h-[7.275rem] fixed inset-0 z-10 bg-[#434343] flex justify-between items-center xl:px-[22rem] lg:px-[7rem] md:px-[4rem] px-[2rem] ">
       <div className="flex space-x-8 items-center">
-        <Link href="/">
+        
           {/* <Image
             alt="Avni Logo"
             src={Logo.src}
@@ -57,13 +57,13 @@ const Header = () => {
             height={78}
           /> */}
 
-          <Image
+          {/* <Image
           alt="Avni Logo"
           src={Logo.src}
           height={8}
           width={67}
-          />
-        </Link>
+          /> */}
+        
       </div>
       <div className="flex space-x-8 items-center">
         {links.map(({ name, href }, index: number) => (

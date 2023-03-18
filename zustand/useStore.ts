@@ -10,6 +10,11 @@ const useStore = create(
         set((state: any) => ({
           referrer: id,
         }))
+      },
+      setPhone: (phone: string) => {
+        set((state: any) => ({
+           phone: phone,
+        }))
       }
     }),
     {

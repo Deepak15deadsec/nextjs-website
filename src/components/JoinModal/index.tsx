@@ -6,6 +6,7 @@ import { FcGoogle } from "react-icons/fc";
 import { useRouter } from "next/router";
 import { useGetGoogleOAuthURL } from "../../google";
 import axios from "axios";
+import useStore from "../../../zustand/useStore";
 
 const JoinModal = (props: any) => {
     const [country, setCountry] = useState(countries[0])
@@ -16,6 +17,7 @@ const JoinModal = (props: any) => {
     const [step, setStep] = useState(1)
     let currentOTPIndex: number = 0;
     const router = useRouter()
+    const setPhone = useStore((state: any) => state.setPhone)
     const { googleUrl } = useGetGoogleOAuthURL()
 
     const handleOnChange = ({
@@ -47,40 +49,57 @@ const JoinModal = (props: any) => {
 
 
     const goNext = async () => {
-        //api for otp 
-        const res = await axios({
-            url: `https://2factor.in/API/V1/6961d34a-7b2f-11eb-a9bc-0200cd936042/SMS/+91${value}/AUTOGEN/OTP1`,
-            method: "GET",
-            headers: {
-                "content-type": "application/json"
-            }
-        })
+        try {
+            //api for otp 
+            const res = await axios({
+                url: `https://2factor.in/API/V1/6961d34a-7b2f-11eb-a9bc-0200cd936042/SMS/${country.dial_code}${value}/AUTOGEN/OTP1`,
+                method: "GET",
+                headers: {
+                    "content-type": "application/json"
+                }
+            })
 
-        if (res && res.status) {
-            setStep(2)
+            if (res && res.status) {
+                setStep(2)
+            }
+
+        } catch (error) {
+            console.log(error)
         }
+
     }
 
     const otpVerify = async () => {
-        //api verify otp api call
+        try {
+            //api verify otp api call
+            axios({
+                url: `https://2factor.in/API/V1/6961d34a-7b2f-11eb-a9bc-0200cd936042/SMS/VERIFY3/${country.dial_code}${value}/${otp.join('')}`,
+                method: "GET",
+                headers: {
+                    "content-type": "application/json"
+                }
+            }).then(async (res) => {
+                if (res && res.status) {
+                    const { data } = await axios({
+                        url: `${process.env.NEXT_PUBLIC_BASE_URL}/oauth/verify/${country.dial_code}${value}`,
+                        method: "GET",
+                        headers: {
+                            "content-type": "application/json"
+                        }
+                    })
 
-        console.log("otp", otp)
-
-
-        const res = await axios({
-            url: `https://2factor.in/API/V1/6961d34a-7b2f-11eb-a9bc-0200cd936042/SMS/VERIFY3/${value}/${otp.join('')}`,
-            method: "GET",
-            headers: {
-                "content-type": "application/json"
-            }
-        })
-
-        if (res && res.status) {
-            setStep(2)
+                
+                    if (data && data.status == 200){
+                       window.location.href = data.url;
+                    }else {
+                        setPhone(`${country.dial_code}${value}`)
+                        setStep(3)
+                    }    
+                }
+            })
+        } catch (error) {
+            console.log(error)
         }
-
-        setStep(3)
-
     }
 
     const google = async () => {
@@ -118,8 +137,8 @@ const JoinModal = (props: any) => {
                                 disabled={value.length < 10 ? true : false}
                                 onClick={goNext}
                             >
-                                  <img
-                                    src={`${value.length == 10 ? "/images/mverify.png" : "/images/rverify.png"  }`}
+                                <img
+                                    src={`${value.length == 10 ? "/images/mverify.png" : "/images/rverify.png"}`}
                                     alt="Sandeep Nailwal"
                                     className="h-[2rem] w-[2rem] mr-[1rem] object-contain"
                                 />
