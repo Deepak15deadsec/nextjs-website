@@ -10,11 +10,7 @@ const index = () => {
 
   return (
     <div className="bg-[#434343] py-[13rem] flex flex-col justify-center items-center xl:px-[22rem] lg:px-[12rem] md:px-[10rem] px-[8rem]  space-y-7">
-      <JoinModal
-        isOpen={isOpen}
-        onClose={() => setIsOpen(false)}
-        
-      />
+    
 
       <p className="text-center font-[800] lg:text-[10rem] lg:leading-[10.5rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
         Rewards for<br />proof of shopping
@@ -26,13 +22,20 @@ const index = () => {
 
       <p className="pt-[3rem] pb-[1rem] lg:text-[1.75rem] md:text-[1.5rem] text-[0.8rem] font-Open-Sans font-[400] tracking-normal leading-[2.5rem]   text-[#57CC99]">Join 10K+ members of our pre-launch program & earn rewards and offers everyday</p>
 
-      <button
-        onClick={() => setIsOpen(true)}
-        className="bg-white  rounded-[3.2rem] px-8 py-4 font-lettera-medium font-[700]  lg:text-[2.5rem]  text-[#333333]"
-      >
-        Join now
-      </button>
+      {
+        isOpen==false && (<button
+          onClick={() => setIsOpen(true)}
+          className="bg-white z-[999] rounded-[3.2rem] px-8 py-4 font-lettera-medium font-[700]  lg:text-[2.5rem]  text-[#333333]"
+        >
+          Join now
+        </button>)
+      }
 
+      <JoinModal
+        isOpen={isOpen}
+        onClose={() => setIsOpen(false)}
+        
+      />
       {/* <button
         onClick={google}
         className="h-[4rem]  flex justify-center items-center text-white shadow-lg  font-[400] text-[1.5rem]  leading-[3rem]"

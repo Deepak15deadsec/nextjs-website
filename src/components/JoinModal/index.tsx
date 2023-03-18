@@ -48,7 +48,7 @@ const JoinModal = (props: any) => {
 
     const goNext = async () => {
         //api for otp 
-       const res = await axios({
+        const res = await axios({
             url: `https://2factor.in/API/V1/6961d34a-7b2f-11eb-a9bc-0200cd936042/SMS/+91${value}/AUTOGEN/OTP1`,
             method: "GET",
             headers: {
@@ -56,28 +56,28 @@ const JoinModal = (props: any) => {
             }
         })
 
-        if(res && res.status){
+        if (res && res.status) {
             setStep(2)
-        } 
+        }
     }
 
-    const otpVerify = async() => {
+    const otpVerify = async () => {
         //api verify otp api call
 
         console.log("otp", otp)
-       
+
 
         const res = await axios({
-            url:`https://2factor.in/API/V1/6961d34a-7b2f-11eb-a9bc-0200cd936042/SMS/VERIFY3/${value}/${otp.join('')}`,
+            url: `https://2factor.in/API/V1/6961d34a-7b2f-11eb-a9bc-0200cd936042/SMS/VERIFY3/${value}/${otp.join('')}`,
             method: "GET",
             headers: {
                 "content-type": "application/json"
             }
         })
 
-        if(res && res.status){
+        if (res && res.status) {
             setStep(2)
-        } 
+        }
 
         setStep(3)
 
@@ -96,32 +96,37 @@ const JoinModal = (props: any) => {
                         <Dialog.Title
                             className="text-[#333333] text-[3rem]  font-[600]"
                         >
-                            enter your phone number to get the link via SMS
+                            Enter your phone number to join via SMS
                         </Dialog.Title >
 
-                        <div className="bg-gray-50 border border-gray-300  inline-flex rounded-[3rem] space-x-6 h-12   ">
+                        <div className="bg-white border border-gray-300  inline-flex rounded-[3rem] mx-[5rem] space-x-6 h-12   ">
                             <CountryCode
                                 country={country}
                                 setCountry={setCountry}
                                 countries={countries} />
                             <input
-                                className="  text-gray-900 text-[3rem] font-[600] focus:outline-none w-[50%]"
+                                className="  text-gray-900 text-[3rem]  font-[600] focus:outline-none "
                                 type="tel"
                                 onChange={(e: any) => setValue(e.target.value)}
                                 value={value}
                                 maxLength={10}
-                                placeholder="_ _ _ _ _ _ _ _ _ _"
+                                placeholder=""
                             />
+
+                            <button
+                                type="button"
+                                disabled={value.length < 10 ? true : false}
+                                onClick={goNext}
+                            >
+                                  <img
+                                    src={`${value.length == 10 ? "/images/mverify.png" : "/images/rverify.png"  }`}
+                                    alt="Sandeep Nailwal"
+                                    className="h-[2rem] w-[2rem] mr-[1rem] object-contain"
+                                />
+                            </button>
                         </div>
 
-                        <button
-                            type="button"
-                            disabled={value.length < 10 ? true : false}
-                            className={`${value.length == 10 ? "bg-blue-100" : "bg-black opacity-60"} w-72 mx-auto inline-flex justify-center rounded-md border border-transparent px-4 py-2 text-[1.5rem] font-medium text-blue-900  focus:outline-none  `}
-                            onClick={goNext}
-                        >
-                            Submit
-                        </button>
+
 
                     </div>
                 )
@@ -184,47 +189,47 @@ const JoinModal = (props: any) => {
 
 
     return (
-        <div className="absolute inset-0">
-            <Transition appear show={props?.isOpen} as={Fragment}>
-                <Dialog as="div" className="relative z-10" onClose={() => {
-                    setStep(1)
-                    props?.onClose()
-                    setOtp(new Array(6).fill(""))
-                    setValue("")
-                }}>
-                    <Transition.Child
-                        as={Fragment}
-                        enter="ease-out duration-300"
-                        enterFrom="opacity-0"
-                        enterTo="opacity-100"
-                        leave="ease-in duration-200"
-                        leaveFrom="opacity-100"
-                        leaveTo="opacity-0"
-                    >
-                        <div className="fixed inset-0 bg-black bg-opacity-25" />
-                    </Transition.Child>
 
-                    <div className="fixed inset-0 overflow-y-auto">
-                        <div className="flex min-h-full items-center justify-center p-4 text-center">
-                            <Transition.Child
-                                as={Fragment}
-                                enter="ease-out duration-300"
-                                enterFrom="opacity-0 scale-95"
-                                enterTo="opacity-100 scale-100"
-                                leave="ease-in duration-200"
-                                leaveFrom="opacity-100 scale-100"
-                                leaveTo="opacity-0 scale-95"
-                            >
-                                <Dialog.Panel className="w-[130vh] h-[62vh] flex justify-center items-center  transform  rounded-[5rem] bg-white p-6 text-left align-middle shadow-xl transition-all">
-                                    {renderDialog()}
-                                </Dialog.Panel>
+        <Transition appear show={props?.isOpen} as={Fragment}>
+            <Dialog as="div" className="relative z-10" onClose={() => {
+                setStep(1)
+                props?.onClose()
+                setOtp(new Array(6).fill(""))
+                setValue("")
+            }}>
+                <Transition.Child
+                    as={Fragment}
+                    enter="ease-out duration-300"
+                    enterFrom="opacity-0"
+                    enterTo="opacity-100"
+                    leave="ease-in duration-200"
+                    leaveFrom="opacity-100"
+                    leaveTo="opacity-0"
+                >
+                    <div className="fixed inset-0 bg-black bg-opacity-25" />
+                </Transition.Child>
 
-                            </Transition.Child>
-                        </div>
+                <div className="fixed inset-0 overflow-y-auto">
+                    <div className="flex min-h-full items-center justify-center p-4 text-center">
+                        <Transition.Child
+                            as={Fragment}
+                            enter="ease-out duration-300"
+                            enterFrom="opacity-0 scale-95"
+                            enterTo="opacity-100 scale-100"
+                            leave="ease-in duration-200"
+                            leaveFrom="opacity-100 scale-100"
+                            leaveTo="opacity-0 scale-95"
+                        >
+                            <Dialog.Panel className="w-[130vh] h-[62vh] flex justify-center items-center  transform  rounded-[5rem] bg-white p-6 text-left align-middle shadow-xl transition-all">
+                                {renderDialog()}
+                            </Dialog.Panel>
+
+                        </Transition.Child>
                     </div>
-                </Dialog>
-            </Transition>
-        </div>
+                </div>
+            </Dialog>
+        </Transition>
+
     )
 }
 

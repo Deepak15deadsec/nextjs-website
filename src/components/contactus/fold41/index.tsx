@@ -116,7 +116,7 @@ const Fold41 = () => {
                           type="text"
                           onChange={(e) => onChangeHandler(e.target.value, "name")}
                           value={input.name}
-                          placeholder="Enter your Names"
+                          placeholder="Enter your Name"
                         />
                       </div>
                       <div>
