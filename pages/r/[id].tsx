@@ -8,6 +8,7 @@ import { Chair, Fold1, Fold2, Fold4, Fold6, Fold8, Fold9, Money} from "../../src
 import Image from "next/image"
 import GreenCard from "../../src/components/GreenCard";
 import Logo from '../../public/images/google.svg';
+import {usePathname } from 'next/navigation';
 
 // export async function getServerPaths() {
 //   try {
@@ -34,12 +35,15 @@ import Logo from '../../public/images/google.svg';
 // }
 
 export default function Home() {
-  const {query:{id}} = useRouter();
+
+  const pathName = usePathname()
+
+
   const updateReferrer = useStore((state: any) => state.updateReferrer);
 
   useEffect(() => {
-    updateReferrer(id);
-  }, [id]);
+    updateReferrer(pathName?.replace(/[/r/]/g, ''));
+  }, [pathName]);
 
   return (
     <div>
