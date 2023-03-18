@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Ambassador from "../../../../public/images/ambassador.png"
+
 
 const index = () => {
 
@@ -23,7 +23,7 @@ const index = () => {
                     < Image
                         height={914}
                         width={700}
-                        src={Ambassador.src}
+                        src="/images/Ambassador.png"
                         alt="Avni Hero"
                         className="object-contain"
                     />
