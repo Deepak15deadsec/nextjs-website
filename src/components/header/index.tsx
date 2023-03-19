@@ -8,10 +8,13 @@ import { useGetGoogleOAuthURL } from "../../google";
 import NavLink from "../ActiveLink"
 import Image from 'next/image'
 import { addSyntheticLeadingComment } from "typescript";
+import { useState } from "react";
+import JoinModal from "../JoinModal";
 
 
 const Header = () => {
   const router = useRouter();
+  let [isOpen, setIsOpen] = useState(false)
   const { googleUrl } = useGetGoogleOAuthURL()
   const links = [
     {
@@ -49,7 +52,8 @@ const Header = () => {
   return (
     <div className="h-[7.275rem] fixed inset-0 z-10 bg-[#434343] flex justify-between items-center xl:px-[22rem] lg:px-[7rem] md:px-[4rem] px-[2rem] ">
       <div className="flex space-x-8 items-center">
-        
+
+        <Link href="/">
           {/* <Image
             alt="Avni Logo"
             src={Logo.src}
@@ -57,13 +61,14 @@ const Header = () => {
             height={78}
           /> */}
 
-          {/* <Image
-          alt="Avni Logo"
-          src={Logo.src}
-          height={8}
-          width={67}
-          /> */}
-        
+          <Image
+            alt="Avni Logo"
+            src={Logo.src}
+            height={8}
+            width={67}
+          />
+        </Link>
+
       </div>
       <div className="flex space-x-8 items-center">
         {links.map(({ name, href }, index: number) => (
@@ -72,8 +77,21 @@ const Header = () => {
           </NavLink>
         ))}
 
+        {
+          isOpen == false && (<button
+            onClick={() => setIsOpen(true)}
+            className="bg-white z-[999] rounded-[3.2rem] px-5 py-3 font-lettera-medium font-[700]  lg:text-[1.2rem]  text-[#333333]"
+          >
+            Join now
+          </button>)
+        }
 
-        
+        <JoinModal
+          isOpen={isOpen}
+          onClose={() => setIsOpen(false)}
+
+        />
+
         {/* <button
           onClick={google}
           className="h-[38px] flex justify-center items-center text-white shadow-lg font-lettera-medium font-[500] text-[1.2rem] tracking-normal leading-[2rem]"
@@ -91,10 +109,7 @@ const Header = () => {
           src="https://cdn.juno.finance/juno-main-landing/store-icons.svg"
           data-v-ee1708b6=""
         /> */}
-        {/* <button className="flex items-center space-x-4 bg-black rounded-[1rem] ">
-          <AiFillApple color="fff" />
-          <IoLogoGooglePlaystore color="fff" />
-        </button> */}
+
       </div>
     </div>
   );

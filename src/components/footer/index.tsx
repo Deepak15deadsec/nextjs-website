@@ -62,13 +62,13 @@ const Footer = () => {
     {
       name: "Company",
       links: [
-        { name: "About Us", href: "/" },],
+        { name: "About Us", href: "/company" },],
     },
   ];
   return (
-    <div className="bg-[#EEEEEE] mt-[5rem] ">
+    <div className="bg-[#EEEEEE]  ">
       <div className="my-[0rem] w-full xl:px-[22rem] lg:px-[7rem] md:px-[2rem] px-[1.5rem] flex justify-between ">
-        <div className="space-y-[1rem] w-3/4 mb-[4rem] mt-[2rem]">
+        <div className="space-y-[1rem] w-3/4 mb-[2rem] mt-[2rem]">
 
           <Image
             alt="Avni Logo"
@@ -78,8 +78,8 @@ const Footer = () => {
             className="object-contain"
           />
 
-          <p className="text-left font-[400] text-[1rem] leading-[1.4rem] ">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br /> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br /> when an unknown printer took a galley of type and scrambled it to make a type <br />  specimen book.
+          <p className="text-left font-[400] w-[70%] text-[1rem] leading-[1.4rem] ">
+           We are a company building bridges between brands and consumers. All data and transactions are encrypted to ensure a completely secure experience for our members.
 
           </p>
 

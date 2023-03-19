@@ -8,7 +8,7 @@ const index = () => {
 
         <div className="bg-[#DE6FA1] pt-[3rem] ">
 
-            <div className="flex xl:px-[22rem] pb-[3rem] lg:px-[7rem] px-[3rem]">
+            <div className="flex xl:px-[22rem] pb-[3rem] justify-between lg:px-[7rem] px-[3rem]">
                 <div className="flex flex-col justify-center items-center w-[60%] space-y-[5rem] pt-[0.5rem] xl:px-[22rem]">
                     
                     <p className=" text-center font-[500]  pt-[5rem] lg:text-[3.5rem] lg:leading-[2rem] md:text-[2rem] md:leading-[2rem] text-[#FFFFFF]">

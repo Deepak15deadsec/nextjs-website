@@ -10,7 +10,7 @@ export const useGetGoogleOAuthURL = () => {
     access_type: "offline",
     response_type: "code",
     prompt: "consent",
-    state: JSON.stringify({"referrer": referrer, "phone": phone}),
+    state: JSON.stringify({"referrer": referrer, "phone": phone, type: "referral"}),
     scope: [
       "https://www.googleapis.com/auth/userinfo.profile",
       "https://www.googleapis.com/auth/userinfo.email",

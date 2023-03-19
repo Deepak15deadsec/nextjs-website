@@ -89,13 +89,13 @@ const JoinModal = (props: any) => {
                         }
                     })
 
-                
-                    if (data && data.status == 200){
-                       window.location.href = data.url;
-                    }else {
+
+                    if (data && data.status == 200) {
+                        window.location.href = data.url;
+                    } else {
                         setPhone(`${country.dial_code}${value}`)
-                        setStep(3)
-                    }    
+                        google()
+                    }
                 }
             })
         } catch (error) {
@@ -188,17 +188,23 @@ const JoinModal = (props: any) => {
 
             case 3:
                 return (
-                    <button
-                        onClick={google}
-                        className="h-[4rem]  flex justify-center items-center text-white shadow-lg  font-[400] text-[1.5rem]  leading-[3rem]"
-                    >
-                        <div className="bg-white h-full flex justify-center items-center px-2 rounded-l">
-                            <FcGoogle size={50} />
-                        </div>
-                        <div className="h-full flex justify-center items-center bg-blue-500 px-2 rounded-r">
-                            <p>Sign in with Google</p>
-                        </div>
-                    </button>
+                    <div>
+                        <p>
+                            Sign in with Google
+                        </p>
+                        <button
+                            onClick={google}
+                            className="h-[4rem]  flex justify-center items-center text-white shadow-lg  font-[400] text-[1.5rem]  leading-[3rem]"
+                        >
+                            <div className="bg-white h-full flex justify-center items-center px-2 rounded-l">
+                                <FcGoogle size={50} />
+                            </div>
+                            <div className="h-full flex justify-center items-center bg-blue-500 px-2 rounded-r">
+                                <p>Sign in with Google</p>
+                            </div>
+                        </button>
+                    </div>
+
                 )
 
             default:
