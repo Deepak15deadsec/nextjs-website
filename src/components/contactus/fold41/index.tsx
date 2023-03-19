@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../../../../public/images/google.svg";
-import Person from "../../../../public/images/lperson.svg";
+import Person from "../../../../public/images/contactus.png";
 import GreenCard from "../../GreenCard";
 import Loading from "../../Loading";
 import Thankyou from "../../Thankyou";
@@ -142,7 +142,7 @@ const Fold41 = () => {
                             } block p-11 w-[30rem] h-[18rem] text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 `}
                           onChange={(e) => onChangeHandler(e.target.value, "message")}
                           value={input.message}
-                          placeholder="Write your thoughts here..."
+                          placeholder="Write your query here..."
                         />
                       </div>
 

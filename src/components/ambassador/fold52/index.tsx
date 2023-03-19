@@ -6,29 +6,27 @@ const index = () => {
 
     return (
 
-        <div className="bg-[#b82e8a] pt-[3rem] ">
+        <div className="bg-[#DE6FA1] pt-[3rem] ">
 
-            <div className="flex  xl:px-[22rem] pb-[5rem] lg:px-[7rem] px-[3rem]">
-                <div className="justify-center items-center w-[60%] space-y-[5rem] pt-[1rem] xl:px-[22rem]">
+            <div className="flex xl:px-[22rem] pb-[3rem] lg:px-[7rem] px-[3rem]">
+                <div className="flex flex-col justify-center items-center w-[60%] space-y-[5rem] pt-[0.5rem] xl:px-[22rem]">
                     
-                    <p className=" text-center font-[300]  pt-[12rem] lg:text-[2.5rem] lg:leading-[0rem] md:text-[2rem] md:leading-[0rem] text-[#FFFFFF]">
-                    WE WANT YOU IN THE
+                    <p className=" text-center font-[500]  pt-[5rem] lg:text-[3.5rem] lg:leading-[2rem] md:text-[2rem] md:leading-[2rem] text-[#FFFFFF]">
+                    Change is here 
                     </p>
 
-                    <p className=" text-center font-[400] lg:text-[6rem] lg:leading-[2rem] md:text-[2rem] md:leading-[2rem] text-[#FFFFFF]">
-                    #AVNICREW
+                    <p className=" text-center font-[100] lg:text-[2rem] lg:leading-[2rem] md:text-[2rem] md:leading-[2rem] text-[#FFFFFF]">
+                    Web3 is here to revolutionise the face of Advertising & You can be a part of it!
                     </p>
 
-                    <p className="text-center pl-[3rem] w-[90%] font-[100] lg:text-[1.5rem] lg:leading-[1.5rem] md:text-[1rem] md:leading-[1rem] text-[#FFFFFF]">
-                    Love Avni? We're on the hunt for Brand Ambassadors of all follower sizes to help spread the word.
+                    <p className="text-center pl-[3rem] font-[100] lg:text-[2rem] lg:leading-[2.5rem] md:text-[1rem] md:leading-[1rem] text-[#FFFFFF]">
+                    We believe in creating a more transparent, secure, User-First advertising model that benefits people and gives the Data ownership back into their hands. 
                     </p> 
 
-                    <div className="pl-[22rem] ">
-                        <button className="rounded-[1rem] bg-[#01A4EF]  p-8 space-y-5 w-[15rem] h-[5rem] ">
-                            <p className="margin-right: 100px text-[1.5rem] font-Open-Sans font-[500] tracking-normal leading-[1rem] text-[#FFFFFF]">Apply Now</p>
-                        </button>
-                        
-                    </div>
+                    <p className="text-center pl-[3rem] font-[100] lg:text-[2rem] lg:leading-[2rem] md:text-[1rem] md:leading-[1rem] text-[#FFFFFF]">
+                    Here’s an opportunity to shape the future of advertising. 
+                    </p> 
+                   
 
                    </div>
 

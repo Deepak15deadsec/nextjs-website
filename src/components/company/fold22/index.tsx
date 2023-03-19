@@ -1,7 +1,7 @@
 import React from "react";
 import { useGetGoogleOAuthURL } from "../../../google";
 import { useRouter } from "next/router";
-import Logo from '../../../../public/images/ishape.svg';
+import Logo from '../../../../public/images/ishape.png';
 
 const index = () => {
   const router = useRouter();
@@ -31,8 +31,8 @@ const index = () => {
             <img
               src={Logo.src}
               alt="Fortune"
-              height="333px"
-              width="341px"
+              height="700px"
+              width="700px"
               className=" xs:h-10 ipadPro:h-10 object-contain v-lazy-image v-lazy-image-loaded"
             />
 
