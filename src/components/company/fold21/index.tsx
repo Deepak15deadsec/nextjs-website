@@ -13,9 +13,9 @@ const index = () => {
   };
   return (
     <div className="bg-[#434343] py-[20rem] flex flex-col justify-center items-center xl:px-[22rem] lg:px-[12rem] px-[3rem]">
-      <p className="text-[3.8rem]  font-sans w-[94%] font-[500] text-center tracking-normal leading-[4rem] text-[#FFFFFF] ">Build a Brand to connect with Consumers through Ads that make Sense with Real value</p>
+      <p className="text-[3.8rem]  font-sans w-[94%] font-[500] text-center tracking-normal leading-[4rem] text-[#FFFFFF] ">Building a one stop <br></br> trusted gateway for the world of <br></br> digital Advertising</p>
 
-      <p className="text-[3rem] mt-[4rem] font-sans font-[500] text-center w-[80%] tracking-normal leading-[3.5rem] text-[#AAAAAA]">Building an Easy-to-Use, Trusted & Compliant gateway for the world of Digital Advertising. </p>
+      <p className="text-[3rem] mt-[4rem] font-sans font-[500] text-center w-[80%] tracking-normal leading-[3.5rem] text-[#AAAAAA]">Avni aims to empower brands with suited ad solutions powered by Web3</p>
 
       <button
       onClick={google}

@@ -11,19 +11,21 @@ const index = () => {
     <div className="w-full bg-[#F5F5F5]">
 
 
-      <div className="bg-[#F5F5F5] mt-[0rem]  flex flex-col justify-center items-center md:px-[2rem] lg:px-[4rem] px-[4rem]">
+      {/* <div className="bg-[#F5F5F5] mt-[0rem]  flex flex-col justify-center items-center md:px-[2rem] lg:px-[4rem] px-[4rem]">
         <p className="text-[3.75rem] mt-[6rem] font-sans font-[600] text-center tracking-normal leading-[5rem] text-[#67DF87]">First ever Crypto app with {'>'} 1 million users</p>
         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-1 gap-x-6 mt-[3rem] mb-[1rem]">
           <Card img={Linechart.src} title="On-chain Transactions" number="3.9M"/>
           <Card img={User.src} title="Wallet Count" number="10.6M"/>
-          <Card img={Create.src} title="Number of Creators" number="1.7M"/>
+          <Card img={Create.src} title="Number of Creators" number="1.7M"/> */}
          
 
-        </div>
+        {/* </div> */}
 
+      {/* </div> */}
+
+      <div className="text-[2.5rem] my-[3rem] font-[600] font-sans leading-[3.5rem] text-center">
+        <p className="text-[#333333] "><em> "Because the people who are crazy enough to think they can <br/> change the world, are the ones who do." - Steve Jobs</em></p>
       </div>
-
-      
 
 
     </div>

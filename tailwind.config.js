@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-				sans: ['var(--font-open_sans)']
+        body: ['Delicious Handrawn']
+				// sans: ['var(--font-open_sans)']
 			}
     },
   },

@@ -25,12 +25,12 @@ const Ambassador = () => {
 
         { <Fold51 /> }
         { <Fold52 /> }
-        { <Fold53 /> }
+        {/* { <Fold53 /> } */}
         { <Fold54 /> }
         { <Fold55 /> }
-        { <Fold56 /> }
-        { <Fold57 /> }
-        { <Fold58 /> }
+        {/* { <Fold56 /> } */}
+        {/* { <Fold57 /> } */}
+        {/* { <Fold58 /> } */}
         <div className="mt-[5rem]">
           <GreenCard src={Logo.src} content={<p className="text-[1rem]  font-[400] text-center  leading-[1.5rem] text-[#333333]">Sound too good to be true? Here’s the deal: Stores wants you to transact at their stores via <br /> offers and promotions we provide. we use the advertising revenue as Cash Back in Token.<br /> Everyone wins</p>} />
         </div>

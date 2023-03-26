@@ -9,15 +9,15 @@ import GreenCard from "../../GreenCard"
 
 const index = () => {
   return (
-    <div className="w-full bg-[#F5F5F5]">
-      <div className="bg-[#F5F5F5] mt-[0rem]  flex flex-col justify-center items-center px-[1rem] pb-[10rem]">
+    <div className="w-full mt-[5rem] bg-[#F5F5F5]">
+      {/* <div className="bg-[#F5F5F5] mt-[0rem]  flex flex-col justify-center items-center px-[1rem] pb-[10rem]">
         <p className="text-[3.75rem] mt-[6rem] font-sans font-[600] text-center tracking-normal leading-[4rem] text-[#333333]">Hear from our Team</p>
 
 
         <div className="my-[2rem] w-full xl:px-[22rem] lg:px-[8rem] md:px-[8rem] px-[3rem] flex justify-between ">
-          {/* <div className="space-y-[2rem] w-3/4 mb-[4rem] mt-[5rem]"> */}
+          <div className="space-y-[2rem] w-3/4 mb-[4rem] mt-[5rem]"> 
 
-            {/* <div className="flex justify-start  items-center ml-[4rem] mt-[0rem]">
+            <div className="flex justify-start  items-center ml-[4rem] mt-[0rem]">
               <img
                 src={Person.src}
                 alt="Fortune"
@@ -26,11 +26,11 @@ const index = () => {
                 className=" xs:h-10 ipadPro:h-10 object-contain v-lazy-image v-lazy-image-loaded"
               />
 
-            </div> */}
+            </div>
 
 
 
-          {/* </div> */}
+          </div>
           <div className="space-y-[1rem] w-full justify-center mt-[4rem]">
 
             <img
@@ -49,7 +49,7 @@ const index = () => {
         </div>
 
       </div>
-
+ */}
 
      
       <GreenCard src={Logo.src} content={<p className="text-[1rem]  font-[400] text-center  leading-[1.5rem] text-[#333333]">Sound too good to be true? Here’s the deal: Stores wants you to transact at their stores via <br /> offers and promotions we provide. we use the advertising revenue as Cash Back in Token.<br /> Everyone wins</p>} />

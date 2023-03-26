@@ -1,40 +1,40 @@
 import React from "react";
 import Image from "next/image";
-import Crew from "../../../../public/images/crew.png"
+import BrandAmbassador from "../../../../public/images/brandambassador.png"
 
 const index = () => {
 
     return (
 
-        <div className="bg-[#DE6FA1] pt-[3rem] ">
+        <div className="bg-[#804c24] pt-[3rem] ">
 
-            <div className="flex xl:px-[22rem] pb-[3rem] justify-between lg:px-[7rem] px-[3rem]">
-                <div className="flex flex-col justify-center items-center w-[60%] space-y-[5rem] pt-[0.5rem] xl:px-[22rem]">
+            <div className="flex justify-between lg:px-[7rem] px-[3rem] py-5">
+                <div className="flex flex-col text-left w-[65%] space-y-[3rem] ">
                     
-                    <p className=" text-center font-[500]  pt-[5rem] lg:text-[3.5rem] lg:leading-[2rem] md:text-[2rem] md:leading-[2rem] text-[#FFFFFF]">
-                    Change is here 
+                    <p className="  font-[500]  text-[5rem]  text-[#FFFFFF]">
+                    Change is here...
                     </p>
 
-                    <p className=" text-center font-[100] lg:text-[2rem] lg:leading-[2rem] md:text-[2rem] md:leading-[2rem] text-[#FFFFFF]">
-                    Web3 is here to revolutionise the face of Advertising & You can be a part of it!
+                    <p className="  font-[450] text-[3rem]  text-[#FFFFFF]">
+                    Web3 is here to revolutionize the face of advertising & You can be a part of it!
                     </p>
 
-                    <p className="text-center pl-[3rem] font-[100] lg:text-[2rem] lg:leading-[2.5rem] md:text-[1rem] md:leading-[1rem] text-[#FFFFFF]">
-                    We believe in creating a more transparent, secure, User-First advertising model that benefits people and gives the Data ownership back into their hands. 
+                    <p className=" font-[400] text-[2rem] text-[#FFFFFF]">
+                    We believe in creating a more transparent, secure, user-first advertising model that rewards people and gives the data ownership back into their hands
                     </p> 
 
-                    <p className="text-center pl-[3rem] font-[100] lg:text-[2rem] lg:leading-[2rem] md:text-[1rem] md:leading-[1rem] text-[#FFFFFF]">
-                    Here’s an opportunity to shape the future of advertising. 
+                    <p className=" font-[400] text-[2rem] pb-[5rem] text-[#FFFFFF]">
+                    With avni-ambassador program be a part of the shared vision and get special rewards along with bragging rights!!
                     </p> 
                    
 
                    </div>
 
-                <div className="space-y-[4rem] pb-[3rem] pr-[3rem]">
+                <div className=" pt-12">
                     < Image
-                        height={400}
+                        height={500}
                         width={500}
-                        src={Crew.src}
+                        src={BrandAmbassador.src}
                         alt="Avni Hero"
                         className="object-contain"
                     />

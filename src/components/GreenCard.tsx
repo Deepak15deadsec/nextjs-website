@@ -1,14 +1,16 @@
 import React from 'react'
+import { useState } from "react";
 import Image from 'next/image'
 import { FcGoogle } from "react-icons/fc";
 import { useRouter } from "next/router";
 import { useGetGoogleOAuthURL } from "../google";
+import JoinModal from "../components/JoinModal";
 
 const GreenCard = ({ content, src }: any) => {
 
     const router = useRouter();
     const { googleUrl } = useGetGoogleOAuthURL()
-  
+    let [isOpen, setIsOpen] = useState(false)
     const google = async () => {
       await router.push(googleUrl);
     };
@@ -28,9 +30,9 @@ const GreenCard = ({ content, src }: any) => {
 
 
 
-                <div className="hidden md:flex lg:flex space-x-3 pt-[2rem] justify-center">
+                <div className="hidden md:flex lg:flex space-x-3 pt-[0.7rem] justify-center">
 
-                    <button
+                    {/* <button
                         onClick={google}
                         className="h-[4rem]  flex justify-center items-center text-white shadow-lg  font-[400] text-[1.5rem]  leading-[3rem]"
                     >
@@ -40,7 +42,21 @@ const GreenCard = ({ content, src }: any) => {
                         <div className="h-full flex justify-center items-center bg-blue-500 px-2 rounded-r">
                             <p>Sign in with Google</p>
                         </div>
-                    </button>
+                    </button> */}
+                    {
+                        isOpen==false && (<button
+                        onClick={() => setIsOpen(true)}
+                        className="bg-white z-[999] rounded-[3.2rem] px-8 py-4 font-lettera-medium font-[700]  lg:text-[1.5rem]  text-[#333333]"
+                        >
+                        Join Now
+                        </button>)
+                    }
+
+      <JoinModal
+        isOpen={isOpen}
+        onClose={() => setIsOpen(false)}
+        
+      />
 
 
                 </div>

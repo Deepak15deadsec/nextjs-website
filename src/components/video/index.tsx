@@ -40,7 +40,7 @@ export default function MyModal() {
             <div className="fixed inset-0 bg-black bg-opacity-25" />
           </Transition.Child>
           <div className="fixed inset-0 overflow-y-auto">
-            <div className="flex min-h-full items-center justify-center p-4 text-center">
+            <div className="flex min-h-full items-center justify-center p-4 min-w-full text-center">
               <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"
@@ -50,12 +50,13 @@ export default function MyModal() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-[60%] h-[60%] p-2 flex justify-center items-center transform overflow-hidden rounded-2xl bg-white  shadow-xl transition-all">
+                <Dialog.Panel className="w-[60%] h-[60%] p-2 flex  justify-center items-center transform overflow-hidden rounded-2xl bg-white  shadow-xl transition-all">
                   <video
                     className="rounded-[10px]"
                     width="100%"
                     height="100%"
                     src="https://res.cloudinary.com/dgjxmcrkg/video/upload/v1676979834/AVNI_explained_okvmjq.mp4"
+                    
                     controls
                     autoPlay
                   >

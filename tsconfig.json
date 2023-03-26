@@ -28,7 +28,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "src/socialfollow/index.js"  ],
   "exclude": [
     "node_modules"
   ]

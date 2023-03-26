@@ -6,10 +6,10 @@ import Cardd from './Cardd'
 const index = () => {
 
     return (
-        <div className="bg-[#FF6154] mt-[0rem]  flex flex-col justify-center items-center lg:px-[5rem] px-[3rem]">
-            <p className="text-[3rem] mt-[6rem] font-sans font-[500] text-center tracking-normal leading-[3.5rem] text-white">A Gamut of Engineers, Designers, and Product Thinkers, driven by the opportunity to create fairer Financial Systems</p>
+        <div className="bg-[#FF6154] flex flex-col justify-left items-left pb-[5rem] lg:px-[5rem] px-[3rem]">
+            <p className="text-[3rem] mt-[6rem] font-sans font-[500] text-left tracking-normal pb-10 leading-[3.5rem] text-white">A gamut of engineers & product thinkers<br></br> driven by the opportunity to create fairer financial systems</p>
 
-            <div className="grid xs:grid-cols-1 grid-cols-2 gap-3 mt-[3rem] mb-[4rem]">
+            <div className="justify-start">
 
                 <Cardd />
                 <Card />

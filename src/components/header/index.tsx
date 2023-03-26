@@ -31,18 +31,18 @@ const Header = () => {
       name: "$ART",
       href: "/artcoin"
     },
-    {
-      name: "Company",
-      href: "/company",
-    },
-    {
-      name: "FAQs",
-      href: "/faq",
-    },
-    {
-      name: "Contact",
-      href: "/contactus"
-    },
+    // {
+    //   name: "Company",
+    //   href: "/company",
+    // },
+    // {
+    //   name: "FAQs",
+    //   href: "/faq",
+    // },
+    // {
+    //   name: "Contact",
+    //   href: "/contactus"
+    // },
   ];
 
   const google = async () => {

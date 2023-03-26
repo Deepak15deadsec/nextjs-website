@@ -2,25 +2,14 @@ import React from "react";
 import Box from "../../../../public/images/reward.png";
 
 
-const Cardx = ({img, content, title }:{img:string, content:string, title:string}) => {
+const Cardx = ({title }:{title:string}) => {
   return (
-    <div className="rounded-[1.75rem] bg-[#FFFFFF] p-8 space-y-2 lg:w-[22rem]">
-      <div className="flex space-x-4 items-center">
-        <img
-          src={img}
-          alt="Sandeep Nailwal"
-          className=" object-contain"
-        />
+    <div className="rounded-[3.5rem] bg-[url('/images/trust-bg.webp') border-8 border-red-400">
 
-      </div>
-      <div className="space-y-[0.15rem]">
-        <p className="text-[2.5rem] font-lettera-medium font-[600]  tracking-normal leading-[3.5rem] text-[#F14F20]">{title}</p>
+      
+        <p className="text-[2.5rem] font-lettera-medium font-[600] tracking-normal leading-[3.5rem] text-[#ffffff]">{title}</p>
 
 
-      </div>
-      <p className=" text-[1.4rem] font-lettera-regular font-[400]  tracking-normal leading-[1.5rem] text-[#434343]">
-      {content} 
-      </p>
 
     </div>
   );

@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Coin from "../../../../public/images/coin221.webp";
-import shapes from '../../../../public/images/artcoin.svg'
+import shapes from '../../../../public/images/artcoin.svg';
+import Web3 from '../../../../public/images/web3.png';
 
 const index = () => {
 
@@ -14,11 +15,11 @@ const index = () => {
             <div className="flex justify-between mb-[18rem] xl:px-[22rem] lg:px-[7rem] px-[3rem]">
                 <div className="w-[60%] space-y-[5rem] pt-[5rem]">
                     <p className="text-left font-[700] lg:text-[6rem] lg:leading-[6rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                    Making advertising cost effective & beneficial for everyone. 
+                    Making advertising cost effective & beneficial for everyone
                     </p>
 
-                    <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                    The $600 Billion Digital Advertising Industry is failing advertisers & users with Privacy, Transparency, and Efficiency concerns!
+                    <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#AAAAAA]">
+                    The $600 Billion Digital Advertising Industry is failing advertisers & users with privacy, transparency and efficiency concerns!
                     </p>
                 </div>
 
@@ -45,11 +46,11 @@ const index = () => {
             <div className="flex justify-between pt-[10rem] pb-[10rem] bg-[#d41522] xl:px-[22rem] lg:px-[7rem] px-[3rem] ">
                 <div className="w-[60%] space-y-[5rem] pt-[5rem]">
                     <p className="text-left font-[700] lg:text-[6rem] lg:leading-[6rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                        Advertising technology is broken
+                        Current advertising technology is broken!
                     </p>
 
                     <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                    With Ad Blockers, Overload, Lack of Transparency, and Data Privacy Concerns
+                    With ad blockers, lack of transparency and data privacy concerns
                     </p>
                 </div>
                 <div>
@@ -63,25 +64,27 @@ const index = () => {
                 </div>
             </div>
 
-            <div className="flex justify-between pt-[10rem] pb-[10rem] bg-[#2218de] xl:px-[22rem] lg:px-[7rem] px-[3rem]">
-                <div>
-                    < Image
-                        height={814}
-                        width={600}
-                        src={shapes.src}
-                        alt="Avni Hero"
-                        className="object-contain"
-                    />
-                </div>
+            <div className="flex justify-between pt-[5rem] pb-[5rem] bg-[#2218de] xl:px-[22rem] lg:px-[7rem] px-[3rem]">
+                
 
-                <div className="w-[50%] space-y-[5rem] pt-[5rem]">
+                <div className="w-[50%] space-y-[5rem] pt-[3rem]">
                     <p className="text-left font-[700] lg:text-[6rem] lg:leading-[6rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
                     Web3 for a CHANGE!
                     </p>
 
                     <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                    Bringing the Targeted, Transparent & Pro-user approach! Keeping user privacy and consent intact.
+                    Introducing a targeted, transparent & pro-user approach, keeping user privacy and consent intact
                     </p>
+                </div>
+
+                <div className="pt-[0.5rem]"> 
+                    < Image
+                        height={700}
+                        width={700}
+                        src={Web3.src}
+                        alt="Avni Hero"
+                        className="object-contain"
+                    />
                 </div>
 
             </div>

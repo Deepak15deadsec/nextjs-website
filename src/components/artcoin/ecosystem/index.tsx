@@ -1,127 +1,125 @@
 import React from 'react'
+import { useState } from "react";
 import shapes from '../../../../public/images/artcoin.svg'
 import Image from 'next/image'
+import Bulb from '../../../../public/images/bulb.png'
+import Select from '../../../../public/images/select.png'
+import SignUp from '../../../../public/images/signup.png'
+import GetStarted from '../../../../public/images/getstarted.png'
 import holder from "../../../../public/images/security.png"
 import { useRouter } from "next/router";
 import { useGetGoogleOAuthURL } from "../../../google";
 import { FcGoogle } from "react-icons/fc";
-
+import JoinModal from "../../JoinModal";
 
 const index = () => {
 
-    const router = useRouter();
+  const router = useRouter();
   const { googleUrl } = useGetGoogleOAuthURL()
+  let [isOpen, setIsOpen] = useState(false)
 
   const google = async () => {
     await router.push(googleUrl);
   };
 
+  const openInNewTab = (url: string | URL | undefined) => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+    if (newWindow) newWindow.opener = null
+}
+
     return (
         <div className="bg-[#434343]   ">
             <div className="flex justify-between pt-[10rem] pb-[10rem] bg-[#353dab] xl:px-[22rem] lg:px-[7rem] px-[3rem] ">
-                <div className="w-[60%]  pt-[1rem]">
+                <div className="w-[75%]  pt-[1rem]">
 
-                    <p className="text-left font-[600]  lg:text-[3rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                    ART Advertising platform
+                    <p className="text-left font-[600] pl-[4rem]  lg:text-[3rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
+                    The $ART in avni ad-platform
                     </p>
                     <div className='space-y-[1rem] mt-[5rem]'>
-                        <div className='flex space-x-[1rem]'>
+                    <div className='flex space-x-[1rem]  pl-[4rem]'>
                             < Image
-                                height={32}
-                                width={32}
-                                src={holder.src}
+                                height={50}
+                                width={50}
+                                src={Bulb.src}
                                 alt="Avni Hero"
                                 className="object-contain"
                             />
-                            <p className="text-left font-[400]  lg:text-[1.75rem] lg:leading-[2rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                            Users Earn for Consent & Data
+
+                            <p className="text-left font-[500] pt-[0.8rem] lg:text-[2rem] lg:leading-[2rem] md:text-[2rem] md:leading-[3rem] text-[#cbcbcb]">
+                            How it works
                             </p>
                         </div>
-
-                        <p className="text-left font-[300] w-[75%] lg:text-[1.5rem] lg:leading-[2rem] md:text-[2rem] md:leading-[3rem] text-[#eccdcd]">
-                        Keeping the privacy intact while serving offers & ads, as they earn ART for <br/> ad-engagement.
-                        </p>
-                        {/* <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] p-3 font-lettera-medium font-[700] px-[2rem] lg:text-[1.5rem] md:text-[1rem] text-[#353dab] tracking-normal leading-[1.33rem]">
-                            Sign up for Brave Rewards
-                        </button> */}
-                        <button
-                            onClick={google}
-                             className="h-[45px] flex justify-center items-center text-white shadow-lg font-lettera-medium font-[700] text-[1.4rem] tracking-normal leading-[2rem]"
-                                >
-                        {/* <button
-                            onClick={google}
-                             className="h-[48px] flex justify-center rounded-[3.2rem] items-center text-white shadow-lg font-lettera-medium font-[700] text-[1.5rem] tracking-normal leading-[1.33rem]"
-                                >         */}
-                        {/* <div className="bg-white h-full flex justify-center items-center px-2 rounded-l">
-                             <FcGoogle size={28} />
-                         </div>
-                         <div className="h-full lg:flex md:flex hidden  justify-left items-center bg-blue-500 px-2 rounded-r">
-                            <p>Sign in with Google</p>
-                        </div> */}
-                        {/* <div className="bg-white h-full flex justify-center items-center px-2 rounded-[3.2rem]">
-                             <FcGoogle size={35} />
-                         </div> */}
-                        <div className="h-full lg:flex md:flex hidden text-[#353dab] justify-left items-center bg-[#FFFFFF] px-[1rem] rounded-[3.2rem] ">
-                        <FcGoogle size={35} /> <p className='ml-[0.5rem] '>Sign up for Brave Rewards</p>
+                        <div className='pt-[3rem] '>
+                        <div className='flex space-x-[1rem] pb-[3rem]'>
+                            < Image
+                                height={40}
+                                width={40}
+                                src={Select.src}
+                                alt="Avni Hero"
+                                className="object-contain"
+                            />
+                            <div className="pl-[1rem] text-left font-[500]  lg:text-[1.75rem] lg:leading-[2.5rem] md:text-[2rem] md:leading-[5rem] text-[#cbcbcb]">
+                            With avni the data ownership is back to the user once they join <br/> Start earning $ART tokens for ad-engagement from your favorite brands while we ensure your privacy & security
+                            </div>
                         </div>
-                        
-                        </button>
+
+                        <div className='flex space-x-[1rem] pt-20'>
+                            < Image
+                                height={40}
+                                width={40}
+                                src={Select.src}
+                                alt="Avni Hero"
+                                className="object-contain"
+                            />
+                            <div className="pl-[1rem] text-left font-[500]  lg:text-[1.75rem] lg:leading-[2.5rem] md:text-[2rem] md:leading-[5rem] text-[#cbcbcb]">
+                            ROI based efficient approach for advertisers <br/> Measure each ad-unit with avni's transaction settlement system try transaction based campaigns aside from impression based
+                            </div>
+                        </div>       
+                        </div>
                           </div>
 
-                    {/* <div className='space-y-[1rem] mt-[5rem]'>
-                        <div className='flex space-x-[1rem]'> */}
-                            {/* < Image
-                                height={32}
-                                width={32}
-                                src={holder.src}
-                                alt="Avni Hero"
-                                className="object-contain"
-                            /> */}
-                            {/* <p className="text-left font-[400]  lg:text-[1.75rem] lg:leading-[2rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                            Creators get paid for making great content
-                            </p> */}
-                        {/* </div> */}
-
-                        {/* <p className="text-left font-[300] w-[75%] lg:text-[1.5rem] lg:leading-[2rem] md:text-[2rem] md:leading-[3rem] text-[#eccdcd]">
-                        Publishers and creators earn ad revenue and user contributions as well as tips.
-                        </p> */}
-                        {/* <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] p-3 font-lettera-medium font-[700] px-[2rem] lg:text-[1.5rem] md:text-[1rem] text-[#353dab] tracking-normal leading-[1.33rem]">
-                            Join Verified Creator Network
-                        </button> */}
-                    {/* </div> */}
-
-                    <div className='space-y-[1rem] mt-[5rem]'>
-                        <div className='flex space-x-[1rem]'>
-                            < Image
-                                height={32}
-                                width={32}
-                                src={holder.src}
-                                alt="Avni Hero"
-                                className="object-contain"
-                            />
-                            <p className="text-left font-[400]  lg:text-[1.75rem] lg:leading-[2rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                            ROI based Efficient approach for Advertisers
-                            </p>
-                        </div>
-
-                        <p className="text-left font-[300] w-[75%] lg:text-[1.5rem] lg:leading-[2rem] md:text-[2rem] md:leading-[3rem] text-[#eccdcd]">
-                        Avni's transaction settlement system allows Advertisers to measure each <br/> ad-unit.<br/> To help you get started with Avni Ads, we will give you 1000 transaction <br/> ad credit. Give it a try for free.
-                        </p>
-                        <button className="bg-[#FFFFFF] mt-[3.5rem] rounded-[3.2rem] p-3 font-lettera-medium font-[700] px-[2rem] lg:text-[1.5rem] md:text-[1rem] text-[#353dab] tracking-normal leading-[1.33rem]">
-                           Get Started
-                        </button>
-                    </div>
-
-                </div>
-                <div>
-                    < Image
-                        height={814}
-                        width={600}
-                        src={shapes.src}
+                    
+                                </div>
+                <div className=' grid grid-flow-row items-center pt-[5rem] mr-25'>
+                    <div className='pt-[4.5rem] mt-5'>
+                {
+                        isOpen==false && (<button 
+                        onClick={() => setIsOpen(true)}
+                        className="bg-[#353dab] z-[999] rounded-[3.2rem] px-8 py-4 font-lettera-medium font-[700] text-center lg:text-[1.5rem] text-[#cbcbcb]"
+                        >< Image
+                        height={200}
+                        width={235}
+                        src={SignUp.src}
                         alt="Avni Hero"
                         className="object-contain"
                     />
-                </div>
+
+                       <p className='bg-[#434343] rounded-[1rem] px-2 py-2'> Collect 50 ART Tokens</p>
+                       
+                        </button>)
+                    }
+
+      <JoinModal
+        isOpen={isOpen}
+        onClose={() => setIsOpen(false)}
+        
+      />
+      </div>
+      <div className='pt-[2rem] mt-5'>
+      <button onClick={() => openInNewTab('https://ads.avniads.com/')}
+                        className="bg-[#353dab] rounded-[3.2rem] px-5 py-2 font-lettera-medium font-[700] lg:text-[1.5rem] text-center text-[#cbcbcb]">
+                        < Image
+                        height={250}
+                        width={270}
+                        src={GetStarted.src}
+                        alt="Avni Hero"
+                        className="object-contain"
+                    />       
+                        <p className='bg-[#434343] rounded-[1rem] px-8 py-2'> With 1000 ad credits </p>
+                        </button>
+      </div>
+      </div>
+               
             </div>
         </div>
     )
