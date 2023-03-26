@@ -36,7 +36,7 @@ const index = () => {
                     <p className="text-center font-[200] text-[2.4rem] text-[#FFFFFF]">
                     Your work as a campus ambassador for Avni will entail the following:</p>
 
-                    <div className="text-left font-[100] lg:text-[2rem] text-[#FFFFFF] style={{ display: 'inline', float: 'left' }}">
+                    <div className="text-left font-[100] lg:text-[2rem] px-[2rem] text-[#FFFFFF] style={{ display: 'inline', float: 'left' }}">
                     <ol style={{ listStyleType: 'disc' }}>
                     <li> Hosting & promoting avni events & campaigns in your campus</li>
                     <li> Introducing avni to college students & onboarding them to the platform</li>

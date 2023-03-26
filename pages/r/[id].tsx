@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import useStore from "../../zustand/useStore";
 // import Group from "../../public/images/Mask-group.png";
 import Group from "../../public/images/partners.png";
-import { Chair, Fold1, Fold2, Fold4, Fold6, Fold8, Fold9, Money} from "../../src/components/main"
+import { Chair, Earn, Fold1, Fold2, Fold4, Fold6, Fold8, Fold9, Money} from "../../src/components/main"
 import Image from "next/image"
 import GreenCard from "../../src/components/GreenCard";
 import Logo from '../../public/images/google.svg';
@@ -56,7 +56,8 @@ export default function Home() {
       <main className="bg-[#F5F5F5]">
         <Fold1 />
         <Chair />
-        <Fold2 />
+        <Earn />
+        {/* <Fold2 /> */}
         <Money />
         {/* <Fold4 /> */}
         <div className="mt-[0rem] bg-[#F5F5F5] from-[#4BA173] to-[#80CF9C]">

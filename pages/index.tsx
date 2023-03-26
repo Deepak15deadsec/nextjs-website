@@ -1,7 +1,7 @@
 import Head from "next/head";
 // import Group from "../public/images/Mask-group.webp";
 import Group from "../public/images/partners.png";
-import { Fold1, Fold2, Fold4, Fold6, Fold8, Fold9, Chair, Money } from "../src/components/main"
+import { Fold1, Fold2, Fold4, Fold6, Fold8, Fold9, Chair, Money, Earn } from "../src/components/main"
 import Image from "next/image";
 import GreenCard from "../src/components/GreenCard";
 import Logo from '../public/images/google.svg';
@@ -26,7 +26,8 @@ export default function Home() {
       <main className="bg-[#F5F5F5]">
         <Fold1 />
         <Chair />
-        <Fold2 />
+        <Earn />
+        {/* <Fold2 /> */}
         <Money />
         {/* <Fold4 /> */}
         <div className="mt-[0rem] bg-[#F5F5F5] from-[#4BA173] to-[#80CF9C]">
