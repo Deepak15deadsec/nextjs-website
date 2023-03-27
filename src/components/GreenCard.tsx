@@ -12,17 +12,17 @@ const GreenCard = ({ content, src }: any) => {
     const { googleUrl } = useGetGoogleOAuthURL()
     let [isOpen, setIsOpen] = useState(false)
     const google = async () => {
-      await router.push(googleUrl);
+        await router.push(googleUrl);
     };
 
     return (
-        <div className="my-[0rem]  w-full xl:px-[38rem] lg:px-[10rem]  flex justify-center">
+        <div className="my-[0rem]  w-full xl:px-[35rem] lg:px-[26rem] md:px-[10rem] px-[3rem]  flex justify-center">
             <div className="rounded-[2.5rem] bg-[#67DF87] px-[5rem] p-8 sm:space-y-5 lg:space-y-5 md:space-y-5 space-y-2 w-auto h-auto">
 
                 <div className="flex space-x-4 justify-center">
 
                     <div className="space-y-[0.15rem] ">
-                        <p className="text-[3rem]  font-[700] text-center tracking-normal leading-[3.5rem] text-[#333333]">Join our pre-launch program today and<br />make every shopping count!</p>
+                        <p className="lg:text-[3rem] md:text-[3rem] text-[1.5rem] font-[700] text-center tracking-normal lg:leading-[3.5rem] md:leading-[3.5rem] leading-[1.8rem] text-[#333333]">Join our pre-launch program today and make every shopping count!</p>
                     </div>
                 </div>
 
@@ -30,7 +30,7 @@ const GreenCard = ({ content, src }: any) => {
 
 
 
-                <div className="hidden md:flex lg:flex space-x-3 pt-[0.7rem] justify-center">
+                <div className="flex space-x-3 pt-[0.7rem] justify-center">
 
                     {/* <button
                         onClick={google}
@@ -44,26 +44,26 @@ const GreenCard = ({ content, src }: any) => {
                         </div>
                     </button> */}
                     {
-                        isOpen==false && (<button
-                        onClick={() => setIsOpen(true)}
-                        className="bg-white z-[999] rounded-[3.2rem] px-8 py-4 font-lettera-medium font-[700]  lg:text-[1.5rem]  text-[#333333]"
+                        isOpen == false && (<button
+                            onClick={() => setIsOpen(true)}
+                            className="bg-white z-[999] rounded-[3.2rem] px-8 py-4 font-lettera-medium font-[700]  lg:text-[1.5rem]  text-[#333333]"
                         >
-                        Join Now
+                            Join Now
                         </button>)
                     }
 
-      <JoinModal
-        isOpen={isOpen}
-        onClose={() => setIsOpen(false)}
-        
-      />
+                    <JoinModal
+                        isOpen={isOpen}
+                        onClose={() => setIsOpen(false)}
+
+                    />
 
 
                 </div>
 
-                <div className="flex md:hidden lg:hidden space-x-3 justify-center">
+                {/* <div className="flex md:hidden lg:hidden space-x-3 justify-center">
 
-                <button
+                    <button
                         onClick={google}
                         className="h-[4rem]  flex justify-center items-center text-white shadow-lg  font-[400] text-[1.5rem]  leading-[3rem]"
                     >
@@ -76,7 +76,22 @@ const GreenCard = ({ content, src }: any) => {
                     </button>
 
 
-                </div>
+{
+                        isOpen == false && (<button
+                            onClick={() => setIsOpen(true)}
+                            className="bg-white  rounded-[3.2rem] px-8 py-4 font-lettera-medium font-[700]  lg:text-[1.5rem]  text-[#333333]"
+                        >
+                            Join Now
+                        </button>)
+                    }
+
+                    <JoinModal
+                        isOpen={isOpen}
+                        onClose={() => setIsOpen(false)}
+
+                    />
+
+                </div> */}
 
             </div>
 

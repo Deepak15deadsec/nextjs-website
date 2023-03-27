@@ -131,7 +131,7 @@ const Footer = () => {
                 
               </div>
             ))}
-           <div className=" font-lettera-bold font-[500] text-[1.5rem] tracking-normal leading-[1.5rem] mt-[2rem] lg:mt-[0rem] text-[#333333] ">
+           <div className=" font-lettera-bold font-[500] text-[1.5rem] tracking-normal leading-[1.5rem]  lg:mt-[0rem] text-[#333333] ">
                 <p>  Contact Us </p>
                                   
                   <div className="flex flex-row space-x-2 pt-[1rem]">

@@ -20,7 +20,7 @@ const index = () => {
         Earn crypto rewards for every shopping receipt with personalized brand offers
       </p>
 
-      <p className="pt-[3rem] pb-[1rem] lg:text-[1.75rem] md:text-[1.5rem] text-[0.8rem] font-Open-Sans font-[400] tracking-normal leading-[2.5rem]   text-[#57CC99]">Join 10K+ members of our pre-launch program to earn exciting rewards and offers from your favorite brands</p>
+      <p className="lg:pt-[3rem] md:pt-[3rem] pt-[0rem] pb-[1rem] lg:text-[1.75rem] text-center md:text-[1.5rem] text-[0.8rem] font-Open-Sans font-[400] tracking-normal leading-[2.5rem]   text-[#57CC99]">Join 10K+ members of our pre-launch program to earn exciting rewards and offers from your favorite brands</p>
 
       {
         isOpen==false && (<button
