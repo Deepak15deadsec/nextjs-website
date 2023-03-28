@@ -41,7 +41,7 @@ const index = () => {
         </div>
         <div className="space-y-6 ">
         <button onClick={() => openInNewTab('https://docs.google.com/forms/d/e/1FAIpQLSdRCS1T45mEvvgbY_-j0esPbXM4F-_AG_z7CgDlzYST_9Wwdw/viewform?usp=pp_url&entry.407278199=https://')} className="rounded-[2rem] bg-[#ffffff]  p-8 space-y-5 ">
-                    <p className="bg-[#ee6c5c] text-[2rem] font-[500] rounded-[3.5rem]  px-[5rem] py-[2rem] space-y-5  text-[#434343]">Become an ambassador</p>
+                    <p className="bg-[#ee6c5c] text-[2rem] font-[500] rounded-[3.5rem]  px-[5rem] py-[2rem] space-y-5  text-[#ffffff]">Become an ambassador</p>
                 </button>
                 <div/>
                 </div>

@@ -135,12 +135,12 @@ const Footer = () => {
                 <p>  Contact Us </p>
                                   
                   <div className="flex flex-row space-x-2 pt-[1rem]">
-                  <a href="https://t.me/s/avniclub">
+                
                   <FontAwesomeIcon icon={faTwitter} height={30}
                   width={30} color="#1DA1F2"/>
-                 </a>
+                 
 
-                 <a href="https://t.me/s/avniclub">
+                 <a href="https://www.linkedin.com/company/avniclub">
                  <FontAwesomeIcon icon={faLinkedin} height={30}
                  width={30} color="#0072b1"/>
                 </a>

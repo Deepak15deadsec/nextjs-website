@@ -26,8 +26,8 @@ export default function Home() {
       <main className="bg-[#F5F5F5]">
         <Fold1 />
         <Chair />
-        <Earn />
-        {/* <Fold2 /> */}
+        {/* <Earn /> */}
+        <Fold2 />
         <Money />
         {/* <Fold4 /> */}
         <div className="mt-[0rem] bg-[#F5F5F5] from-[#4BA173] to-[#80CF9C]">
