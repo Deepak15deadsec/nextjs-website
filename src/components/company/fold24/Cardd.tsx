@@ -34,11 +34,11 @@ const Cardd = () => {
           <img
             src={Comma.src}
             alt="Fortune"
-            height="66px"
-            width="76px"
+            height="30px"
+            width="30px"
             className=" xs:h-10 ipadPro:h-10 object-contain v-lazy-image v-lazy-image-loaded"
           />
-          <div className="justify-left items-left text-[1.25rem] pt-[1rem] font-[500] leading-[2.5rem] text-[#333333]">Advertising in the coming days world will be less about interrupting audiences and more about engaging with communities. It will require a shift from centralized control to decentralized collaboration, where brands earn trust by delivering authentic, value-driven experiences and empowering consumers to co-create the narrative of their brand story</div>
+          <div className="justify-left items-left text-[1.25rem] pt-[1rem] font-[500] leading-[2.5rem] text-[#d2d0d6]">Advertising in the coming days world will be less about interrupting audiences and more about engaging with communities. It will require a shift from centralized control to decentralized collaboration, where brands earn trust by delivering authentic, value-driven experiences and empowering consumers to co-create the narrative of their brand story</div>
         </div>
 
       </div>

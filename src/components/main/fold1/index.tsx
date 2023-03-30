@@ -9,19 +9,18 @@ const index = () => {
   let [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className="bg-[#434343] py-[13rem] flex flex-col justify-center items-center xl:px-[22rem] lg:px-[12rem] md:px-[10rem] px-[8rem]  space-y-7">
+    <div className="bg-[#36454f] py-[13rem] flex flex-col justify-center items-center xl:px-[22rem] lg:px-[12rem] md:px-[10rem] px-[8rem]  space-y-7">
     
 
-      <p className="text-center font-[800] lg:text-[10rem] lg:leading-[10.5rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
-        Rewards for<br />proof of shopping
+      <p className="text-center font-[800] lg:text-[8rem] lg:leading-[10.5rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
+        rewards for<br />proof of shopping
       </p>
 
-      <p className="text-center font-[500] pt-[1rem] lg:text-[3.8rem] lg:leading-[4.2rem] md:text-[2.2rem] md:leading-[2.5rem] leading-[1.8rem] text-[1.5rem] text-[#FFFFFF]">
-        Earn crypto rewards for every shopping receipt with personalized brand offers
+      <p className="text-center font-[500] pt-[1rem] lg:text-[2.0 rem] lg:leading-[4.2rem] md:text-[2.2rem] md:leading-[2.5rem] leading-[1.8rem] text-[1.5rem] text-[#FFFFFF]">
+        tokens, digital collatables, execlusive offers, coupons & cashbacks <br/><br/><br/>
       </p>
 
-      <p className="lg:pt-[3rem] md:pt-[3rem] pt-[0rem] pb-[1rem] lg:text-[1.75rem] text-center md:text-[1.5rem] text-[0.8rem] font-Open-Sans font-[400] tracking-normal leading-[2.5rem]   text-[#57CC99]">Join 10K+ members of our pre-launch program to earn exciting rewards and offers from your favorite brands</p>
-
+     
       {
         isOpen==false && (<button
           onClick={() => setIsOpen(true)}
@@ -30,6 +29,7 @@ const index = () => {
           Join now
         </button>)
       }
+ <p className="lg:pt-[3rem] md:pt-[3rem] pt-[0rem] pb-[1rem] lg:text-[1.75rem] text-center md:text-[1.5rem] text-[0.8rem] font-Open-Sans font-[400] tracking-normal leading-[1.5rem]   text-[#57CC99]">   2K+ members already reserved their seats in the pre-launch program </p>
 
       <JoinModal
         isOpen={isOpen}

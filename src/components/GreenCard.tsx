@@ -17,12 +17,12 @@ const GreenCard = ({ content, src }: any) => {
 
     return (
         <div className="my-[0rem]  w-full xl:px-[35rem] lg:px-[26rem] md:px-[10rem] px-[3rem]  flex justify-center">
-            <div className="rounded-[2.5rem] bg-[#67DF87] px-[5rem] p-8 sm:space-y-5 lg:space-y-5 md:space-y-5 space-y-2 w-auto h-auto">
+            <div className="rounded-[2.5rem] bg-[#dd245d] px-[5rem] p-8 sm:space-y-5 lg:space-y-5 md:space-y-5 space-y-2 w-auto h-auto">
 
                 <div className="flex space-x-4 justify-center">
 
                     <div className="space-y-[0.15rem] ">
-                        <p className="lg:text-[3rem] md:text-[3rem] text-[1.5rem] font-[700] text-center tracking-normal lg:leading-[3.5rem] md:leading-[3.5rem] leading-[1.8rem] text-[#333333]">Join our pre-launch program today and make every shopping count!</p>
+                        <p className="lg:text-[3rem] md:text-[3rem] text-[1.5rem] font-[700] text-center tracking-normal lg:leading-[3.5rem] md:leading-[3.5rem] leading-[1.8rem] text-[#FFFFFF]">join  pre-launch program today to <br/>claim your  300+ tokens</p>
                     </div>
                 </div>
 
@@ -46,7 +46,7 @@ const GreenCard = ({ content, src }: any) => {
                     {
                         isOpen == false && (<button
                             onClick={() => setIsOpen(true)}
-                            className="bg-white z-[999] rounded-[3.2rem] px-8 py-4 font-lettera-medium font-[700]  lg:text-[1.5rem]  text-[#333333]"
+                            className="bg-[#30D792] z-[999] rounded-[3.2rem] px-8 py-4 font-lettera-medium font-[700]  lg:text-[1.5rem]  text-[#333333]"
                         >
                             Join Now
                         </button>)

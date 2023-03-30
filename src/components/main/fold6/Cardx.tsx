@@ -8,7 +8,7 @@ const Cardx = ({img, content, title }:{img:string, content:string, title:string}
       <div className="flex space-x-4 items-center">
         <img
           src={img}
-          alt="Sandeep Nailwal"
+          alt=""
           className=" object-contain"
         />
 

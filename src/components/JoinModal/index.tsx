@@ -116,10 +116,10 @@ const JoinModal = (props: any) => {
                         <Dialog.Title
                             className="text-[#333333] text-[3rem] pl-[1rem] font-[600]"
                         >
-                            Enter your phone number to join via SMS
+                            enter your phone number to join
                         </Dialog.Title >
 
-                        <div className="bg-white border border-gray-300  inline-flex rounded-[3rem] mx-[5rem] space-x-6 h-12   ">
+                        <div className="bg-white border border-gray-400  inline-flex rounded-[3rem] mx-[5rem] space-x-6 h-12   ">
                             <CountryCode
                                 country={country}
                                 setCountry={setCountry}
@@ -140,7 +140,7 @@ const JoinModal = (props: any) => {
                             >
                                 <img
                                     src={`${value.length == 10 ? "/images/mverify.png" : "/images/rverify.png"}`}
-                                    alt="Sandeep Nailwal"
+                                    alt=""
                                     className="h-[3rem] w-[3rem] mr-[2.5rem] object-contain"
                                 />
                             </button>

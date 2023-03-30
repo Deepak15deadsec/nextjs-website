@@ -6,17 +6,29 @@ import Video from "../../video"
 
 const index = () => {
   return (
-    <div className="w-full bg-[#216169] pb-[10rem]">
+    <div className="w-full bg-[#0169ff] pb-[10rem]">
 
 
       <div className=" w-full xl:px-[22rem] px-[7rem] flex justify-between">
         <div className="space-y-[2.5rem] w-[65%] mt-[10rem] ">
+     
           <p className="text-left font-[800]  lg:text-[9rem] lg:leading-[9rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-          It's your time!         </p>
-          <p className="text-left font-[500] w-[90%] mt-[3rem] lg:text-[3.8rem] lg:leading-[4.1rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-          To earn from your own data when Big companies use it to generate Billions of Dollars, at times without proper consent
-          </p>
+         change is now</p>
+        
+          <p className="text-left font-[400] mt-[3rem] w-[60%] lg:text-[2.8rem] lg:leading-[4rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
+          we are changing the way companies are using user's privacy and data for their benefit to generate billions
+                    </p>
+                   
+
+                    <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] lg:p-10 md:p-6 p-3 font-lettera-medium font-[700] px-[4rem] lg:text-[2.5rem] md:text-[2rem] text-[#333333] tracking-normal leading-[1.33rem]">
+                    Join the change
+                    </button>
         </div>
+        
+       
+
+
+
         {/* <div className="space-y-[8rem] mt-[8rem] "> */}
           <Video />
         {/* </div> */}

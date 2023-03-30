@@ -10,14 +10,14 @@ const index = () => {
         if (newWindow) newWindow.opener = null
     }
     return (
-        <div className="bg-[#434343] pt-[15rem]  ">
+        <div className="bg-[#36454f] pt-[15rem]  ">
             <div className="flex flex-col justify-center items-center pb-[5rem] xl:px-[22rem] lg:px-[7rem] px-[3rem]">
                 <div className="w-full space-y-[5rem] py-[3rem]">
-                    <p className="text-center font-[700] lg:text-[6rem] lg:leading-[5rem]  text-[#FFFFFF]">
-                    Be a part of the future of advertising <br/> with avni-ambassador program
+                    <p className="text-center font-[800] lg:text-[8rem] lg:leading-[10.5rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
+                    lead the change <br/> you wish to see
                     </p>
-                    <p className="text-center font-[400] lg:text-[3rem] lg:leading-[3.3rem] text-[#FFFFFF]">
-                    Dive into the world of web 3.0 ad-tech <br/> with the vision of avni
+                    <p className="text-center font-[500] pt-[1rem] lg:text-[2.0 rem] lg:leading-[4.2rem] md:text-[2.2rem] md:leading-[2.5rem] leading-[1.8rem] text-[1.5rem] text-[#FFFFFF]">
+                    reward and loyalty should not be a transactional exchange <br/>  rather a genuine connection between customers and their brands, <br/>built on trust, value, and shared experiences
                     </p>
                 </div>
                 <button onClick={() => openInNewTab('https://docs.google.com/forms/d/e/1FAIpQLSdRCS1T45mEvvgbY_-j0esPbXM4F-_AG_z7CgDlzYST_9Wwdw/viewform?usp=pp_url&entry.407278199=https://')} className="rounded-[2rem] bg-[#ffffff]  p-8 space-y-5 ">

@@ -2,7 +2,7 @@ import React from "react";
 
 const index = () => {
   return (
-    <div className=" mt-[5rem] h-[17rem] bg-[#333333] px-[2rem] w-full flex justify-center items-center space-x-10 lg:space-x-32 md:space-x-32">
+    <div className=" mt-[5rem] h-[17rem] bg-[#abb6c8] px-[2rem] w-full flex justify-center items-center space-x-10 lg:space-x-32 md:space-x-32">
       <div className=" space-y-4 items-center ">
         <p className="font-lettera-black font-[600] text-[3rem] tracking-normal leading-[3rem] text-[#01A4EF]">
           10k+

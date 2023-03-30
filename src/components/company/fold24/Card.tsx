@@ -21,12 +21,12 @@ const Card = () => {
             </div>
           </div>
 
-          <div className="justify-left items-left text-[2.25rem]  font-[600] leading-[3.5rem] text-[#FFFFFF]">Martin Zielinski</div>
+          <div className="justify-left items-left text-[2rem]  font-[600] leading-[2rem] text-[#FFFFFF]">martin Zielinski</div>
 
 
 
           <div className="text-[1.25rem] pl-[2.4rem] font-[400] leading-[1.5rem] text-[#FFFFFF]">
-            Co-founder & CMO
+            co-founder & CMO
           </div>
         </div>
 
@@ -34,11 +34,11 @@ const Card = () => {
           <img
             src={Comma.src}
             alt="Fortune"
-            height="66px"
-            width="76px"
+            height="30px"
+            width="30px"
             className=" xs:h-10 ipadPro:h-10 object-contain v-lazy-image v-lazy-image-loaded"
           />
-          <div className="justify-left items-left text-[1.25rem] pt-[1rem] font-[500] leading-[2.5rem] text-[#333333]">Advertising in the coming days world will be less about interrupting audiences and more about engaging with communities. It will require a shift from centralized control to decentralized collaboration, where brands earn trust by delivering authentic, value-driven experiences and empowering consumers to co-create the narrative of their brand story</div>
+          <div className="justify-left items-left text-[1.25rem] pt-[1rem] font-[500] leading-[2.5rem] text-[#d2d0d6]">gone are the days of opaque ad networks and middlemen taking a cut at every turn. With decentralization, we can empower advertisers and publishers to connect directly, with full control and visibility over their campaigns. and with the rise of privacy concerns and ad-blocking, decentralized advertising offers a way to put the power back in the hands of the user, allowing them to control their data and monetize their attention</div>
         </div>
 
       </div>

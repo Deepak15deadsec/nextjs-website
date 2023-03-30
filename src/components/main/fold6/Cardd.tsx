@@ -1,8 +1,10 @@
 import React from "react";
 import Box from "../../../../public/images/safety-box.png";
 
+
 const Cardd = () => {
   return (
+    /*
     <div className="rounded-[1.75rem] bg-[#FFFFFF] to-[#2d2d2d8f] p-8 space-y-2">
       <div className="flex space-x-4 items-center">
         <img
@@ -22,6 +24,8 @@ const Cardd = () => {
       </p>
       
     </div>
+    */
+   <div></div>
   );
 };
 

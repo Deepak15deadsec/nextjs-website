@@ -12,10 +12,12 @@ const index = () => {
     await router.push(googleUrl);
   };
   return (
-    <div className="bg-[#434343] py-[20rem] flex flex-col justify-center items-center xl:px-[22rem] lg:px-[12rem] px-[3rem]">
-      <p className="text-[3.8rem]  font-sans w-[94%] font-[500] text-center tracking-normal leading-[4rem] text-[#FFFFFF] ">Building a one stop <br></br> trusted gateway for the world of <br></br> digital Advertising</p>
+    <div className="bg-[#36454f] py-[13rem] flex flex-col justify-center items-center xl:px-[22rem] lg:px-[12rem] md:px-[10rem] px-[8rem]  space-y-7">
+        <p className="text-center font-[800] lg:text-[8rem] lg:leading-[10.5rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
+        mission to become ​favorite rewards platform that people love
+      </p>
 
-      <p className="text-[3rem] mt-[4rem] font-sans font-[500] text-center w-[80%] tracking-normal leading-[3.5rem] text-[#AAAAAA]">Avni aims to empower brands with suited ad solutions powered by Web3</p>
+      <p className="text-center font-[500] w-[80%] pt-[1rem] lg:text-[2.0 rem] lg:leading-[4.2rem] md:text-[2.2rem] md:leading-[2.5rem] leading-[1.8rem] text-[1.5rem] text-[#FFFFFF]">fun and easy way to collect tokens, digital collatables(NFTs), offers and  gift cards for everyday shopping</p>
 
       <button
       onClick={google}

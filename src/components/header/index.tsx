@@ -17,19 +17,18 @@ const Header = () => {
   let [isOpen, setIsOpen] = useState(false)
   const { googleUrl } = useGetGoogleOAuthURL()
   const links = [
-    {
-      name: "Ambassador",
-      href: "/ambassador"
-    },
 
     {
-      name: "Advertiser",
+      name: "action reward token",
+      href: "/artcoin"
+    },
+    {
+      name: "advertiser",
       href: "https://ads.avniads.com"
     },
-
     {
-      name: "$ART",
-      href: "/artcoin"
+      name: "ambassador",
+      href: "/ambassador"
     },
     // {
     //   name: "Company",
@@ -50,7 +49,7 @@ const Header = () => {
   };
 
   return (
-    <div className="h-[7.275rem] fixed inset-0 z-10 bg-[#434343] flex justify-between items-center xl:px-[22rem] lg:px-[7rem] md:px-[4rem] px-[2rem] ">
+    <div className="h-[7.275rem] fixed inset-0 z-10 bg-[#36454F flex justify-between items-center xl:px-[22rem] lg:px-[7rem] md:px-[4rem] px-[2rem] ">
       <div className="flex space-x-8 items-center">
 
         <Link href="/">

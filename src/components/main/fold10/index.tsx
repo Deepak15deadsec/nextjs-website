@@ -53,7 +53,7 @@ const index = () => {
             Avni is Secure
           </p>
           <p className="text-left text-white font-lettera-regular font-[400] text-[1rem] tracking-normal leading-[1.25rem]">
-             We use bank-level security (256-bit encryption) to ensure your information is safe and secure.
+             we use bank-level security (256-bit encryption) to ensure your information is safe and secure.
              we use Multi-Factor and Two-Factor Authentication to prevent unauthorized access, so your wallet is safe.
           </p>
         </div>

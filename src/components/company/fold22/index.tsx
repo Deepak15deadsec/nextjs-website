@@ -1,7 +1,8 @@
 import React from "react";
 import { useGetGoogleOAuthURL } from "../../../google";
 import { useRouter } from "next/router";
-import Logo from '../../../../public/images/ishape.png';
+import Image from "next/image";
+import Hear from "../../../../public/images/Hear.png"
 
 const index = () => {
   const router = useRouter();
@@ -10,33 +11,41 @@ const index = () => {
     await router.push(googleUrl);
   };
   return (
-    <div className="w-full bg-[#EEEEEE] ">
+    <div className= "bg-[#7526f4] py-[15rem] xl:px-[22rem] lg:px-[7rem] md:px-[4rem] px-[2rem] ">
 
+    <div className="flex justify-between lg:px-[7rem] px-[3rem] py-5">
+        <div className="flex flex-col text-left w-[65%] space-y-[3rem] ">
+            
+            <p className="text-left  w-[60%] font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
+heard and  valued             </p>
 
-      <div className="my-[5rem] w-full xl:px-[22rem] lg:px-[8rem] px-[3rem] flex justify-between ">
-        <div className="space-y-[2rem] w-3/4 mb-[4rem] mt-[5rem]">
+            <p className="text-left font-[500] w-[60%] mt-[3rem] lg:text-[2.8rem] lg:leading-[4rem] md:text-[2rem] md:leading-[2rem] text-[1.5rem] text-[#FFFFFF]">
+            build a lasting relationship between consumers and brands with mutial respect and values beyond transations
+            </p>
 
-          <p className="text-[3.75rem] mt-[6rem] font-sans font-[600] text-left tracking-normal leading-[4.2rem] text-[#333333]">In an ad world of "Impressions" <br></br> try "Transactions"</p>
+          
 
-          <p className="text-[2rem] mt-[6rem] font-sans font-[450] text-left tracking-normal leading-[3.2rem] text-[#72858c]">Reach out to users through a rewarding platform like avni with truly personalized offers</p>          
+           </div>
 
-                  </div>
-        <div className="space-y-[1rem] w-2/4 justify-center mt-[5rem]">
-
-          <div className="flex justify-start  items-center ml-[4rem] mt-[0rem]">
-            <img
-              src={Logo.src}
-              alt="Fortune"
-              height="700px"
-              width="700px"
-              className=" xs:h-10 ipadPro:h-10 object-contain v-lazy-image v-lazy-image-loaded"
+        <div className=" pt-12">
+            < Image
+                height={500}
+                width={500}
+                src={Hear.src}
+                alt="ambassador hero"
+                className="object-contain"
             />
+            
 
-          </div>
         </div>
-      </div>
+
 
     </div>
+
+
+  
+
+</div>
   );
 };
 

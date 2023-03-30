@@ -1,39 +1,45 @@
 import React from "react";
 import Image from "next/image";
-import Coin from "../../../../public/images/coin221.webp";
-import shapes from '../../../../public/images/artcoin.svg';
+import Coin from "../../../../public/images/ART-Nikel.png";
+import shapes from '../../../../public/images/wrench.png';
 import Web3 from '../../../../public/images/web3.png';
+import Freedom from '../../../../public/images/freedom.png';
+import Marketing from '../../../../public/images/marketing.png';
+import Gift from '../../../../public/images/gift.png'
 
 const index = () => {
 
     return (
 
-        <div className="bg-[#434343] pt-[15rem]  ">
+        <div className="bg-[#36454f] pt-[15rem]  ">
 
 
 
             <div className="flex justify-between mb-[18rem] xl:px-[22rem] lg:px-[7rem] px-[3rem]">
                 <div className="w-[60%] space-y-[5rem] pt-[5rem]">
-                    <p className="text-left font-[700] lg:text-[6rem] lg:leading-[6rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                    Making advertising cost effective & beneficial for everyone
+                    <p className="text-left font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
+                    get action reward token throughout your day
                     </p>
 
-                    <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#AAAAAA]">
-                    The $600 Billion Digital Advertising Industry is failing advertisers & users with privacy, transparency and efficiency concerns!
+                    <p className="text-left font-[500] mt-[3rem] lg:text-[2.8rem] lg:leading-[4rem] md:text-[2rem] md:leading-[2rem] text-[1.5rem] text-[#FFFFFF]">
+                    
                     </p>
                 </div>
 
                 <div className="space-y-[4rem]">
                     < Image
-                        height={914}
-                        width={700}
+                        height={400}
+                        width={400}
                         src={Coin.src}
-                        alt="Avni Hero"
+                        alt="ART"
                         className="object-contain"
                     />
                     <div className=" pl-60">
-                        <button className="rounded-[1rem] bg-[#01A4EF]  p-8 space-y-5 w-[13rem] h-[5rem]">
-                            <p className="text-[1.5rem] font-Open-Sans font-[500]  tracking-normal leading-[1rem] text-[#FFFFFF]">White Paper</p>
+                    <p className="text-left font-[500] mt-[3rem] lg:text-[2.8rem] lg:leading-[4rem] md:text-[2rem] md:leading-[2rem] text-[1.5rem] text-[#FFFFFF]">
+                      <br/>all collected tokens will be airdropped after the token generation event in mid august 2023
+                    </p>
+                        <button className="rounded-[1rem] bg-[#30D792]  p-8 space-y-5 w-[13rem] h-[5rem]">
+                            <p className="text-[1.5rem] font-Open-Sans font-[500]  tracking-normal leading-[1rem] text-[#FFFFFF]">lite paper</p>
                         </button>
                     </div>
 
@@ -43,14 +49,63 @@ const index = () => {
             </div>
 
 
-            <div className="flex justify-between pt-[10rem] pb-[10rem] bg-[#d41522] xl:px-[22rem] lg:px-[7rem] px-[3rem] ">
+            <div className="flex justify-between pt-[10rem] pb-[10rem] bg-[#00d64f] xl:px-[22rem] lg:px-[7rem] px-[3rem] ">
                 <div className="w-[60%] space-y-[5rem] pt-[5rem]">
-                    <p className="text-left font-[700] lg:text-[6rem] lg:leading-[6rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                        Current advertising technology is broken!
+                    <p className="text-left font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
+                    collect, redeem and repeat  
                     </p>
 
                     <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                    With ad blockers, lack of transparency and data privacy concerns
+                    you can redeem your tokens for free gift cards and enjoy. <br/>it’s that simple!
+                    </p>
+                </div>
+                <div>
+                    < Image
+                        height={814}
+                        width={600}
+                        src={Gift.src}
+                        alt="broken advertising"
+                        className="object-contain"
+                    />
+                </div>
+            </div>
+
+
+
+
+            <div className="flex justify-between pt-[10rem] pb-[10rem] bg-[#0169ff] xl:px-[22rem] lg:px-[7rem] px-[3rem] ">
+                <div className="w-[60%] space-y-[5rem] pt-[5rem]">
+                    <p className="text-left font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
+                    shop with ease and earn with ease  
+                    </p>
+
+                    <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
+                    with revolutionary action reward token for shopping, where every purchase you move one step closer to financial freedom and digital empowerment
+                    </p>
+                </div>
+                <div>
+                    < Image
+                        height={814}
+                        width={600}
+                        src={Freedom.src}
+                        alt="broken advertising"
+                        className="object-contain"
+                    />
+                </div>
+            </div>
+
+
+
+
+
+            <div className="flex justify-between pt-[10rem] pb-[10rem] bg-[#ff4d00] xl:px-[22rem] lg:px-[7rem] px-[3rem] ">
+                <div className="w-[60%] space-y-[5rem] pt-[5rem]">
+                    <p className="text-left font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
+                        fixing the broken advertising 
+                    </p>
+
+                    <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
+                   with personalisation, transparency, data privacy  and rewards <br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>
                     </p>
                 </div>
                 <div>
@@ -58,30 +113,34 @@ const index = () => {
                         height={814}
                         width={600}
                         src={shapes.src}
-                        alt="Avni Hero"
+                        alt="broken advertising"
                         className="object-contain"
                     />
                 </div>
             </div>
 
-            <div className="flex justify-between pt-[5rem] pb-[5rem] bg-[#2218de] xl:px-[22rem] lg:px-[7rem] px-[3rem]">
+            <div className="flex justify-between pt-[5rem] pb-[5rem] bg-[#0169ff] xl:px-[22rem] lg:px-[7rem] px-[3rem]">
                 
 
                 <div className="w-[50%] space-y-[5rem] pt-[3rem]">
-                    <p className="text-left font-[700] lg:text-[6rem] lg:leading-[6rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                    Web3 for a CHANGE!
+                    <p className="text-left font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
+                    action reward platform
                     </p>
 
+                     
                     <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                    Introducing a targeted, transparent & pro-user approach, keeping user privacy and consent intact
+                    building genuine connection between customers and their brands,
+                    built on trust, value,  shared experiences and privacy <br/> &nbsp; <br/>&nbsp; <br/>&nbsp; <br/>&nbsp; <br/>&nbsp; <br/>
                     </p>
+
+                   
                 </div>
 
                 <div className="pt-[0.5rem]"> 
                     < Image
                         height={700}
                         width={700}
-                        src={Web3.src}
+                        src={Marketing.src}
                         alt="Avni Hero"
                         className="object-contain"
                     />

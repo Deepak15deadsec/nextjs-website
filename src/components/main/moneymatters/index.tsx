@@ -17,13 +17,13 @@ const index = () => {
             <div className="flex justify-left ">
                 <div className="w-[85%]">
                     <p className="text-left font-[800] w-[60%] lg:text-[9rem] lg:leading-[9rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                     Personal and exclusive offers
+                     happy shopping
                     </p>
-                    <p className="text-left font-[400] mt-[3rem] w-[40%] lg:text-[3.8rem] lg:leading-[4rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                    So that you don’t have to
+                    <p className="text-left font-[400] mt-[3rem] w-[40%] lg:text-[2.8rem] lg:leading-[4rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
+                    no more hunt for offers and coupons.  all brand offers and promotions are at one place
                     </p>
                     <p className="text-left font-[400] w-[40%] xl:w-[40%] pt-[1rem] lg:text-[1.75rem] lg:leading-[2.5rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                    hunt across the internet to find your favorite brand offers <br/> and promotions.
+                    
                     </p>
                     {/* <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] p-10 font-lettera-medium font-[700] px-[4rem] text-[2.5rem] text-[#333333] tracking-normal leading-[1.33rem]">
                     Experience it now

@@ -21,10 +21,10 @@ const index = () => {
 
             <div className="w-[50%]  pt-[3rem]">
                 <p className="text-right font-[800] lg:mt-[3rem] md:mt-[15rem] mt-[38rem] xl:text-[9em] lg:text-[9rem] lg:leading-[8.5rem] xl:leading-[8.5rem] md:text-[4rem] md:leading-[4.2rem] text-[2rem] text-[#FFFFFF]">
-                    Earn from your data
+                    every action is now rewarding
                 </p>
 
-                <p className="text-right font-[500] mt-[2rem] md:mt-[4rem] lg:text-[3.6rem] lg:leading-[4rem] md:text-[2rem] md:leading-[2.5rem] text-[#FFFFFF]">
+                <p className="text-right font-[500] mt-[2rem] md:mt-[4rem] lg:text-[2.8rem] lg:leading-[4rem] md:text-[2rem] md:leading-[2.5rem] text-[#FFFFFF]">
                     Sounds too good to be true?
 
                 </p>
