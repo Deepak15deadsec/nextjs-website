@@ -10,8 +10,8 @@ const index = () => {
         if (newWindow) newWindow.opener = null
     }
     return (
-        <div className="bg-[#36454f] pt-[15rem]  ">
-            <div className="flex flex-col justify-center items-center pb-[5rem] xl:px-[22rem] lg:px-[7rem] px-[3rem]">
+        <div className="bg-[#36454f]  pt-[10rem]  ">
+            <div className="flex flex-col justify-center items-center pb-[12rem] xl:px-[22rem] lg:px-[7rem] px-[3rem]">
                 <div className="w-full space-y-[5rem] py-[3rem]">
                     <p className="text-center font-[800] lg:text-[8rem] lg:leading-[10.5rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
                     lead the change <br/> you wish to see

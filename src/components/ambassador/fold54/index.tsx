@@ -10,52 +10,52 @@ const index = () => {
     }
     return (
 
-<div className= "bg-[#681dea] py-[15rem] xl:px-[22rem] lg:px-[7rem] md:px-[4rem] px-[2rem]">
+        <div className="bg-[#681dea] py-[10rem] xl:px-[22rem] lg:px-[7rem] md:px-[4rem] px-[2rem]">
 
-<div className="flex justify-between lg:px-[7rem] px-[3rem] py-5">
-    <div className="flex flex-col text-left w-[65%] space-y-[3rem] ">
-        
-        <p className="text-left  w-[80%] font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
-        what to expect
-        </p>
+            <div className="flex justify-between lg:px-[7rem] px-[3rem] py-5">
+                <div className="flex flex-col text-left w-[65%] space-y-[3rem] ">
 
-        <div className="flex justify-center items-center">
+                    <p className="text-left  w-[80%] font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
+                        what to expect
+                    </p>
+
+                    <div className="flex justify-start items-left">
 
 
-<div className=" grid gap-x-8 gap-y-4 grid-cols-3">
+                        <div className=" grid gap-x-8  grid-cols-1">
 
-    <Card title1="priority " title2="allows you to get early access to avni products, exclusive offers from avni, and select brands"/>
-    <Card title1="attend events" title2="event passes to web3 and advertising events" />
-    <Card title1="rewards" title2="additional reward tokens, exclusive ambassador NFT's"/>
-    <Card title1="training" title2="training from industry leaders in web3, blockchain and digital marketing"/>
-    <Card title1="win" title2="cool and exclusive merchandise on regular participation"/>
-    <Card title1="employment" title2="opportunity for internship and full time employment"/>
+                            <Card title1="priority " title2="allows you to get early access to avni products, exclusive offers from avni, and select brands" />
+                            <Card title1="attend events" title2="event passes to web3 and advertising events" />
+                            <Card title1="rewards" title2="additional reward tokens, exclusive ambassador NFT's" />
+                            <Card title1="training" title2="training from industry leaders in web3, blockchain and digital marketing" />
+                            <Card title1="win" title2="cool and exclusive merchandise on regular participation" />
+                            <Card title1="employment" title2="opportunity for internship and full time employment" />
 
-</div>
- 
+                        </div>
 
-                 
-</div>
- 
-<button onClick={() => openInNewTab('https://docs.google.com/forms/d/e/1FAIpQLSdRCS1T45mEvvgbY_-j0esPbXM4F-_AG_z7CgDlzYST_9Wwdw/viewform?usp=pp_url&entry.407278199=https://')}  className="rounded-[2rem] bg-[#ffffff] w-[30%]  p-8 space-y-5 ">
-                    <p className="text-[1.5rem] font-[500]  tracking-normal leading-[1rem] text-[#333333]">Become an ambassador</p>
-                </button>
 
-       </div>
 
-    <div className=" pt-12">
-        < Image
-            height={500}
-            width={500}
-            src={Expect.src}
-            alt="Avni Hero"
-            className="object-contain"
-        />
-        
+                    </div>
 
-    </div>
-</div>        
-</div>
+                    <button onClick={() => openInNewTab('https://docs.google.com/forms/d/e/1FAIpQLSdRCS1T45mEvvgbY_-j0esPbXM4F-_AG_z7CgDlzYST_9Wwdw/viewform?usp=pp_url&entry.407278199=https://')} className="rounded-[2rem] bg-[#ffffff] w-[30%]  p-8 space-y-5 ">
+                        <p className="text-[1.5rem] font-[500]  tracking-normal leading-[1.5rem] text-[#333333]">Become an ambassador</p>
+                    </button>
+
+                </div>
+
+                <div className=" pt-[5rem]">
+                    < Image
+                        height={500}
+                        width={500}
+                        src={Expect.src}
+                        alt="Avni Hero"
+                        className="object-contain"
+                    />
+
+
+                </div>
+            </div>
+        </div>
 
 
 

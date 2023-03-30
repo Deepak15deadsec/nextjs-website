@@ -9,7 +9,7 @@ import GreenCard from "../../GreenCard"
 
 const index = () => {
   return (
-    <div className="w-full mt-[5rem] bg-[#F5F5F5]">
+    <div className="w-full my-[5rem] bg-[#F5F5F5]">
       {/* <div className="bg-[#F5F5F5] mt-[0rem]  flex flex-col justify-center items-center px-[1rem] pb-[10rem]">
         <p className="text-[3.75rem] mt-[6rem] font-sans font-[600] text-center tracking-normal leading-[4rem] text-[#333333]">Hear from our Team</p>
 
@@ -51,10 +51,10 @@ const index = () => {
       </div>
  */}
 
-     
+
       <GreenCard src={Logo.src} content={<p className="text-[1rem]  font-[400] text-center  leading-[1.5rem] text-[#333333]">Sound too good to be true? Here’s the deal: Stores wants you to transact at their stores via <br /> offers and promotions we provide. we use the advertising revenue as Cash Back in Token.<br /> Everyone wins</p>} />
 
-      
+
 
     </div>
   );

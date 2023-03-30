@@ -5,7 +5,7 @@ import shapes from '../../../../public/images/wrench.png';
 import Web3 from '../../../../public/images/web3.png';
 import Freedom from '../../../../public/images/freedom.png';
 import Marketing from '../../../../public/images/marketing.png';
-import Gift from '../../../../public/images/gift.png'
+import Gift from '../../../../public/images/voucher.png'
 
 const index = () => {
 
@@ -15,30 +15,31 @@ const index = () => {
 
 
 
-            <div className="flex justify-between mb-[18rem] xl:px-[22rem] lg:px-[7rem] px-[3rem]">
-                <div className="w-[60%] space-y-[5rem] pt-[5rem]">
+            <div className="flex justify-between mb-[18rem] xl:px-[22rem] lg:px-[14rem] px-[3rem]">
+
+                <div className="w-[60%] space-y-[5rem] ">
                     <p className="text-left font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
-                    get action reward token throughout your day
+                        get action reward token throughout your day
                     </p>
 
                     <p className="text-left font-[500] mt-[3rem] lg:text-[2.8rem] lg:leading-[4rem] md:text-[2rem] md:leading-[2rem] text-[1.5rem] text-[#FFFFFF]">
-                    
+
                     </p>
                 </div>
 
-                <div className="space-y-[4rem]">
+                <div className="mt-[6rem]">
                     < Image
-                        height={400}
-                        width={400}
+                        height={800}
+                        width={800}
                         src={Coin.src}
                         alt="ART"
-                        className="object-contain"
+                        className="object-contain pl-40"
                     />
                     <div className=" pl-60">
-                    <p className="text-left font-[500] mt-[3rem] lg:text-[2.8rem] lg:leading-[4rem] md:text-[2rem] md:leading-[2rem] text-[1.5rem] text-[#FFFFFF]">
-                      <br/>all collected tokens will be airdropped after the token generation event in mid august 2023
-                    </p>
-                        <button className="rounded-[1rem] bg-[#30D792]  p-8 space-y-5 w-[13rem] h-[5rem]">
+                        <p className="text-left font-[500]  lg:text-[1.4rem] lg:leading-[2rem] md:text-[2rem] md:leading-[2rem] text-[1.5rem] text-[#FFFFFF]">
+                            <br />all collected tokens will be airdropped after the token generation event in mid august 2023
+                        </p>
+                        <button className="rounded-[1rem] bg-[#30D792] mt-[1.5rem] p-8 space-y-5 w-[13rem] h-[5rem]">
                             <p className="text-[1.5rem] font-Open-Sans font-[500]  tracking-normal leading-[1rem] text-[#FFFFFF]">lite paper</p>
                         </button>
                     </div>
@@ -49,17 +50,17 @@ const index = () => {
             </div>
 
 
-            <div className="flex justify-between pt-[10rem] pb-[10rem] bg-[#00d64f] xl:px-[22rem] lg:px-[7rem] px-[3rem] ">
-                <div className="w-[60%] space-y-[5rem] pt-[5rem]">
+            <div className="flex justify-between pt-[10rem] pb-[10rem] space-x-[1rem] bg-[#00d64f] xl:px-[22rem] lg:px-[14rem] px-[3rem] ">
+                <div className="w-[60%] space-y-[5rem] ">
                     <p className="text-left font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
-                    collect, redeem and repeat  
+                        collect, redeem and <br />repeat
                     </p>
 
                     <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                    you can redeem your tokens for free gift cards and enjoy. <br/>it’s that simple!
+                        you can redeem your tokens for<br />free gift cards and enjoy.<br />it’s that simple!
                     </p>
                 </div>
-                <div>
+                <div className="pt-[3rem] ">
                     < Image
                         height={814}
                         width={600}
@@ -73,17 +74,17 @@ const index = () => {
 
 
 
-            <div className="flex justify-between pt-[10rem] pb-[10rem] bg-[#0169ff] xl:px-[22rem] lg:px-[7rem] px-[3rem] ">
-                <div className="w-[60%] space-y-[5rem] pt-[5rem]">
+            <div className="flex justify-between pt-[10rem] pb-[10rem] bg-[#0169ff] xl:px-[22rem] lg:px-[14rem] px-[3rem] ">
+                <div className="w-[60%] space-y-[5rem] ">
                     <p className="text-left font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
-                    shop with ease and earn with ease  
+                        shop with ease and earn with ease
                     </p>
 
                     <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                    with revolutionary action reward token for shopping, where every purchase you move one step closer to financial freedom and digital empowerment
+                        with revolutionary action reward token for shopping, where every purchase you move one step closer to financial freedom and digital empowerment
                     </p>
                 </div>
-                <div>
+                <div className="pt-[9rem]">
                     < Image
                         height={814}
                         width={600}
@@ -98,20 +99,20 @@ const index = () => {
 
 
 
-            <div className="flex justify-between pt-[10rem] pb-[10rem] bg-[#ff4d00] xl:px-[22rem] lg:px-[7rem] px-[3rem] ">
-                <div className="w-[60%] space-y-[5rem] pt-[5rem]">
+            <div className="flex justify-between pt-[10rem] pb-[10rem] bg-[#ff4d00] xl:px-[22rem] lg:px-[14rem] px-[3rem] ">
+                <div className="w-[60%] space-y-[5rem] ">
                     <p className="text-left font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
-                        fixing the broken advertising 
+                        fixing the broken advertising
                     </p>
 
                     <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                   with personalisation, transparency, data privacy  and rewards <br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>
+                        with personalisation, transparency, data privacy  and rewards <br />&nbsp;<br />&nbsp;<br />&nbsp;<br />
                     </p>
                 </div>
-                <div>
+                <div className="pt-[5rem]">
                     < Image
-                        height={814}
-                        width={600}
+                        height={714}
+                        width={500}
                         src={shapes.src}
                         alt="broken advertising"
                         className="object-contain"
@@ -119,27 +120,27 @@ const index = () => {
                 </div>
             </div>
 
-            <div className="flex justify-between pt-[5rem] pb-[5rem] bg-[#0169ff] xl:px-[22rem] lg:px-[7rem] px-[3rem]">
-                
+            <div className="flex justify-between pt-[9rem] pb-[0rem] bg-[#0169ff] xl:px-[22rem] lg:px-[14rem] px-[3rem]">
 
-                <div className="w-[50%] space-y-[5rem] pt-[3rem]">
+
+                <div className="w-[50%] space-y-[5rem] ">
                     <p className="text-left font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
-                    action reward platform
+                        action reward platform
                     </p>
 
-                     
+
                     <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                    building genuine connection between customers and their brands,
-                    built on trust, value,  shared experiences and privacy <br/> &nbsp; <br/>&nbsp; <br/>&nbsp; <br/>&nbsp; <br/>&nbsp; <br/>
+                        building genuine connection between customers and their brands,
+                        built on trust, value,  shared experiences and privacy <br /> &nbsp; <br />&nbsp; <br />&nbsp; <br />&nbsp; <br />&nbsp; <br />
                     </p>
 
-                   
+
                 </div>
 
-                <div className="pt-[0.5rem]"> 
+                <div className="pt-[3rem]">
                     < Image
-                        height={700}
-                        width={700}
+                        height={600}
+                        width={600}
                         src={Marketing.src}
                         alt="Avni Hero"
                         className="object-contain"

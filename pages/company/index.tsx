@@ -12,9 +12,9 @@ const Company = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main className="bg-[#F5F5F5]">
+            <main className="bg-[#ffffff]">
 
-                <div className='-mt-[5rem]'>
+                <div className='-mt-[8.5rem]'>
                     <Fold21 />
                 </div>
 
@@ -22,7 +22,7 @@ const Company = () => {
                 {/* <Fold23 /> */}
                 <Fold24 />
                 <Fold25 />
-                <Fold9 />
+                {/* <Fold9 /> */}
 
             </main>
         </div>
