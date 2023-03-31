@@ -24,7 +24,7 @@ const Faq = () => {
             <Fold31 />
             <Content />
             <div className="w-full bg-[#EEEEEE] py-[2.5rem]">
-                <div className=" xl:px-[22rem] lg:px-[8.75rem] md:px-[8.75rem] px-[1.5rem] flex justify-between items-center">
+                <div className=" xl:px-[22rem] lg:px-[15.5rem] md:px-[8.75rem] px-[1.5rem] flex justify-between items-center">
                     <div className="flex space-x-5">
                         <Image
                             src={Logo.src}

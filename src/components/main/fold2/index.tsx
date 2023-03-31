@@ -8,6 +8,7 @@ import Sr from "../../../../public/images/reward.png";
 import Er from "../../../../public/images/receipt.png";
 import If from "../../../../public/images/add-group.png";
 import Od from "../../../../public/images/tap.png";
+import Coin from "../../../../public/images/coinnikel.png"
 
 const index = () => {
   const router = useRouter();
@@ -34,7 +35,7 @@ const index = () => {
           </button>
         </div>
 
-        <div className="space-y-[1rem] mb-[4rem] ml-[10rem] mt-[15rem]">
+        <div className="space-y-[1rem] mb-[4rem] ml-[25rem] mt-[15rem]">
           <div className="flex justify-right  items-right">
 
             {/* <div className="grid xs:grid-cols-1 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-[3rem] mb-[4rem]">
@@ -48,10 +49,10 @@ const index = () => {
 
             <div className=" grid gap-x-8  grid-cols-1">
 
-              <Cardy img={Sr.src} title1="signup" title2="50 $ART" />
-              <Cardy img={Er.src} title1="shopping receipt" title2="2 $ART" />
-              <Cardy img={If.src} title1="invite a friend" title2="50 $ART" />
-              <Cardy img={Od.src} title1="opt-in data" title2="upto 200 $ART" />
+              <Cardy img={Coin.src} title1="signup" title2="50 tokens" />
+              <Cardy img={Coin.src} title1="shopping receipt" title2="2 tokens" />
+              <Cardy img={Coin.src} title1="invite a friend" title2="50 tokens" />
+              <Cardy img={Coin.src} title1="opt-in data" title2="upto 200 tokens" />
             </div>
           </div>
 

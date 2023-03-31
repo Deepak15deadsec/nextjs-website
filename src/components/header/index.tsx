@@ -49,7 +49,7 @@ const Header = () => {
   };
 
   return (
-    <div className="h-[7.275rem] fixed inset-0 z-10 bg-[#36454F flex justify-between items-center xl:px-[22rem] lg:px-[7rem] md:px-[4rem] px-[2rem] ">
+    <div className="h-[7.275rem] fixed inset-0 z-10 bg-[#36454F] flex justify-between items-center xl:px-[22rem] lg:px-[7rem] md:px-[4rem] px-[2rem] ">
       <div className="flex space-x-8 items-center">
 
         <Link href="/">

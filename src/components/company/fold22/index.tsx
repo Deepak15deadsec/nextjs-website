@@ -20,7 +20,7 @@ const index = () => {
             heard and  valued             </p>
 
           <p className="text-left font-[500] w-[60%] mt-[3rem] lg:text-[2.8rem] lg:leading-[4rem] md:text-[2rem] md:leading-[2rem] text-[1.5rem] text-[#FFFFFF]">
-            build a lasting relationship between consumers and brands with mutial respect and values beyond transations
+            build a lasting relationship between consumers and brands with mutual respect and values beyond transations
           </p>
 
 

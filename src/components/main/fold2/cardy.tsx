@@ -1,9 +1,7 @@
 import React from "react";
-import Box from "../../../../public/images/reward.png";
 
 
-
-const Cardy = ({ img, title1, title2 }: { img:string, title1: string, title2: string }) => {
+const Cardy = ({ img, title1, title2 }: { img: string, title1: string, title2: string }) => {
   return (
     <div className="rounded-[1.75rem]  px-[1.5rem] space-y-2 space-x-3 lg:w-[60rem] flex text-left">
 
@@ -32,9 +30,19 @@ const Cardy = ({ img, title1, title2 }: { img:string, title1: string, title2: st
             width: '240px'
           }}></hr>
 
-        <p className=" text-[1.4rem]  font-[400] text-left tracking-normal pb-[2rem] leading-[2rem] text-[#ffffff]">
-          {title2}
-        </p>
+        <div className="flex space-x-2">
+          <img
+            src={img}
+            height="30rem"
+            width="30rem"
+            alt=""
+            className="-mt-[1.5rem] object-contain"
+          />
+          <p className=" text-[1.4rem] mt-[0.5rem] font-[400] text-left tracking-normal pb-[2rem] leading-[2rem] text-[#ffffff]">
+            {title2}
+          </p>
+        </div>
+
       </div>
 
     </div>
