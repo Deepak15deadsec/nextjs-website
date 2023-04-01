@@ -30,8 +30,8 @@ const index = () => {
 
                     <div className=" grid gap-x-8  grid-cols-1">
 
-                        <Cardx img={Pradeep.src} title0="Pradeep Vallat" title1="Co-founder & CEO" title2="Advertising in the coming days world will be less about interrupting audiences and more about engaging with communities. It will require a shift from centralized control to decentralized collaboration, where brands earn trust by delivering authentic, value-driven experiences and empowering consumers to co-create the narrative of their brand story " />
-                        <Cardx img={Martin.src} title0="Martin Zielinski" title1="co-founder & CMO" title2="gone are the days of opaque ad networks and middlemen taking a cut at every turn. With decentralization, we can empower advertisers and publishers to connect directly, with full control and visibility over their campaigns. and with the rise of privacy concerns and ad-blocking, decentralized advertising offers a way to put the power back in the hands of the user, allowing them to control their data and monetize their attention " />
+                        <Cardx img={Pradeep.src} title0="Pradeep Vallat" title1="Co-founder & CEO" title2="advertising in the coming days world will be less about interrupting audiences and more about engaging with communities. It will require a shift from centralized control to decentralized collaboration, where brands earn trust by delivering authentic, value-driven experiences and empowering consumers to co-create the narrative of their brand story " />
+                        <Cardx img={Martin.src} title0="Martin Zielinski" title1="Co-founder & CMO" title2="gone are the days of opaque ad networks and middlemen taking a cut at every turn. With decentralization, we can empower advertisers and publishers to connect directly, with full control and visibility over their campaigns. and with the rise of privacy concerns and ad-blocking, decentralized advertising offers a way to put the power back in the hands of the user, allowing them to control their data and monetize their attention " />
 
                     </div>
 

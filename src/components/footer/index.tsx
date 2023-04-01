@@ -9,7 +9,7 @@ import { faFacebook, faLinkedin, faTelegram, faTwitter, faYoutube } from "@forta
 import { FaLinkedin, FaTelegram, FaTwitter } from "react-icons/fa";
 
 const styles = {
-  className:'text-gray-600 block px-2 py-1 hover:underline hover:text-gray-900',
+  className: 'text-gray-600 block px-2 py-1 hover:underline hover:text-gray-900',
   activeClassName: 'underline text-gray-900'
 }
 
@@ -53,35 +53,35 @@ const Footer = () => {
       name: "company",
       links: [
         { name: "about us", href: "/company" },
-       
+
       ],
     },
     // {
     //   name: "Contact Us",
     //   links: [],},
 
-        // { name: "Talk to us", href: "/contactus" },
-        
-      //   {
-      //     name: (
-      //       <div className="flex space-x-2">
-      //         <span>
-      //           <FaTwitter size={23} />
-      //         </span>
-      //         <span>
-      //           <FaLinkedin size={23} />
-      //         </span>
-      //         <span>
-      //           <FaTelegram size={23} />
-      //         </span>
-      //       </div>
-      //     ),
-      //     href: "/",
-                      
-          
-      //   },
-    
-    
+    // { name: "Talk to us", href: "/contactus" },
+
+    //   {
+    //     name: (
+    //       <div className="flex space-x-2">
+    //         <span>
+    //           <FaTwitter size={23} />
+    //         </span>
+    //         <span>
+    //           <FaLinkedin size={23} />
+    //         </span>
+    //         <span>
+    //           <FaTelegram size={23} />
+    //         </span>
+    //       </div>
+    //     ),
+    //     href: "/",
+
+
+    //   },
+
+
   ];
   return (
     <div className="bg-[#36454f]   text-[#b3aeb4] ">
@@ -97,8 +97,8 @@ const Footer = () => {
           />
 
           <p className="text-left font-[400] w-[75%] text-[1.1rem] leading-[1.5rem]  ">
-         at avni we are  bridging between consumers and brands with trust, value, and shared experiences<br/> all data and transactions are encrypted to ensure a completely secure experience for our users. <br/> no data is shared with adverisers or any agencies
-         <br/> <br/> (c) 2023 Avni AdTech Inc
+            at avni we are  bridging between consumers and brands with trust, value, and shared experiences<br /> all data and transactions are encrypted to ensure a completely secure experience for our users. <br /> no data is shared with adverisers or any agencies
+            <br /> <br /> (c) 2023 Avni AdTech Inc
 
           </p>
 
@@ -124,39 +124,44 @@ const Footer = () => {
                     >
                       {name}
                     </Link>
-                    
+
                   ))
-                  
+
                   }
-                  
+
                 </div>
-                
+
               </div>
             ))}
-           <div className=" font-lettera-bold font-[500] text-[1.5rem] tracking-normal leading-[1.5rem]  lg:mt-[0rem] text-[#ffffff]  ">
-                <p>contact us</p>
-                                  
-                  <div className="flex flex-row space-x-2 pt-[1rem]">
-                
-                  <FontAwesomeIcon icon={faTwitter} height={30}
-                  width={30} color="#1DA1F2"/>
-                 
+            <div className=" font-lettera-bold font-[500] text-[1.5rem] tracking-normal leading-[1.5rem]  lg:mt-[0rem] text-[#ffffff]  ">
+              <p>contact us</p>
+              <div className="mt-[0.7rem]"></div>
 
-                 <a href="https://www.linkedin.com/company/avniclub">
-                 <FontAwesomeIcon icon={faLinkedin} height={30}
-                 width={30} color="#0072b1"/>
+              <a className="text-[#b3aeb4]  text-[1.1rem]" href="/contactus">support</a>
+
+              <div className="flex flex-row space-x-2 pt-[1rem]">
+
+                
+
+                <FontAwesomeIcon icon={faTwitter} height={30}
+                  width={30} color="#b3aeb4" />
+
+
+                <a href="https://www.linkedin.com/company/avniclub">
+                  <FontAwesomeIcon icon={faLinkedin} height={30}
+                    width={30} color="#b3aeb4" />
                 </a>
 
                 <a href="https://t.me/s/avniclub">
-                <FontAwesomeIcon icon={faTelegram} height={30} 
-                width={30} color="#0088cc"/>
+                  <FontAwesomeIcon icon={faTelegram} height={30}
+                    width={30} color="#b3aeb4" />
                 </a>
-             </div>
-             </div>     
+              </div>
+            </div>
           </div>
-          
+
         </div>
-        
+
       </div>
 
       {/* <div className="px-[10rem] space-y-4 py-[3rem]">
@@ -170,10 +175,10 @@ const Footer = () => {
           © Copyright 2022 Avni by CapitalA, Inc
         </p>
       </div> */}
-    
+
 
     </div>
-    
+
   );
 };
 

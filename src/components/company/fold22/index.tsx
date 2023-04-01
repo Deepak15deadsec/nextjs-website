@@ -17,7 +17,7 @@ const index = () => {
         <div className="flex flex-col text-left w-[65%] space-y-[3rem] ">
 
           <p className="text-left  w-[60%] font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
-            heard and  valued             </p>
+            heard and  valued </p>
 
           <p className="text-left font-[500] w-[60%] mt-[3rem] lg:text-[2.8rem] lg:leading-[4rem] md:text-[2rem] md:leading-[2rem] text-[1.5rem] text-[#FFFFFF]">
             build a lasting relationship between consumers and brands with mutual respect and values beyond transations

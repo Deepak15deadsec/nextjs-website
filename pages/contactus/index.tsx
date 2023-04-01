@@ -19,7 +19,7 @@ const Contactus = () => {
             <main className="bg-[#FFFFFF]">
 
                 <Fold41 />
-                <div className='mt-[5rem]'>
+                <div className='my-[5rem]'>
                     <GreenCard
                         src={Logo.src}
                         content={
@@ -32,7 +32,7 @@ const Contactus = () => {
                         }
                     />
                 </div>
-                <Fold9 />
+                {/* <Fold9 /> */}
 
             </main>
         </div>

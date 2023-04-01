@@ -38,8 +38,8 @@ const faq = [
 
 const Content = () => {
   return (
-    <div className="xl:px-[22rem] bg-[#a1c0ec] lg:px-[14rem] md:px-[4rem] px-[2rem] my-[6.25rem]">
-      <h1 className="text-[#6348c7] font-semibold text-[3.75rem] leading-[80px] -mt-4">Frequently Asked Questions</h1>
+    <div className="xl:px-[22rem] bg-[#3bdfce] lg:px-[14rem] md:px-[4rem] px-[2rem] mb-[6.25rem]">
+      <h1 className="text-[#6348c7] font-semibold text-[3.75rem] pt-[5rem] leading-[80px] -mt-4">Frequently Asked Questions</h1>
 
       <div className="mt-[1.875rem] space-y-6">
         {faq.map((data, index) => {
@@ -52,13 +52,13 @@ const Content = () => {
                 {({ open }: any) => (
                   <>
                     <Disclosure.Button className="flex w-full justify-between rounded-lg  text-left items-center">
-                      <span className="font-semibold text-[2.25rem]  text-[#333333] leading-[50px]">{data.question}</span>
+                      <span className="font-semibold text-[2.8rem]  text-[#ffffff] leading-[50px]">{data.question}</span>
                       <FaChevronUp
                         className={`${open ? "rotate-180 transform" : ""
                           } h-5 w-5  text-[#333333]`}
                       />
                     </Disclosure.Button>
-                    <Disclosure.Panel className="py-4 font-[400] text-[1.25rem] leading-[26px] text-[#312f2f]">
+                    <Disclosure.Panel className="py-4 font-[400] text-[1.4rem] leading-[1.8rem] text-[#312f2f]">
                       {data.answer}
                     </Disclosure.Panel>
                   </>
