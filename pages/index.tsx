@@ -23,7 +23,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-[#ffffff]">
+      <main className="bg-[#ffffff] overflow-hidden">
         <Fold1 />
         <Chair />
         {/* <Earn /> */}
