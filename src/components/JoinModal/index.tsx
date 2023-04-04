@@ -52,7 +52,7 @@ const JoinModal = (props: any) => {
     const goNext = async () => {
         try {
             //api for otp 
-            const res = await axios({
+            const {data} = await axios({
                 url: `https://2factor.in/API/V1/6961d34a-7b2f-11eb-a9bc-0200cd936042/SMS/${country.dial_code}${value}/AUTOGEN/OTP1`,
                 method: "GET",
                 headers: {
@@ -60,7 +60,7 @@ const JoinModal = (props: any) => {
                 }
             })
 
-            if (res && res.status) {
+            if (data && data.Status === "Success") {
                 setStep(2)
             }
 
@@ -79,8 +79,8 @@ const JoinModal = (props: any) => {
                 headers: {
                     "content-type": "application/json"
                 }
-            }).then(async (res) => {
-                if (res && res.status) {
+            }).then(async ({data}) => {
+                if (data && data.Status !== "OTP Mismatch") {
                     const { data } = await axios({
                         url: `${process.env.NEXT_PUBLIC_BASE_URL}/oauth/verify/${country.dial_code}${value}`,
                         method: "GET",
