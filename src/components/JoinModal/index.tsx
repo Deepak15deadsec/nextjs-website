@@ -94,7 +94,22 @@ const JoinModal = (props: any) => {
                         window.location.href = data.url;
                     } else {
                         setPhone(`${country.dial_code}${value}`)
-                        google()
+                        const { data: signup } = await axios({
+                            url: `${process.env.NEXT_PUBLIC_BASE_URL}/oauth/signup`,
+                            method: "POST",
+                            headers: {
+                                "content-type": "application/json"
+                            },
+                            data: JSON.stringify({
+                                "phone": `${country.dial_code}${value}`,
+                                "name": "",
+                                "smsAccess": false,
+                                "locationAccess": false,
+                                "gender": "",
+                                "age": null
+                            })
+                        })
+                        window.location.href = signup.url;
                     }
                 }
             })
