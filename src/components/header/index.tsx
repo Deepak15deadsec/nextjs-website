@@ -22,9 +22,13 @@ const Header = () => {
       name: "action reward token",
       href: "/artcoin"
     },
+    // {
+    //   name: "advertiser",
+    //   href: "https://ads.avniads.com"
+    // },
     {
       name: "advertiser",
-      href: "https://ads.avniads.com"
+      href: "/advertiser"
     },
     {
       name: "ambassador",
