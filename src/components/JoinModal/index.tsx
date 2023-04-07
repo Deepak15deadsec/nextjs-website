@@ -1,6 +1,7 @@
 import { Fragment, useState, useRef, useEffect } from "react";
 import { Dialog, Transition } from '@headlessui/react'
-import countries from "../../../lib/countries.json"
+// import countries from "../../../lib/countries.json"
+import countries from "../../../lib/countryflag.json"
 import CountryCode from "../dropdowns/CountryDropdown"
 import { FcGoogle } from "react-icons/fc";
 import { useRouter } from "next/router";
