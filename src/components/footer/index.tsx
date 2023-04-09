@@ -97,7 +97,7 @@ const Footer = () => {
           />
 
           <p className="text-left font-[400] w-[75%] text-[1.1rem] leading-[1.5rem]  ">
-            at avni we are  bridging between consumers and brands with trust, value, and shared experiences<br /> all data and transactions are encrypted to ensure a completely secure experience for our users. <br /> no data is shared with adverisers or any agencies
+            at avni we are bridging the gap between consumers and brands with trust, value, and shared experiences.<br /> all data and transactions are encrypted to ensure a completely secure experience for our users. <br /> no data is shared with adverisers or any agencies.
             <br /> <br /> (c) 2023 Avni AdTech Inc
 
           </p>
