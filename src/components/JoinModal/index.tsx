@@ -190,7 +190,14 @@ const JoinModal = (props: any) => {
                                 )
                             })}
                         </div>
-                        <div className="mt-[4rem] px-[3rem] flex justify-end space-x-[0.5rem]">
+                        <div className="mt-[4rem] px-[3rem] flex justify-between space-x-[0.5rem]">
+                        <button
+                                type="button"
+                                className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-[1.5rem] font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                                onClick={goNext}
+                            >
+                                Resend OTP
+                            </button>
                             <button
                                 type="button"
                                 className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-[1.5rem] font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"

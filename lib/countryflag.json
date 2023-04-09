@@ -1,5 +1,11 @@
 [
     {
+        "name": "India",
+        "flag": "🇮🇳",
+        "code": "IN",
+        "dial_code": "+91"
+    },
+    {
         "name": "Afghanistan",
         "flag": "🇦🇫",
         "code": "AF",
@@ -598,12 +604,6 @@
         "flag": "🇮🇸",
         "code": "IS",
         "dial_code": "+354"
-    },
-    {
-        "name": "India",
-        "flag": "🇮🇳",
-        "code": "IN",
-        "dial_code": "+91"
     },
     {
         "name": "Indonesia",
