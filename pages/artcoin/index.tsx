@@ -4,6 +4,7 @@ import { Fold9 } from "../../src/components/main"
 import Head from 'next/head'
 import GreenCard from '../../src/components/GreenCard'
 import Logo from '../../public/images/google.svg';
+import Header from '../../src/components/header'
 
 const Artcoin = () => {
   return (
@@ -15,7 +16,7 @@ const Artcoin = () => {
       </Head>
 
       <main className="bg-[#ffffff]">
-
+        <Header />
         <Coin />
         {/* <Fold11 /> */}
         {/* <Fold12 />

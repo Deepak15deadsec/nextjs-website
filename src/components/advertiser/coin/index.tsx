@@ -8,28 +8,28 @@ import Repeat from '../../../../public/images/repeat.png';
 import Gift from '../../../../public/images/voucher.png'
 
 const index = () => {
-     
+
     return (
 
         <div className="bg-[#36454f] pt-[1rem]  ">
 
-            <div className="flex justify-between pt-[10rem] pb-[10rem] space-x-[1rem] bg-[#00d64f] xl:px-[22rem] lg:px-[14rem] px-[3rem] ">
+            <div className="flex justify-between pt-[10rem] pb-[10rem] space-x-[1rem] bg-[#30D792] xl:px-[22rem] lg:px-[14rem] px-[3rem] ">
                 <div className="w-[60%] space-y-[5rem] ">
                     <p className="text-left font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
                         Grow your Business
                     </p>
 
                     <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[2rem] text-[#FFFFFF]">
-                       upto 1000 transaction credits<br />you only pay for results not for clicks<br />it’s that simple!
+                        upto 1000 transaction credits<br />you only pay for results not for clicks<br />it’s that simple!
                     </p>
 
                     <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] lg:p-10 md:p-6 p-3 font-lettera-medium font-[700] px-[4rem] lg:text-[2.5rem] md:text-[2rem] text-[#333333] tracking-normal leading-[1.33rem]">
-                    Get Started
+                        Get Started
                     </button>
                 </div>
-               
-               
-                <div className="pt-[3rem] ">
+
+
+                <div className="pl-[3rem] pt-[3rem] ">
                     < Image
                         height={814}
                         width={600}
@@ -38,23 +38,23 @@ const index = () => {
                         className="object-contain"
                     />
                 </div>
-                
+
             </div>
 
 
 
 
-            <div className="flex justify-between pt-[10rem] pb-[10rem] bg-[#FF6000] xl:px-[22rem] lg:px-[14rem] px-[3rem] ">
+            <div className="flex justify-between py-[10rem]  bg-[#FF6000] xl:px-[22rem] lg:px-[14rem] px-[3rem] ">
                 <div className="w-[60%] space-y-[5rem] ">
                     <p className="text-left font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
                         Do not pay for clicks
                     </p>
 
                     <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                     pay only when a customer purchases,<br/> and NOT for  clicks
+                        pay only when a customer purchases,<br /> and NOT for  clicks
                     </p>
                     <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] lg:p-10 md:p-6 p-3 font-lettera-medium font-[700] px-[4rem] lg:text-[2.5rem] md:text-[2rem] text-[#333333] tracking-normal leading-[1.33rem]">
-                    Get Started
+                        Get Started
                     </button>
                 </div>
                 <div className="pt-[9rem]">
@@ -90,27 +90,27 @@ const index = () => {
                 </div>
             </div>
 
-            <div className="flex justify-between pt-[9rem] pb-[0rem] bg-[#F99417] xl:px-[22rem] lg:px-[14rem] px-[3rem]">
+            <div className="flex justify-between pt-[9rem] pb-[0rem]  bg-[#F99417] xl:px-[22rem] lg:px-[14rem] px-[3rem]">
 
 
                 <div className="w-[50%] space-y-[5rem] ">
                     <p className="text-left font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
-                       acquire new customers
+                        acquire new customers
                     </p>
 
                     <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                       with hyper personalization, and targetting at lowest price 
+                        with hyper personalization, and targetting at lowest price
                     </p>
 
                     <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] lg:p-10 md:p-6 p-3 font-lettera-medium font-[700] px-[4rem] lg:text-[2.5rem] md:text-[2rem] text-[#333333] tracking-normal leading-[1.33rem]">
-                    Get Started
+                        Get Started
                     </button>
 
 
                     <br /> &nbsp; <br />&nbsp; <br />&nbsp; <br />&nbsp; <br />&nbsp; <br />
                 </div>
 
-                <div className="pt-[3rem]">
+                <div className="pt-[3rem] ">
                     < Image
                         height={600}
                         width={600}
@@ -125,31 +125,31 @@ const index = () => {
             <div className="flex justify-between pt-[9rem] pb-[0rem] bg-[#84D2C5] xl:px-[22rem] lg:px-[14rem] px-[3rem]">
 
 
-<div className="w-[50%] space-y-[5rem] ">
-    <p className="text-left font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
-       increase repeat purchases
-    </p>
+                <div className="w-[50%] space-y-[5rem] ">
+                    <p className="text-left font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
+                        increase repeat purchases
+                    </p>
 
-    <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-       with our unique milestone driven rewards, engage and increase number of purhcase per customer
-    </p>
-    <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] lg:p-10 md:p-6 p-3 font-lettera-medium font-[700] px-[4rem] lg:text-[2.5rem] md:text-[2rem] text-[#333333] tracking-normal leading-[1.33rem]">
-                    Get Started
+                    <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
+                        with our unique milestone driven rewards, engage and increase number of purhcase per customer
+                    </p>
+                    <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] lg:p-10 md:p-6 p-3 font-lettera-medium font-[700] px-[4rem] lg:text-[2.5rem] md:text-[2rem] text-[#333333] tracking-normal leading-[1.33rem]">
+                        Get Started
                     </button>
                     <br /><br /><br />
-</div>
+                </div>
 
-<div className="pt-[3rem]">
-    < Image
-        height={600}
-        width={600}
-        src={Repeat.src}
-        alt="Avni Hero"
-        className="object-contain"
-    />
-</div>
+                <div className="pt-[3rem]">
+                    < Image
+                        height={600}
+                        width={600}
+                        src={Repeat.src}
+                        alt="Avni Hero"
+                        className="object-contain"
+                    />
+                </div>
 
-</div>
+            </div>
 
             {/* <div className="flex justify-between pt-[10rem] bg-[#c9f51b] pb-[10rem] xl:px-[22rem] lg:px-[7rem] px-[3rem]">
             <div className="w-[60%] space-y-[5rem] pt-[5rem]">

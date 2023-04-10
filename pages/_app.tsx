@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
   
   return (
     <main className={`${open_sans.variable} font-sans`}>
-      <Header />
+      
       <Component {...pageProps} />
       <Footer />
     </main>)

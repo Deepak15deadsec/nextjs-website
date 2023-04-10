@@ -1,7 +1,7 @@
 import React from "react";
 import Link from 'next/link'
 // import Logo from "../../../public/images/AVNI-logo.svg";
-import Logo from "../../../public/images/avni-logo2.webp"
+import Logo from "../../../public/images/group2.png"
 import { FcGoogle } from "react-icons/fc";
 import { useRouter } from "next/router";
 import { useGetGoogleOAuthURL } from "../../google";
@@ -57,19 +57,19 @@ const Header = () => {
       <div className="flex space-x-8 items-center">
 
         <Link href="/">
-          {/* <Image
+          <Image
             alt="Avni Logo"
             src={Logo.src}
-            width={117}
-            height={78}
-          /> */}
-
-          <Image
+            width={157}
+            height={118}
+          />
+        
+          {/* <Image
             alt="Avni Logo"
             src={Logo.src}
             height={8}
             width={67}
-          />
+          /> */}
         </Link>
 
       </div>

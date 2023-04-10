@@ -9,6 +9,7 @@ import Image from "next/image"
 import GreenCard from "../../src/components/GreenCard";
 import Logo from '../../public/images/google.svg';
 import {usePathname } from 'next/navigation';
+import Header from "../../src/components/header";
 
 // export async function getServerPaths() {
 //   try {
@@ -54,6 +55,7 @@ export default function Home() {
       </Head>
 
       <main className="bg-[#ffffff] overflow-hidden">
+        <Header />
         <Fold1 />
         <Chair />
         {/* <Earn /> */}

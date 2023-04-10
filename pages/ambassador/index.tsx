@@ -8,6 +8,7 @@ import { Fold56 } from "../../src/components/ambassador"
 import { Fold57 } from "../../src/components/ambassador"
 import { Fold58 } from "../../src/components/ambassador"
 import { Fold9 } from "../../src/components/main"
+import Header from "../../src/components/header"
 import Head from 'next/head'
 import GreenCard from '../../src/components/GreenCard'
 import Logo from '../../public/images/google.svg';
@@ -22,7 +23,7 @@ const Ambassador = () => {
       </Head>
 
       <main className="bg-[#Ffffff] mt-[0rem]">
-
+<Header />
         { <Fold51 /> }
         { <Fold52 /> }
         { <Fold53 /> }

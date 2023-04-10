@@ -2,6 +2,7 @@ import React from 'react'
 import { Fold21, Fold22, Fold23, Fold24, Fold25 } from "../../src/components/company"
 import { Fold9 } from "../../src/components/main"
 import Head from 'next/head'
+import Header from '../../src/components/header'
 
 const Company = () => {
     return (
@@ -13,7 +14,7 @@ const Company = () => {
             </Head>
 
             <main className="bg-[#ffffff]">
-
+                <Header />
                 <div className='-mt-[8.5rem]'>
                     <Fold21 />
                 </div>

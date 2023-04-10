@@ -7,6 +7,7 @@ import GreenCard from "../src/components/GreenCard";
 import Logo from '../public/images/google.svg';
 import useStore from "../zustand/useStore";
 import { useEffect } from 'react'
+import Header from "../src/components/header"
 
 export default function Home() {
   
@@ -24,6 +25,7 @@ export default function Home() {
       </Head>
 
       <main className="bg-[#ffffff] overflow-hidden">
+      <Header />
         <Fold1 />
         <Chair />
         {/* <Earn /> */}
