@@ -91,10 +91,10 @@ const Fold41 = () => {
   switch (nextScreen) {
     case 1:
       return (
-        <div className=" bg-[#434343] ">
-          <div className="flex">
+        <div className=" bg-[#36454F] ">
+          <div className="flex justify-between">
             <div className="w-[50%]">
-              <div className="my-[2rem] w-full xl:px-[22rem] lg:px-[8rem]  flex justify-start ">
+              <div className="my-[5rem] w-full xl:px-[22rem] lg:px-[14rem]  flex justify-start ">
                 <div className="space-y-[1.5rem]  mb-[4rem] mt-[2rem]">
                   <p className="text-[4.75rem]  font-sans font-[600] text-left tracking-normal leading-[4rem] text-[#FFFFFF]">
                     Contact Us
@@ -146,7 +146,7 @@ const Fold41 = () => {
                         />
                       </div>
 
-                      <button type="submit" className="rounded-[1rem] bg-[#01A4EF] mt-[1rem] p-3 space-y-5 w-[8.6rem] h-[5rem] text-[1.5rem]  font-sans font-[700] text-center tracking-normal leading-[2rem] text-[#FFFFFF]">
+                      <button type="submit" className="rounded-[1rem] bg-[#57CC99] mt-[1rem] p-3 space-y-5 w-[30%] text-[1.5rem]  font-sans font-[700] text-center tracking-normal leading-[2rem] text-[#FFFFFF]">
                         Submit
                       </button>
                     </div>

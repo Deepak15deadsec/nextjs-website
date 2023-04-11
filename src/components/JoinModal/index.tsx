@@ -14,6 +14,7 @@ let currentOTPIndex: number = 0;
 const JoinModal = (props: any) => {
     const [country, setCountry] = useState(countries[0])
     const [value, setValue] = useState("")
+    const [referrer, setReferrer] = useState('');
     const [otp, setOtp] = useState<string[]>(new Array(6).fill(""));
     const [activeOTPIndex, setActiveOTPIndex] = useState<number>(0);
     const inputRef = useRef<HTMLInputElement>(null)
@@ -49,11 +50,18 @@ const JoinModal = (props: any) => {
         inputRef.current?.focus()
     }, [activeOTPIndex])
 
-
+    useEffect(() => {
+        const storedData = localStorage.getItem('avni-storage');
+        if (storedData) {
+            const parsedData = JSON.parse(storedData);
+            setReferrer(parsedData.state.referrer);
+        }
+    }, []);
+    
     const goNext = async () => {
         try {
             //api for otp 
-            const {data} = await axios({
+            const { data } = await axios({
                 url: `https://2factor.in/API/V1/6961d34a-7b2f-11eb-a9bc-0200cd936042/SMS/${country.dial_code}${value}/AUTOGEN/OTP1`,
                 method: "GET",
                 headers: {
@@ -80,7 +88,7 @@ const JoinModal = (props: any) => {
                 headers: {
                     "content-type": "application/json"
                 }
-            }).then(async ({data}) => {
+            }).then(async ({ data }) => {
                 if (data && data.Status !== "OTP Mismatch") {
                     const { data } = await axios({
                         url: `${process.env.NEXT_PUBLIC_BASE_URL}/oauth/verify/${country.dial_code}${value}`,
@@ -92,7 +100,8 @@ const JoinModal = (props: any) => {
 
 
                     if (data && data.status == 200) {
-                        window.location.href = data.url;
+                        setStep(4)
+                        // window.location.href = data.url;
                     } else {
                         setPhone(`${country.dial_code}${value}`)
                         const { data: signup } = await axios({
@@ -110,6 +119,7 @@ const JoinModal = (props: any) => {
                                 "age": null
                             })
                         })
+
                         window.location.href = signup.url;
                     }
                 }
@@ -117,6 +127,19 @@ const JoinModal = (props: any) => {
         } catch (error) {
             console.log(error)
         }
+    }
+
+    const inviteUrl = async () => {
+
+        const { data } = await axios({
+            url: `${process.env.NEXT_PUBLIC_BASE_URL}/oauth/verify/${country.dial_code}${value}`,
+            method: "GET",
+            headers: {
+                "content-type": "application/json"
+            }
+        })
+        window.location.href = data.url;
+
     }
 
     const google = async () => {
@@ -128,9 +151,9 @@ const JoinModal = (props: any) => {
         switch (step) {
             case 1:
                 return (
-                    <div className="flex flex-col space-y-12 px-[5rem]">
+                    <div className="flex z-[10000] flex-col space-y-12 px-[5rem]">
                         <Dialog.Title
-                            className="text-[#333333] text-[3rem] pl-[1rem] font-[600]"
+                            className="text-[#333333] text-[3rem] pl-[5rem] font-[600]"
                         >
                             enter your phone number to join
                         </Dialog.Title >
@@ -190,17 +213,17 @@ const JoinModal = (props: any) => {
                                 )
                             })}
                         </div>
-                        <div className="mt-[4rem] px-[3rem] flex justify-between space-x-[0.5rem]">
-                        <button
+                        <div className="mt-[4rem] px-[3rem] flex justify-end space-x-[0.5rem]">
+                            <button
                                 type="button"
-                                className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-[1.5rem] font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                                className="inline-flex justify-center rounded-md border border-transparent bg-[#cccccc] px-4 py-2 text-[1.5rem] font-medium text-white hover:bg-[#c2b6b6] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                                 onClick={goNext}
                             >
-                                Resend OTP
+                                Reset OTP
                             </button>
                             <button
                                 type="button"
-                                className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-[1.5rem] font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                                className="inline-flex justify-center rounded-md border border-transparent bg-[#57CC99] px-4 py-2 text-[1.5rem] font-medium text-white hover:bg-[#2bd88d] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                                 onClick={otpVerify}
                             >
                                 Verify
@@ -230,6 +253,43 @@ const JoinModal = (props: any) => {
 
                 )
 
+            case 4:
+                return (
+                    <div>
+                        <Dialog.Title
+                            className="text-[#333333] mt-[3rem] text-[3rem] font-[600] leading-[3rem]"
+                        >
+                            Invite Code
+                        </Dialog.Title >
+                        <div className="flex w-full space-x-5  mt-[4rem]">
+
+                            <input
+                                className="  text-gray-900 text-[3rem] border-8 px-2 font-[600] focus:outline-none "
+                                type="tel"
+
+                                value={referrer}
+                                maxLength={10}
+                                placeholder=""
+                            />
+                        </div>
+                        <div className="mt-[4rem]  flex justify-end space-x-[0.5rem]">
+                            <button
+                                type="button"
+                                className="inline-flex justify-center rounded-md border border-transparent bg-[#cccccc] px-4 py-2 text-[1.5rem] font-medium text-white hover:bg-[#c2b6b6] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                                onClick={inviteUrl}
+                            >
+                                Skip
+                            </button>
+                            <button
+                                type="button"
+                                className="inline-flex justify-center rounded-md border border-transparent bg-[#57CC99] px-4 py-2 text-[1.5rem] font-medium text-white hover:bg-[#2bd88d] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+
+                            >
+                                Verify
+                            </button>
+                        </div>
+                    </div>
+                )
             default:
                 return (<></>)
         }

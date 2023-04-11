@@ -38,7 +38,7 @@ const faq = [
 
 const Content = () => {
   return (
-    <div className="xl:px-[22rem] bg-[#3bdfce] lg:px-[14rem] md:px-[4rem] px-[2rem] mb-[6.25rem]">
+    <div className="xl:px-[22rem] bg-[#3bdfce] lg:px-[14rem] md:px-[4rem] px-[2rem] pb-[3.25rem]">
       <h1 className="text-[#6348c7] font-semibold text-[3.75rem] pt-[5rem] leading-[80px] -mt-4">Frequently Asked Questions</h1>
 
       <div className="mt-[1.875rem] space-y-6">
@@ -58,7 +58,7 @@ const Content = () => {
                           } h-5 w-5  text-[#333333]`}
                       />
                     </Disclosure.Button>
-                    <Disclosure.Panel className="py-4 font-[400] text-[1.4rem] leading-[1.8rem] text-[#312f2f]">
+                    <Disclosure.Panel className="py-4 font-[400] text-[1.75rem] leading-[2rem] text-[#312f2f]">
                       {data.answer}
                     </Disclosure.Panel>
                   </>

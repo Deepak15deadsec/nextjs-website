@@ -45,7 +45,7 @@ const Faq = () => {
                         </div>
 
                         <div>
-                            <button className="p-7 font-[700] text-[1.5rem] leading-[24px] rounded-[1.25rem] bg-[#01A4EF] text-white">Get in Touch</button>
+                            <button className="p-7 font-[700] text-[1.5rem] leading-[24px] rounded-[1.25rem] bg-white text-black">Get in Touch</button>
                         </div>
                     </div>
                 </div>

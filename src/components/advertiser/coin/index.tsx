@@ -16,7 +16,7 @@ const index = () => {
             <div className="flex justify-between pt-[10rem] pb-[10rem] space-x-[1rem] bg-[#30D792] xl:px-[22rem] lg:px-[14rem] px-[3rem] ">
                 <div className="w-[60%] space-y-[5rem] ">
                     <p className="text-left font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
-                        Grow your Business
+                        grow your business
                     </p>
 
                     <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[2rem] text-[#FFFFFF]">
@@ -47,7 +47,7 @@ const index = () => {
             <div className="flex justify-between py-[10rem]  bg-[#FF6000] xl:px-[22rem] lg:px-[14rem] px-[3rem] ">
                 <div className="w-[60%] space-y-[5rem] ">
                     <p className="text-left font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
-                        Do not pay for clicks
+                        do not pay for clicks
                     </p>
 
                     <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">

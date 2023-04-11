@@ -10,31 +10,31 @@ const index = () => {
 
   return (
     <div className="bg-[#36454f] py-[13rem] flex flex-col justify-center items-center xl:px-[22rem] lg:px-[12rem] md:px-[10rem] px-[8rem]  space-y-7">
-    
+
 
       <p className="text-center font-[800] lg:text-[8rem] lg:leading-[10.5rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
         rewards for<br />proof of shopping
       </p>
 
-      <p className="text-center font-[500] pt-[1rem] lg:text-[2.0 rem] lg:leading-[4.2rem] md:text-[2.2rem] md:leading-[2.5rem] leading-[1.8rem] text-[1.5rem] text-[#FFFFFF]">
-        tokens, digital collatables, execlusive offers, coupons & cashbacks <br/><br/><br/>
+      <p className="text-center font-[500] pt-[1rem] lg:text-[2rem] lg:leading-[4.2rem] md:text-[2rem] md:leading-[2.5rem] leading-[1.8rem] text-[1.5rem] text-[#FFFFFF]">
+        tokens, digital collatables, execlusive offers, coupons & cashbacks <br /><br /><br />
       </p>
 
-     
+
       {
-        isOpen==false && (<button
+        isOpen == false && (<button
           onClick={() => setIsOpen(true)}
-          className="bg-white z-[999] rounded-[3.2rem] px-8 py-4 font-lettera-medium font-[700]  lg:text-[2.5rem]  text-[#333333]"
+          className="bg-white  rounded-[3.2rem] px-8 py-4 font-lettera-medium font-[700]  lg:text-[2.5rem]  text-[#333333]"
         >
           Join now
         </button>)
       }
- <p className="lg:pt-[3rem] md:pt-[3rem] pt-[0rem] pb-[1rem] lg:text-[1.75rem] text-center md:text-[1.5rem] text-[0.8rem] font-Open-Sans font-[400] tracking-normal leading-[1.5rem]   text-[#57CC99]">   2K+ members already reserved their seats in the pre-launch program </p>
+      <p className="lg:pt-[3rem] md:pt-[3rem] pt-[0rem] pb-[1rem] lg:text-[1.75rem] text-center md:text-[1.5rem] text-[0.8rem] font-Open-Sans font-[400] tracking-normal leading-[1.5rem]   text-[#57CC99]">   2K+ members already reserved their seats in the pre-launch program </p>
 
       <JoinModal
         isOpen={isOpen}
         onClose={() => setIsOpen(false)}
-        
+
       />
       {/* <button
         onClick={google}
