@@ -47,17 +47,16 @@ const JoinModal = (props: any) => {
 
 
     useEffect(() => {
-        inputRef.current?.focus()
-    }, [activeOTPIndex])
-
-    useEffect(() => {
         const storedData = localStorage.getItem('avni-storage');
         if (storedData) {
             const parsedData = JSON.parse(storedData);
             setReferrer(parsedData.state.referrer);
         }
-    }, []);
-    
+        inputRef.current?.focus()
+    }, [activeOTPIndex])
+
+
+
     const goNext = async () => {
         try {
             //api for otp 
@@ -100,27 +99,10 @@ const JoinModal = (props: any) => {
 
 
                     if (data && data.status == 200) {
-                        setStep(4)
-                        // window.location.href = data.url;
+                        
+                         window.location.href = data.url;
                     } else {
-                        setPhone(`${country.dial_code}${value}`)
-                        const { data: signup } = await axios({
-                            url: `${process.env.NEXT_PUBLIC_BASE_URL}/oauth/signup`,
-                            method: "POST",
-                            headers: {
-                                "content-type": "application/json"
-                            },
-                            data: JSON.stringify({
-                                "phone": `${country.dial_code}${value}`,
-                                "name": "",
-                                "smsAccess": false,
-                                "locationAccess": false,
-                                "gender": "",
-                                "age": null
-                            })
-                        })
-
-                        window.location.href = signup.url;
+                        setStep(4)
                     }
                 }
             })
@@ -129,16 +111,50 @@ const JoinModal = (props: any) => {
         }
     }
 
-    const inviteUrl = async () => {
+    const skipInvite = async () => {
 
-        const { data } = await axios({
-            url: `${process.env.NEXT_PUBLIC_BASE_URL}/oauth/verify/${country.dial_code}${value}`,
-            method: "GET",
+            const { data: signup } = await axios({
+                url: `${process.env.NEXT_PUBLIC_BASE_URL}/oauth/signup`,
+                method: "POST",
+                headers: {
+                    "content-type": "application/json"
+                },
+                data: JSON.stringify({
+                    "phone": `${country.dial_code}${value}`,
+                    "name": "Guest",
+                    "smsAccess": false,
+                    "locationAccess": false,
+                    "gender": "",
+                    "age": null
+                })
+            })
+
+            window.location.href = signup.url;
+        
+        
+
+    }
+
+    const verifyInvite = async () => {
+
+        const { data: signup } = await axios({
+            url: `${process.env.NEXT_PUBLIC_BASE_URL}/oauth/signup`,
+            method: "POST",
             headers: {
                 "content-type": "application/json"
-            }
+            },
+            data: JSON.stringify({
+                "phone": `${country.dial_code}${value}`,
+                "name": "Guest",
+                "smsAccess": false,
+                "locationAccess": false,
+                "gender": "",
+                "referrer": referrer,
+                "age": null
+            })
         })
-        window.location.href = data.url;
+
+        window.location.href = signup.url;
 
     }
 
@@ -266,8 +282,8 @@ const JoinModal = (props: any) => {
                             <input
                                 className="  text-gray-900 text-[3rem] border-8 px-2 font-[600] focus:outline-none "
                                 type="tel"
-
                                 value={referrer}
+                                onChange={(e)=>setReferrer(e.target.value)}
                                 maxLength={10}
                                 placeholder=""
                             />
@@ -276,14 +292,14 @@ const JoinModal = (props: any) => {
                             <button
                                 type="button"
                                 className="inline-flex justify-center rounded-md border border-transparent bg-[#cccccc] px-4 py-2 text-[1.5rem] font-medium text-white hover:bg-[#c2b6b6] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                                onClick={inviteUrl}
+                                onClick={skipInvite}
                             >
                                 Skip
                             </button>
                             <button
                                 type="button"
                                 className="inline-flex justify-center rounded-md border border-transparent bg-[#57CC99] px-4 py-2 text-[1.5rem] font-medium text-white hover:bg-[#2bd88d] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-
+                                onClick={verifyInvite}
                             >
                                 Verify
                             </button>
