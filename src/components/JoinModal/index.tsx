@@ -125,6 +125,7 @@ const JoinModal = (props: any) => {
                     "smsAccess": false,
                     "locationAccess": false,
                     "gender": "",
+                    "referrer": "",
                     "age": null
                 })
             })
