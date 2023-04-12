@@ -129,8 +129,8 @@ const JoinModal = (props: any) => {
 
 
                     if (data && data.status == 200) {
-                        
-                        window.location.href = data.url;
+                        setStep(4)
+                        //window.location.href = data.url;
                     } else {
                         setStep(4)
                     }
@@ -148,49 +148,49 @@ const JoinModal = (props: any) => {
 
     const skipInvite = async () => {
 
-        // const { data: signup } = await axios({
-        //     url: `${process.env.NEXT_PUBLIC_BASE_URL}/oauth/signup`,
-        //     method: "POST",
-        //     headers: {
-        //         "content-type": "application/json"
-        //     },
-        //     data: JSON.stringify({
-        //         "phone": `${country.dial_code}${value}`,
-        //         "name": "Guest",
-        //         "smsAccess": false,
-        //         "locationAccess": false,
-        //         "gender": "",
-        //         "referrer": "",
-        //         "age": null
-        //     })
-        // })
+        const { data: signup } = await axios({
+            url: `${process.env.NEXT_PUBLIC_BASE_URL}/oauth/signup`,
+            method: "POST",
+            headers: {
+                "content-type": "application/json"
+            },
+            data: JSON.stringify({
+                "phone": `${country.dial_code}${value}`,
+                "name": "Guest",
+                "smsAccess": false,
+                "locationAccess": false,
+                "gender": "",
+                "referrer": "",
+                "age": null
+            })
+        })
 
-        // window.location.href = signup.url;
-console.log("phone", `${country.dial_code}${value}`)
+        window.location.href = signup.url;
+
 
 
     }
 
     const verifyInvite = async () => {
 
-        // const { data: signup } = await axios({
-        //     url: `${process.env.NEXT_PUBLIC_BASE_URL}/oauth/signup`,
-        //     method: "POST",
-        //     headers: {
-        //         "content-type": "application/json"
-        //     },
-        //     data: JSON.stringify({
-        //         "phone": `${country.dial_code}${value}`,
-        //         "name": "Guest",
-        //         "smsAccess": false,
-        //         "locationAccess": false,
-        //         "gender": "",
-        //         "referrer": referrer,
-        //         "age": null
-        //     })
-        // })
+        const { data: signup } = await axios({
+            url: `${process.env.NEXT_PUBLIC_BASE_URL}/oauth/signup`,
+            method: "POST",
+            headers: {
+                "content-type": "application/json"
+            },
+            data: JSON.stringify({
+                "phone": `${country.dial_code}${value}`,
+                "name": "Guest",
+                "smsAccess": false,
+                "locationAccess": false,
+                "gender": "",
+                "referrer": referrer,
+                "age": null
+            })
+        })
 
-        // window.location.href = signup.url;
+        window.location.href = signup.url;
 
         console.log("phone", `${country.dial_code}${value}`)
 
