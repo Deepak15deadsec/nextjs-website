@@ -12,6 +12,7 @@ import Header from "../../src/components/header"
 import Head from 'next/head'
 import GreenCard from '../../src/components/GreenCard'
 import Logo from '../../public/images/google.svg';
+import Mobile from '../../src/components/mobheader'
 
 const Ambassador = () => {
   return (
@@ -23,7 +24,12 @@ const Ambassador = () => {
       </Head>
 
       <main className="bg-[#Ffffff] mt-[0rem]">
-<Header />
+      <div className="lg:flex md:flex hidden">
+          <Header />
+        </div>
+        <div className="lg:hidden md:hidden flex">
+          <Mobile />
+        </div>
         { <Fold51 /> }
         { <Fold52 /> }
         { <Fold53 /> }

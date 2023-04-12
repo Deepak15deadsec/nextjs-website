@@ -8,6 +8,7 @@ import Content from "./Content"
 import Head from 'next/head'
 import Google from '../../public/images/google.svg'
 import Header from '../../src/components/header'
+import Mobile from '../../src/components/mobheader'
 
 const Faq = () => {
     return (
@@ -21,7 +22,12 @@ const Faq = () => {
 
 
             <main className="bg-[#FFFFFF]">
-                <Header />
+            <div className="lg:flex md:flex hidden">
+          <Header />
+        </div>
+        <div className="lg:hidden md:hidden flex">
+          <Mobile />
+        </div>
                 <Fold31 />
                 <Content />
                 <div className="w-full bg-[#EEEEEE] py-[2.5rem]">

@@ -5,6 +5,7 @@ import Head from 'next/head'
 import GreenCard from '../../src/components/GreenCard'
 import Logo from '../../public/images/google.svg';
 import Header from '../../src/components/header'
+import Mobile from '../../src/components/mobheader'
 
 const Artcoin = () => {
   return (
@@ -16,7 +17,12 @@ const Artcoin = () => {
       </Head>
 
       <main className="bg-[#ffffff]">
-        <Header />
+      <div className="lg:flex md:flex hidden">
+          <Header />
+        </div>
+        <div className="lg:hidden md:hidden flex">
+          <Mobile />
+        </div>
         <Coin />
         {/* <Fold11 /> */}
         {/* <Fold12 />

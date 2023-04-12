@@ -3,6 +3,7 @@ import { Fold21, Fold22, Fold23, Fold24, Fold25 } from "../../src/components/com
 import { Fold9 } from "../../src/components/main"
 import Head from 'next/head'
 import Header from '../../src/components/header'
+import Mobile from '../../src/components/mobheader'
 
 const Company = () => {
     return (
@@ -14,7 +15,12 @@ const Company = () => {
             </Head>
 
             <main className="bg-[#ffffff]">
-                <Header />
+            <div className="lg:flex md:flex hidden">
+          <Header />
+        </div>
+        <div className="lg:hidden md:hidden flex">
+          <Mobile />
+        </div>
                 <div className='-mt-[8.5rem]'>
                     <Fold21 />
                 </div>

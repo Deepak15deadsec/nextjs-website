@@ -85,7 +85,7 @@ const Footer = () => {
   ];
   return (
     <div className="bg-[#36454f]   text-[#b3aeb4] ">
-      <div className=" w-full xl:px-[22rem] lg:px-[7rem] md:px-[2rem] px-[1.5rem] flex justify-between   ">
+      <div className=" w-full xl:px-[22rem] lg:px-[7rem] md:px-[2rem] px-[1rem] flex justify-between   ">
         <div className="space-y-[1rem] w-3/4 mb-[2rem] mt-[2rem]">
 
           <Image

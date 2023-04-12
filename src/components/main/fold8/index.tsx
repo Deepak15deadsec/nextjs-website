@@ -44,10 +44,10 @@ const index = () => {
       <div className=" w-full px-[3rem] lg:hidden md:hidden flex flex-col justify-center">
         <div className="space-y-[2.5rem] w-[65%] mt-[10rem] ">
 
-          <p className="text-left font-[800]  lg:text-[9rem] lg:leading-[9rem] md:text-[2rem] md:leading-[3rem] text-[3rem] text-[#FFFFFF]">
+          <p className="text-left font-[800]  lg:text-[9rem] lg:leading-[9rem] md:text-[2rem] md:leading-[3rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
             change is now</p>
 
-          <p className="text-left font-[400] mt-[3rem] w-[60%] lg:text-[2.8rem] lg:leading-[4rem] md:text-[2rem] md:leading-[3rem] text-[1.5rem] leading-[1.5rem] text-[#FFFFFF]">
+          <p className="text-left font-[400] mt-[3rem] w-[60%] lg:text-[2.8rem] lg:leading-[4rem] md:text-[2rem] md:leading-[3rem] text-[1.5rem] leading-[1.8rem] text-[#FFFFFF]">
             we are changing the way companies are using user's privacy and data for their benefit to generate billions
           </p>
 

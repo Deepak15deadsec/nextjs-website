@@ -129,8 +129,8 @@ const JoinModal = (props: any) => {
 
 
                     if (data && data.status == 200) {
-                        setStep(4)
-                        //window.location.href = data.url;
+                        
+                        window.location.href = data.url;
                     } else {
                         setStep(4)
                     }

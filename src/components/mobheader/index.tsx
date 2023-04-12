@@ -12,14 +12,15 @@ import { useState } from "react";
 import JoinMobile from "../JoinMobile";
 
 
-const Header = () => {
+const Mobile = () => {
   const router = useRouter();
   let [isOpen, setIsOpen] = useState(false)
+  const [isOpenn, setIsOpenn] = useState(false);
   const { googleUrl } = useGetGoogleOAuthURL()
   const links = [
 
     {
-      name: "arttoken",
+      name: "art token",
       href: "/artcoin"
     },
     // {
@@ -54,68 +55,54 @@ const Header = () => {
 
   return (
     <div className="h-[7.275rem] fixed inset-0 z-10 bg-[#36454F] flex justify-between items-center xl:px-[22rem] lg:px-[7rem] md:px-[4rem] px-[2rem] ">
-      <div className="flex space-x-8 items-center">
-
-        <Link href="/">
-          <Image
-            alt="Avni Logo"
-            src={Logo.src}
-            width={157}
-            height={118}
-          />
+      <div className="flex space-x-4 items-center">
         
-          {/* <Image
-            alt="Avni Logo"
-            src={Logo.src}
-            height={8}
-            width={67}
-          /> */}
+        <Link href="/">
+          <Image alt="Avni Logo" src={Logo.src} width={157} height={118} />
+
         </Link>
-
+        <button
+          onClick={() => setIsOpenn(!isOpenn)}
+          className="lg:hidden text-white"
+        >
+          {/* Hamburger menu icon */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-8 w-8"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fillRule="evenodd"
+              d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 6a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 6a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </button>
+        <nav
+          className={`lg:flex items-center space-x-4 ${isOpenn ? "flex" : "hidden"
+            }`}
+        >
+          {links.map(({ name, href }, index) => (
+            <NavLink href={href} key={index}>
+              {name}
+            </NavLink>
+          ))}
+        </nav>
       </div>
-      <div className="flex space-x-3 items-center">
-        {links.map(({ name, href }, index: number) => (
-          <NavLink href={href} key={index} >
-            {name}
-          </NavLink>
-        ))}
+      <div className="flex items-center">
 
-        {
-          isOpen == false && (<button
+        {!isOpenn && (
+          <button
             onClick={() => setIsOpen(true)}
-            className="bg-white z-[999] rounded-[3.2rem] px-5 py-3 font-lettera-medium font-[700]  lg:text-[1.2rem]  text-[#333333]"
+            className="lg:hidden bg-white z-[999] rounded-[3.2rem] px-5 py-3 font-lettera-medium font-[700] text-[#333333]"
           >
             Join now
-          </button>)
-        }
-
-        <JoinMobile
-          isOpen={isOpen}
-          onClose={() => setIsOpen(false)}
-
-        />
-
-        {/* <button
-          onClick={google}
-          className="h-[38px] flex justify-center items-center text-white shadow-lg font-lettera-medium font-[500] text-[1.2rem] tracking-normal leading-[2rem]"
-        >
-          <div className="bg-white h-full flex justify-center items-center px-2 rounded-l">
-            <FcGoogle size={28} />
-          </div>
-          <div className="h-full lg:flex md:flex hidden  justify-center items-center bg-blue-500 px-2 rounded-r">
-            <p>Sign in with Google</p>
-          </div>
-        </button> */}
-
-
-        {/* <img
-          src="https://cdn.juno.finance/juno-main-landing/store-icons.svg"
-          data-v-ee1708b6=""
-        /> */}
-
+          </button>
+        )}
+        <JoinMobile isOpen={isOpen} onClose={() => setIsOpen(false)} />
       </div>
     </div>
   );
-};
-
-export default Header;
+}
+export default Mobile;

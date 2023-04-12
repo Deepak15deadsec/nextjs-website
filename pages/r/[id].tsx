@@ -10,6 +10,7 @@ import GreenCard from "../../src/components/GreenCard";
 import Logo from '../../public/images/google.svg';
 import {usePathname } from 'next/navigation';
 import Header from "../../src/components/header";
+import Mobile from "../../src/components/mobheader";
 
 // export async function getServerPaths() {
 //   try {
@@ -55,7 +56,12 @@ export default function Home() {
       </Head>
 
       <main className="bg-[#ffffff] overflow-hidden">
-        <Header />
+      <div className="lg:flex md:flex hidden">
+          <Header />
+        </div>
+        <div className="lg:hidden md:hidden flex">
+          <Mobile />
+        </div>
         <Fold1 />
         <Chair />
         {/* <Earn /> */}
