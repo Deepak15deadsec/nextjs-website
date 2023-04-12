@@ -8,9 +8,10 @@ import Logo from '../public/images/google.svg';
 import useStore from "../zustand/useStore";
 import { useEffect } from 'react'
 import Header from "../src/components/header"
+import Mobile from "../src/components/mobheader"
 
 export default function Home() {
-  
+
   const updateReferror = useStore((state) => state.updateReferrer)
   useEffect(() => {
     updateReferror("")
@@ -25,7 +26,12 @@ export default function Home() {
       </Head>
 
       <main className="bg-[#ffffff] overflow-hidden">
-      <Header />
+        <div className="lg:flex md:flex hidden">
+          <Header />
+        </div>
+        <div className="lg:hidden md:hidden flex">
+          <Mobile />
+        </div>
         <Fold1 />
         <Chair />
         {/* <Earn /> */}

@@ -46,7 +46,7 @@ const GreenCard = ({ content, src }: any) => {
                     {
                         isOpen == false && (<button
                             onClick={() => setIsOpen(true)}
-                            className="bg-[#30D792] z-[999] rounded-[3.2rem] px-8 py-4 font-lettera-medium font-[700]  lg:text-[1.5rem]  text-[#333333]"
+                            className="bg-[#30D792] rounded-[3.2rem] px-8 py-4 font-lettera-medium font-[700]  lg:text-[1.5rem]  text-[#333333]"
                         >
                             Join Now
                         </button>)

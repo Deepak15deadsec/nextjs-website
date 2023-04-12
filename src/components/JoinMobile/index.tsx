@@ -12,7 +12,7 @@ import useStore from "../../../zustand/useStore";
 
 
 let currentOTPIndex: number = 0;
-const JoinModal = (props: any) => {
+const JoinMobile = (props: any) => {
     const [country, setCountry] = useState(countries[0])
     const [value, setValue] = useState("")
     const [referrer, setReferrer] = useState('');
@@ -207,7 +207,7 @@ console.log("phone", `${country.dial_code}${value}`)
                 return (
                     <div className="flex z-[10000] flex-col space-y-12 px-[5rem]">
                         <Dialog.Title
-                            className="text-[#333333] text-[3rem] pl-[5rem] font-[600]"
+                            className="text-[#333333] text-[1rem] pl-[5rem] font-[600]"
                         >
                             enter your phone number to join
                         </Dialog.Title >
@@ -218,7 +218,7 @@ console.log("phone", `${country.dial_code}${value}`)
                                 setCountry={setCountry}
                                 countries={countries} />
                             <input
-                                className="  text-gray-900 text-[3rem]  font-[600] focus:outline-none "
+                                className="  text-gray-900 text-[1rem]  font-[600] focus:outline-none "
                                 type="tel"
                                 onChange={(e: any) => setValue(e.target.value)}
                                 value={value}
@@ -247,11 +247,11 @@ console.log("phone", `${country.dial_code}${value}`)
                 return (
                     <div>
                         <Dialog.Title
-                            className="text-[#333333] mt-[3rem] text-[3rem] px-[3rem] w-[50%] font-[600] leading-[3rem]"
+                            className="text-[#333333] mt-[3rem] text-[1.5rem] px-[3rem]  font-[600] leading-[1.5rem]"
                         >
                             Enter your otp
                         </Dialog.Title >
-                        <div className="flex w-full space-x-5 px-[3rem] mt-[4rem]">
+                        <div className="flex w-full space-x-5 px-[3rem] mt-[1rem]">
                             {otp.map((_, index) => {
                                 return (
                                     <Fragment key={index}>
@@ -261,14 +261,14 @@ console.log("phone", `${country.dial_code}${value}`)
                                             onChange={handleOnChange}
                                             onKeyDown={(e) => handleOnKeyDown(e, index)}
                                             value={otp[index]}
-                                            className="w-full border border-black rounded-lg text-center font-600 text-[5rem]  opacity-60"
+                                            className="w-full border border-black rounded-lg text-center font-600 text-[1.5rem]  opacity-60"
                                         />
                                     </Fragment>
                                 )
                             })}
                         </div>
 
-                        <div className="mt-[4rem] px-[3rem] flex justify-between space-x-[0.5rem]">
+                        <div className="mt-[1rem] px-[3rem] flex justify-between space-x-[0.5rem]">
                             <div>
                                 {
                                     error.OTP && (
@@ -279,7 +279,7 @@ console.log("phone", `${country.dial_code}${value}`)
                             <div className="space-x-2">
                                 <button
                                     type="button"
-                                    className={`inline-flex justify-center rounded-md border border-transparent bg-[#cccccc] ${isDisabled ? "bg-[#cccccc] " : "bg-[#cccccc] hover:bg-[#c2b6b6]"} px-4 py-2 text-[1.5rem] font-medium text-white  focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2`}
+                                    className={`inline-flex justify-center rounded-md border border-transparent bg-[#cccccc] ${isDisabled ? "bg-[#cccccc] " : "bg-[#cccccc] hover:bg-[#c2b6b6]"} px-4 py-2 text-[1rem] font-medium text-white  focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2`}
                                     onClick={goNext}
                                     disabled={isDisabled}
                                 >
@@ -288,7 +288,7 @@ console.log("phone", `${country.dial_code}${value}`)
                                 </button>
                                 <button
                                     type="button"
-                                    className="inline-flex justify-center rounded-md border border-transparent bg-[#57CC99] px-4 py-2 text-[1.5rem] font-medium text-white hover:bg-[#2bd88d] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                                    className="inline-flex justify-center rounded-md border border-transparent bg-[#57CC99] px-4 py-2 text-[1rem] font-medium text-white hover:bg-[#2bd88d] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                                     onClick={otpVerify}
                                 >
                                     Verify
@@ -324,14 +324,14 @@ console.log("phone", `${country.dial_code}${value}`)
                 return (
                     <div>
                         <Dialog.Title
-                            className="text-[#333333] mt-[3rem] text-[3rem] font-[600] leading-[3rem]"
+                            className="text-[#333333] mt-[1rem] text-[1rem] font-[600] leading-[3rem]"
                         >
                             Invite Code
                         </Dialog.Title >
-                        <div className="flex w-full space-x-5  mt-[4rem]">
+                        <div className="flex w-full space-x-5  mt-[1rem]">
 
                             <input
-                                className="  text-gray-900 text-[3rem] border-8 px-2 font-[600] focus:outline-none "
+                                className="  text-gray-900 text-[1rem] border-8 px-2 font-[600] focus:outline-none "
                                 type="tel"
                                 value={referrer}
                                 onChange={(e) => setReferrer(e.target.value)}
@@ -339,11 +339,11 @@ console.log("phone", `${country.dial_code}${value}`)
                                 placeholder=""
                             />
                         </div>
-                        <div className="mt-[4rem]  flex justify-end space-x-[0.5rem]">
+                        <div className="mt-[1rem]  flex justify-end space-x-[0.5rem]">
                             {referrer.length == 0 && (
                                 <button
                                     type="button"
-                                    className="inline-flex justify-center rounded-md border border-transparent bg-[#cccccc] px-4 py-2 text-[1.5rem] font-medium text-white hover:bg-[#c2b6b6] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                                    className="inline-flex justify-center rounded-md border border-transparent bg-[#cccccc] px-4 py-2 text-[1rem] font-medium text-white hover:bg-[#c2b6b6] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                                     onClick={skipInvite}
 
                                 >
@@ -352,7 +352,7 @@ console.log("phone", `${country.dial_code}${value}`)
                             )}
                             <button
                                 type="button"
-                                className={`inline-flex justify-center rounded-md border border-transparent ${referrer.length > 0 ? "bg-[#57CC99] hover:bg-[#2bd88d]" : "bg-[#cccccc]"}  px-4 py-2 text-[1.5rem] font-medium text-white  focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2`}
+                                className={`inline-flex justify-center rounded-md border border-transparent ${referrer.length > 0 ? "bg-[#57CC99] hover:bg-[#2bd88d]" : "bg-[#cccccc]"}  px-4 py-2 text-[1rem] font-medium text-white  focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2`}
                                 onClick={verifyInvite}
                                 disabled={referrer.length < 1}
                             >
@@ -400,7 +400,7 @@ console.log("phone", `${country.dial_code}${value}`)
                             leaveFrom="opacity-100 scale-100"
                             leaveTo="opacity-0 scale-95"
                         >
-                            <Dialog.Panel className="w-[130vh] h-[62vh] flex justify-center items-center  transform  rounded-[5rem] bg-white p-6 text-left align-middle shadow-xl transition-all">
+                            <Dialog.Panel className="w-[150vh] h-[62vh] flex justify-center items-center  transform  rounded-[5rem] bg-white p-6 text-left align-middle shadow-xl transition-all">
                                 {renderDialog()}
                             </Dialog.Panel>
 
@@ -417,4 +417,4 @@ console.log("phone", `${country.dial_code}${value}`)
 
 
 
-export default JoinModal
+export default JoinMobile

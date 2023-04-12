@@ -15,7 +15,7 @@ const index = () => {
 
 
 
-            <div className="flex justify-between mb-[18rem] xl:px-[22rem] lg:px-[14rem] px-[3rem]">
+            <div className="lg:flex md:flex hidden justify-between mb-[18rem] xl:px-[22rem] lg:px-[14rem] px-[3rem]">
 
                 <div className="w-[60%] space-y-[5rem] ">
                     <p className="text-left font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
@@ -37,6 +37,41 @@ const index = () => {
                     />
                     <div className=" pl-60">
                         <p className="text-left font-[500]  lg:text-[1.4rem] lg:leading-[2rem] md:text-[2rem] md:leading-[2rem] text-[1.5rem] text-[#FFFFFF]">
+                            <br />all collected tokens will be airdropped after the token generation event in mid august 2023
+                        </p>
+                        <button className="rounded-[1rem] bg-[#30D792] mt-[1.5rem] p-8 space-y-5 w-[13rem] h-[5rem]">
+                            <p className="text-[1.5rem] font-Open-Sans font-[500]  tracking-normal leading-[1rem] text-[#FFFFFF]">lite paper</p>
+                        </button>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div className="lg:hidden md:hidden flex flex-col justify-center mb-[18rem] xl:px-[22rem] lg:px-[14rem] px-[3rem]">
+
+                <div className="w-[60%] space-y-[5rem] ">
+                    <p className="text-left font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
+                        get action reward token throughout your day
+                    </p>
+
+                    <p className="text-left font-[500] mt-[3rem] lg:text-[2.8rem] lg:leading-[4rem] md:text-[2rem] md:leading-[2rem] text-[1.5rem] text-[#FFFFFF]">
+
+                    </p>
+                </div>
+
+                <div className="">
+                    < Image
+                        height={800}
+                        width={800}
+                        src={Coin.src}
+                        alt="ART"
+                        className="object-contain "
+                    />
+                    <div className="flex flex-col justify-center items-center ">
+                        <p className="text-center font-[500]  lg:text-[1.4rem] lg:leading-[2rem] md:text-[2rem] md:leading-[2rem] text-[1.5rem] text-[#FFFFFF]">
                             <br />all collected tokens will be airdropped after the token generation event in mid august 2023
                         </p>
                         <button className="rounded-[1rem] bg-[#30D792] mt-[1.5rem] p-8 space-y-5 w-[13rem] h-[5rem]">

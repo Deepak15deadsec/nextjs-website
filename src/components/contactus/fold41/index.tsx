@@ -94,7 +94,7 @@ const Fold41 = () => {
         <div className=" bg-[#36454F] ">
           <div className="flex justify-between">
             <div className="w-[50%]">
-              <div className="my-[5rem] w-full xl:px-[22rem] lg:px-[14rem]  flex justify-start ">
+              <div className="my-[5rem] w-full xl:px-[22rem] lg:px-[14rem] px-[1rem] flex justify-start ">
                 <div className="space-y-[1.5rem]  mb-[4rem] mt-[2rem]">
                   <p className="text-[4.75rem]  font-sans font-[600] text-left tracking-normal leading-[4rem] text-[#FFFFFF]">
                     Contact Us
@@ -158,7 +158,7 @@ const Fold41 = () => {
               </div>
             </div>
 
-            <div className="w-[50%] ml-[10rem] mt-[8rem]">
+            <div className="lg:flex md:flex hidden w-[50%] ml-[10rem] ">
               <img
                 src={Person.src}
                 alt="Fortune"

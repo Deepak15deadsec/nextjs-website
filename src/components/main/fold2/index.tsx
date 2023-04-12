@@ -18,9 +18,9 @@ const index = () => {
   };
   return (
     <div className=" bg-[#008097] w-full  mt-[-8rem] ">
-      <div className="my-[8rem] w-full xl:px-[22rem] lg:px-[14rem] md:px-[4rem] px-[3rem] flex justify-between">
+      <div className="lg:my-[8rem] md:my-[8rem] my-[0rem] w-full xl:px-[22rem] lg:px-[14rem] md:px-[4rem] px-[3rem] flex justify-between">
        
-        <div className="  mb-[4rem]  xl:mt-[5rem] lg:mt-[4rem] justify-left ">
+        <div className="  mb-[4rem]  xl:mt-[5rem] lg:mt-[4rem] mt-[3rem] justify-left ">
           <p className="text-left font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
             actions are rewarding
           </p>
