@@ -17,7 +17,7 @@ const index = () => {
       {
         isOpen == false && (<button
           onClick={() => setIsOpen(true)}
-          className="rounded-[1rem]  bg-[#01A4EF] mt-[3rem] p-3 space-y-5 w-[10rem] h-[5rem]">
+          className="rounded-[1rem]  cursor-pointer bg-[#57CC99] mt-[3rem] p-3 space-y-5 w-[10rem] h-[5rem]">
           <p className="text-[1.5rem]  font-sans font-[700] text-center tracking-normal leading-[2rem] text-[#FFFFFF]">Join Now</p>
         </button>)
       }

@@ -26,10 +26,10 @@ const Header = () => {
     //   name: "advertiser",
     //   href: "https://ads.avniads.com"
     // },
-    {
-      name: "advertiser",
-      href: "/advertiser"
-    },
+    // {
+    //   name: "advertiser",
+    //   href: "/advertiser"
+    // },
     {
       name: "ambassador",
       href: "/ambassador"

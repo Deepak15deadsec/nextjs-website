@@ -42,6 +42,14 @@ const Footer = () => {
     //     { name: "Interest Rates", href: "/" },
     //   ],
     // },
+
+    {
+      name: "Promote",
+      links: [
+        { name: "Advertising", href: "/advertiser" },
+      
+      ],
+    },
     {
       name: "legal",
       links: [
@@ -105,7 +113,7 @@ const Footer = () => {
         </div>
         <div className=" w-3/4 justify-center mb-[2rem] lg:mt-[6rem] md:mt-[6rem] mt-[3.5rem]">
 
-          <div className="grid xs:grid-cols-1 lg:grid-cols-4 md:grid-cols-4 grid-cols-2    ">
+          <div className="grid xs:grid-cols-1 lg:grid-cols-5 md:grid-cols-5 grid-cols-2   ">
 
 
 
@@ -142,19 +150,19 @@ const Footer = () => {
               <div className="flex flex-row space-x-2 pt-[1rem]">
 
 
-                <a href="https://twitter.com/avniclub">
+                <a href="https://twitter.com/avniclub" target="_blank" rel=" noreferrer">
                   <FontAwesomeIcon icon={faTwitter} height={30}
                     width={30} color="#b3aeb4" />
                 </a>
 
 
 
-                <a href="https://www.linkedin.com/company/avniclub">
+                <a href="https://www.linkedin.com/company/avniclub" target="_blank" rel=" noreferrer">
                   <FontAwesomeIcon icon={faLinkedin} height={30}
                     width={30} color="#b3aeb4" />
                 </a>
 
-                <a href="https://t.me/s/avniclub">
+                <a href="https://t.me/s/avniclub" target="_blank" rel=" noreferrer">
                   <FontAwesomeIcon icon={faTelegram} height={30}
                     width={30} color="#b3aeb4" />
                 </a>

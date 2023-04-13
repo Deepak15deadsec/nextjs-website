@@ -30,7 +30,7 @@ const index = () => {
 
           </p>
 
-          <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] p-5  font-lettera-medium font-[700]  lg:text-[2rem] md:text-[2rem] text-[#333333] tracking-normal leading-[1.33rem]">
+          <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] lg:p-10 md:p-6 p-3 font-lettera-medium font-[700] px-[4rem] lg:text-[2.5rem] md:text-[2rem] text-[#333333] tracking-normal leading-[1.33rem]">
             Collect yours
           </button>
         </div>

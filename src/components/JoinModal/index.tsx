@@ -212,7 +212,7 @@ const JoinModal = (props: any) => {
                             enter your phone number to join
                         </Dialog.Title >
 
-                        <div className="bg-white border border-gray-400  inline-flex rounded-[3rem] mx-[5rem] space-x-6 h-12   ">
+                        <div className="bg-white border border-gray-400 pr-5 py-1 inline-flex rounded-[3rem] mx-[5rem] space-x-6 h-12   ">
                             <CountryCode
                                 country={country}
                                 setCountry={setCountry}
@@ -230,12 +230,9 @@ const JoinModal = (props: any) => {
                                 type="button"
                                 disabled={value.length < 10 ? true : false}
                                 onClick={goNext}
+                                className={`"className="text-[1rem] text-white ${value.length == 10 ? "cursor-pointer bg-[#57CC99] hover:bg-[#44df9c]" : " bg-[#cccccc]"} rounded-[0.5rem] p-2  "`}
                             >
-                                <img
-                                    src={`${value.length == 10 ? "/images/mverify.png" : "/images/rverify.png"}`}
-                                    alt=""
-                                    className="h-[3rem] w-[3rem] mr-[2.5rem] object-contain"
-                                />
+                                Send
                             </button>
                         </div>
 
@@ -326,12 +323,12 @@ const JoinModal = (props: any) => {
                         <Dialog.Title
                             className="text-[#333333] mt-[3rem] text-[3rem] font-[600] leading-[3rem]"
                         >
-                            Invite Code
+                            invite code
                         </Dialog.Title >
-                        <div className="flex w-full space-x-5  mt-[4rem]">
+                        <div className="flex w-full space-x-5  mt-[2rem]">
 
                             <input
-                                className="  text-gray-900 text-[3rem] border-8 px-2 font-[600] focus:outline-none "
+                                className="  text-gray-900 text-[3rem] border-2 px-2 font-[600] focus:outline-none "
                                 type="tel"
                                 value={referrer}
                                 onChange={(e) => setReferrer(e.target.value)}
@@ -339,7 +336,7 @@ const JoinModal = (props: any) => {
                                 placeholder=""
                             />
                         </div>
-                        <div className="mt-[4rem]  flex justify-end space-x-[0.5rem]">
+                        <div className="mt-[2rem]  flex justify-end space-x-[0.5rem]">
                             {referrer.length == 0 && (
                                 <button
                                     type="button"
@@ -352,7 +349,7 @@ const JoinModal = (props: any) => {
                             )}
                             <button
                                 type="button"
-                                className={`inline-flex justify-center rounded-md border border-transparent ${referrer.length > 0 ? "bg-[#57CC99] hover:bg-[#2bd88d]" : "bg-[#cccccc]"}  px-4 py-2 text-[1.5rem] font-medium text-white  focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2`}
+                                className={`inline-flex justify-center rounded-md border border-transparent ${referrer.length > 0 ? "bg-[#57CC99] hover:bg-[#2bd88d]" : "bg-[#f0e5e5]"}  px-4 py-2 text-[1.5rem] font-medium text-white  focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2`}
                                 onClick={verifyInvite}
                                 disabled={referrer.length < 1}
                             >
