@@ -15,7 +15,7 @@ const index = () => {
 
 
 
-            <div className="lg:flex md:flex hidden justify-between mb-[18rem] xl:px-[22rem] lg:px-[14rem] px-[3rem]">
+            <div className="lg:flex md:flex hidden justify-between mb-[18rem] xl:px-[22rem] lg:px-[14rem] px-[2rem]">
 
                 <div className="w-[60%] space-y-[5rem] ">
                     <p className="text-left font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
@@ -92,7 +92,7 @@ const index = () => {
                     </p>
 
                     <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
-                        you can redeem your tokens for<br />free gift cards and enjoy.<br />it’s that simple!
+                        you can redeem your tokens for<br />free gift cards and enjoy<br />it’s that simple!
                     </p>
                 </div>
                 <div className="pt-[3rem] ">
@@ -109,20 +109,29 @@ const index = () => {
 
 
 
-            <div className="flex justify-between pt-[10rem] pb-[10rem] bg-[#0169ff] xl:px-[22rem] lg:px-[14rem] px-[3rem] ">
-                <div className="w-[60%] space-y-[5rem] ">
+            <div className="flex justify-between pt-[10rem] lg:pb-[10rem] md:pb-[10rem] pb-[0rem] bg-[#0169ff] xl:px-[22rem] lg:px-[14rem] px-[3rem] ">
+                <div className="lg:w-[60%] md:w-[60%] w-[80%] space-y-[5rem] ">
                     <p className="text-left font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
                         shop with ease and earn with ease
                     </p>
 
-                    <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
+                    <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[1.5rem] leading-[1.8rem] text-[#FFFFFF]">
                         with revolutionary action reward token for shopping, where every purchase you move one step closer to financial freedom and digital empowerment
                     </p>
                 </div>
-                <div className="pt-[9rem]">
+                <div className="lg:flex md:flex hidden pt-[4rem]">
                     < Image
                         height={814}
                         width={600}
+                        src={Freedom.src}
+                        alt="broken advertising"
+                        className="object-contain"
+                    />
+                </div>
+                <div className="lg:hidden md:hidden flex pb-[32rem]">
+                < Image
+                        height={414}
+                        width={200}
                         src={Freedom.src}
                         alt="broken advertising"
                         className="object-contain"
@@ -134,17 +143,26 @@ const index = () => {
 
 
 
-            <div className="flex justify-between pt-[10rem] pb-[10rem] bg-[#ff4d00] xl:px-[22rem] lg:px-[14rem] px-[3rem] ">
-                <div className="w-[60%] space-y-[5rem] ">
+            <div className="flex justify-between lg:pt-[10rem] md:pt-[10rem] pt-[4rem] lg:pb-[10rem] md:pb-[10rem] pb-[0rem] bg-[#ff4d00] xl:px-[22rem] lg:px-[14rem] px-[3rem] ">
+                <div className="w-[60%] lg:space-y-[5rem] md:space-y-[5rem] space-y-[3rem]">
                     <p className="text-left font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
                         fixing the broken advertising
                     </p>
 
-                    <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
+                    <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[1.5rem] leading-[1.8rem] text-[#FFFFFF]">
                         with personalisation, transparency, data privacy  and rewards <br />&nbsp;<br />&nbsp;<br />&nbsp;<br />
                     </p>
                 </div>
-                <div className="pt-[5rem]">
+                <div className="lg:flex md:flex hidden ">
+                    < Image
+                        height={714}
+                        width={500}
+                        src={shapes.src}
+                        alt="broken advertising"
+                        className="object-contain"
+                    />
+                </div>
+                <div className="lg:hidden md:hidden flex pt-[7rem] ">
                     < Image
                         height={714}
                         width={500}

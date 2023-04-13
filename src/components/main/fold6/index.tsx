@@ -24,7 +24,7 @@ const index = () => {
 
           <Cardy title1="it’s yours: forever & ever!" title2="we leave no stone unturned to ensure your privacy and security. 
 your personal data and transactions are encrypted, and no data is shared with any agencies or advertisers. pinky promise!" />
-          <Cardy title1="avni is secure" title2="we use bank level security(256 bit encryption) to ensure your information is safe and secure. We use multi-mactor and two-factor authentication to prevent unauthorized access, so your data and  wallet is safe." />
+          <Cardy title1="avni is secure" title2="we use bank level security(256 bit encryption) to ensure your information is safe and secure. We use multi-factor and two-factor authentication to prevent unauthorized access, so your data and  wallet is safe." />
 
         </div>
       </div>

@@ -20,7 +20,7 @@ const Mobile = () => {
   const links = [
 
     {
-      name: "art token",
+      name: "token",
       href: "/artcoin"
     },
     // {

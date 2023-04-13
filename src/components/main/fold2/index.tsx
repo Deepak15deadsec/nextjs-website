@@ -26,7 +26,7 @@ const index = () => {
           </p>
           <p className="text-left font-[500] mt-[2rem] md:mt-[4rem] lg:text-[2.8rem] lg:leading-[4rem] md:text-[2rem] md:leading-[2.5rem] text-[#FFFFFF]">
 
-            win exclusive digitial collectable (NFTs) regularly
+            win exclusive digitial collectibles (NFTs) regularly
 
           </p>
 

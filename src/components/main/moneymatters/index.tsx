@@ -20,7 +20,7 @@ const index = () => {
             happy shopping
           </p>
           <p className="text-left font-[400] mt-[3rem] w-[40%] lg:text-[2.8rem] lg:leading-[4rem] md:text-[2rem] md:leading-[3rem] text-[1.5rem] leading-[1.5rem] text-[#FFFFFF]">
-            no more hunt for offers and coupons.  all brand offers and promotions are at one place
+            no more hunt for offers & coupons  all brand offers & promotions are at one place
           </p>
           <p className="text-left font-[400] w-[40%] xl:w-[40%] pt-[1rem] lg:text-[1.75rem] lg:leading-[2.5rem] md:text-[2rem] md:leading-[3rem] text-[#FFFFFF]">
 

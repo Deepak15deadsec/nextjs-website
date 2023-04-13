@@ -41,8 +41,8 @@ const index = () => {
 
                 <div className="lg:hidden md:hidden flex pl-[3rem] pt-[0rem] ">
                     < Image
-                        height={814}
-                        width={600}
+                        height={1014}
+                        width={800}
                         src={Grow.src}
                         alt="broken advertising"
                         className="object-contain"
@@ -76,7 +76,7 @@ const index = () => {
                         className="object-contain"
                     />
                 </div>
-                <div className="lg:hidden md:hidden flex pt-[0rem] ">
+                <div className="lg:hidden md:hidden flex pt-[4rem] ">
                     < Image
                         height={614}
                         width={400}
@@ -107,7 +107,7 @@ const index = () => {
                         className="object-contain"
                     />
                 </div>
-                <div className="lg:hidden md:hidden flex pt-[0rem] ">
+                <div className="lg:hidden md:hidden flex pt-[4rem] ">
                     < Image
                         height={514}
                         width={300}
@@ -127,7 +127,7 @@ const index = () => {
                     </p>
 
                     <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[1.5rem] leading-[1.8rem] text-[#FFFFFF]">
-                        with hyper personalization, and targetting at lowest price
+                        with hyper personalisation, and targetting at lowest price
                     </p>
 
                     <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] lg:p-10 md:p-6 p-3 font-lettera-medium font-[700] px-[4rem] lg:text-[2.5rem] md:text-[2rem]  text-[#333333] tracking-normal leading-[1.33rem]">
@@ -169,7 +169,7 @@ const index = () => {
                     </p>
 
                     <p className="text-left font-[400]  lg:text-[2.5rem] lg:leading-[3rem] md:text-[2rem] md:leading-[3rem] text-[1.5rem] leading-[1.8rem] text-[#FFFFFF]">
-                        with our unique milestone driven rewards, engage and increase number of purhcase per customer
+                        with our unique milestone driven rewards, engage and increase number of purchase per customer
                     </p>
                     <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] lg:p-10 md:p-6 p-3 font-lettera-medium font-[700] px-[4rem] lg:text-[2.5rem] md:text-[2rem] text-[#333333] tracking-normal leading-[1.33rem]">
                         Get Started

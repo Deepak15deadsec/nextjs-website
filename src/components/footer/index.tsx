@@ -133,7 +133,7 @@ const Footer = () => {
 
               </div>
             ))}
-            <div className=" font-lettera-bold font-[500] text-[1.5rem] tracking-normal leading-[1.5rem]  lg:mt-[0rem] text-[#ffffff]  ">
+            <div className=" font-lettera-bold font-[500] text-[1.5rem] tracking-normal leading-[1.5rem] md:mt-[0rem] mt-[2rem] lg:mt-[0rem] text-[#ffffff]  ">
               <p>contact us</p>
               <div className="mt-[0.7rem]"></div>
 
@@ -141,10 +141,12 @@ const Footer = () => {
 
               <div className="flex flex-row space-x-2 pt-[1rem]">
 
-                
 
-                <FontAwesomeIcon icon={faTwitter} height={30}
-                  width={30} color="#b3aeb4" />
+                <a href="https://twitter.com/avniclub">
+                  <FontAwesomeIcon icon={faTwitter} height={30}
+                    width={30} color="#b3aeb4" />
+                </a>
+
 
 
                 <a href="https://www.linkedin.com/company/avniclub">

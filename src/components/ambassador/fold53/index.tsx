@@ -11,7 +11,7 @@ const index = () => {
 
         <div className= "bg-[#dd245c] py-[10rem] xl:px-[22rem] lg:px-[7rem] md:px-[4rem] px-[2rem]">
 
-            <div className="flex justify-between lg:px-[7rem] md:px-[7rem]  py-5">
+            <div className="lg:flex md:flex hidden justify-between lg:px-[7rem] md:px-[7rem]  py-5">
                 <div className="flex flex-col text-left w-[65%] space-y-[3rem] ">
                     
                     <p className="text-left  w-[80%] font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
@@ -52,7 +52,40 @@ const index = () => {
                     
 
                 </div>
-            </div>        
+            </div>  
+
+            <div className="lg:hidden md:hidden flex justify-between lg:px-[7rem] md:px-[7rem]  py-5">
+                <div className="flex flex-col text-left  space-y-[3rem] ">
+                    
+                    <p className="text-left  w-[80%] font-[800]  lg:text-[10rem] lg:leading-[10rem] md:text-[5rem] md:leading-[5rem] text-[3rem] leading-[3rem] text-[#FFFFFF]">
+                    if you are 
+                    </p>
+
+                    <p className="text-left font-[500] w-[60%] mt-[3rem] lg:text-[2.8rem] lg:leading-[4rem] md:text-[2rem] md:leading-[2rem] text-[1.5rem] leading-[1.8rem] text-[#FFFFFF]">
+                    passionate about  web3 or advertising  and eager to make a positive impact
+                    </p>
+
+                    <p className=" font-[400]  w-[80%] lg:text-[2rem] lg:leading-[2.2rem] md:text-[2rem] md:leading-[2.2rem] text-[1.5rem] leading-[1.8rem] text-[#FFFFFF]">
+                    whether you're a natural leader, creative thinker, or simply love to share your experiences, become a college ambassador and help to shape the future of web3 and adveristing</p>
+
+                     
+
+                   </div>
+
+                
+
+                <div className="lg:hidden md:hidden flex pb-[6rem] ">
+                    < Image
+                        height={800}
+                        width={800}
+                        src={BrandAmbassador.src}
+                        alt="Avni Hero"
+                        className="object-contain"
+                    />
+                    
+
+                </div>
+            </div>       
         </div>
 
 

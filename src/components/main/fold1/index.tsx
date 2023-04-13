@@ -17,7 +17,7 @@ const index = () => {
       </p>
 
       <p className="text-center font-[500] pt-[1rem] lg:text-[2rem] lg:leading-[4.2rem] md:text-[2rem] md:leading-[2.5rem] leading-[1.8rem] text-[1.5rem] text-[#FFFFFF]">
-        tokens, digital collatables, execlusive offers, coupons & cashbacks <br /><br /><br />
+        tokens, digital collectibles, exclusive offers, coupons & cashbacks <br /><br /><br />
       </p>
 
 
@@ -29,7 +29,7 @@ const index = () => {
           Join now
         </button>)
       }
-      <p className="lg:pt-[3rem] md:pt-[3rem] pt-[0rem] pb-[1rem] lg:text-[1.75rem] text-center md:text-[1.5rem] text-[0.8rem] font-Open-Sans font-[400] tracking-normal leading-[1.5rem]   text-[#57CC99]">   2K+ members already reserved their seats in the pre-launch program </p>
+      <p className="lg:pt-[3rem] md:pt-[3rem] pt-[0rem] pb-[1rem] lg:text-[1.75rem] text-center md:text-[1.5rem] text-[0.8rem] font-Open-Sans font-[400] tracking-normal leading-[1.5rem]   text-[#57CC99]">   2k+ members have already reserved their seats in the pre-launch program </p>
 
       <JoinModal
         isOpen={isOpen}

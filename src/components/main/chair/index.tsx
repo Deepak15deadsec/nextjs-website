@@ -16,7 +16,7 @@ const index = () => {
                     you are special
                     </p>
                     <p className="text-left font-[500] mt-[3rem] lg:text-[2.8rem] lg:leading-[4rem] md:text-[2rem] md:leading-[2rem] text-[1.5rem] text-[#FFFFFF]">
-                    and the offers too                   <br/>   receive personalised & exclusive offers
+                    and so are the offers                  <br/>   receive personalised & exclusive offers
 
                     </p>
                     <p className="text-left font-[400]  pt-[2rem] w-[80%] lg:text-[1.75rem] lg:leading-[2.5rem] md:text-[1.2rem] md:leading-[1.5rem] text-[1rem] text-[#FFFFFF]">

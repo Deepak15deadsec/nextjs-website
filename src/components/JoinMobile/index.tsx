@@ -400,7 +400,7 @@ const JoinMobile = (props: any) => {
                             leaveFrom="opacity-100 scale-100"
                             leaveTo="opacity-0 scale-95"
                         >
-                            <Dialog.Panel className="w-[150vh] h-[62vh] flex justify-center items-center  transform  rounded-[5rem] bg-white p-6 text-left align-middle shadow-xl transition-all">
+                            <Dialog.Panel className="w-[54vh] h-[24vh] flex justify-center items-center  transform  rounded-[3rem] bg-white p-6 text-left align-middle shadow-xl transition-all">
                                 {renderDialog()}
                             </Dialog.Panel>
 
