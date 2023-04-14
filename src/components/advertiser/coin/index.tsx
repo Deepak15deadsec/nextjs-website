@@ -39,10 +39,10 @@ const index = () => {
                     />
                 </div>
 
-                <div className="lg:hidden md:hidden flex pl-[3rem] pt-[0rem] ">
+                <div className="lg:hidden md:hidden flex pl-[0rem] pt-[0rem] ">
                     < Image
-                        height={1014}
-                        width={800}
+                        height={814}
+                        width={600}
                         src={Grow.src}
                         alt="broken advertising"
                         className="object-contain"

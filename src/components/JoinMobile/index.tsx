@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 import { useGetGoogleOAuthURL } from "../../google";
 import axios from "axios";
 import useStore from "../../../zustand/useStore";
-
+import { enc, AES } from 'crypto-js';
 
 
 let currentOTPIndex: number = 0;
@@ -82,13 +82,20 @@ const JoinMobile = (props: any) => {
 
     const goNext = async () => {
         try {
-            //api for otp 
+
+            var phoneCode = AES.encrypt(`${country.dial_code}${value}`, process.env.NEXT_PUBLIC_CRYPTO_SECRET_KEY as string).toString();
+
+
+            //api for otp
             const { data } = await axios({
-                url: `https://2factor.in/API/V1/6961d34a-7b2f-11eb-a9bc-0200cd936042/SMS/${country.dial_code}${value}/AUTOGEN/OTP1`,
-                method: "GET",
+                url: `${process.env.NEXT_PUBLIC_BASE_URL}/oauth/requestOtp`,
+                method: "post",
                 headers: {
                     "content-type": "application/json"
-                }
+                },
+                data: JSON.stringify({
+                    phoneCode: phoneCode
+                })
             })
 
             if (data && data.Status === "Success") {
@@ -109,41 +116,52 @@ const JoinMobile = (props: any) => {
     }
 
     const otpVerify = async () => {
+
+
         try {
+
+            var phoneCode = AES.encrypt(`${country.dial_code}${value}`, process.env.NEXT_PUBLIC_CRYPTO_SECRET_KEY as string).toString();
+            var otpCode = AES.encrypt(`${otp.join('')}`, process.env.NEXT_PUBLIC_CRYPTO_SECRET_KEY as string).toString();
+
+
             //api verify otp api call
-            axios({
-                url: `https://2factor.in/API/V1/6961d34a-7b2f-11eb-a9bc-0200cd936042/SMS/VERIFY3/${country.dial_code}${value}/${otp.join('')}`,
-                method: "GET",
+            const { data } = await axios({
+                url: `${process.env.NEXT_PUBLIC_BASE_URL}/oauth/verifyOtp`,
+                method: "post",
                 headers: {
                     "content-type": "application/json"
-                }
-            }).then(async ({ data }) => {
-                if (data && data.Status !== "Error") {
-                    const { data } = await axios({
-                        url: `${process.env.NEXT_PUBLIC_BASE_URL}/oauth/verify/${country.dial_code}${value}`,
-                        method: "GET",
-                        headers: {
-                            "content-type": "application/json"
-                        }
-                    })
-
-
-                    if (data && data.status == 200) {
-                        
-                        window.location.href = data.url;
-                    } else {
-                        setStep(4)
-                    }
-                }
-                else {
-                    setError({
-                        OTP: true
-                    })
-                }
+                },
+                data: JSON.stringify({
+                    "phoneCode": phoneCode,
+                    "otpCode": otpCode
+                })
             })
+
+            if (data && data.Status === "Error") {
+
+                setError({
+                    OTP: true
+                })
+
+
+            }
+            else {
+
+
+                if (data && data.status == 200) {
+
+                    window.location.href = data.url;
+                } else {
+                    setStep(4)
+                }
+            }
+
+
         } catch (error) {
             console.log(error)
         }
+
+
     }
 
     const skipInvite = async () => {
@@ -205,14 +223,14 @@ const JoinMobile = (props: any) => {
         switch (step) {
             case 1:
                 return (
-                    <div className="flex z-[10000] flex-col space-y-12 px-[5rem]">
+                    <div className="flex z-[10000] flex-col space-y-4 px-[5rem]">
                         <Dialog.Title
                             className="text-[#333333] text-[1rem] pl-[5rem] font-[600]"
                         >
                             enter your phone number to join
                         </Dialog.Title >
 
-                        <div className="bg-white border border-gray-400  inline-flex rounded-[3rem] mx-[5rem] space-x-6 h-12   ">
+                        <div className="bg-white border border-gray-400  inline-flex rounded-[3rem] mx-[5rem] space-x-3 h-12   ">
                             <CountryCode
                                 country={country}
                                 setCountry={setCountry}
@@ -234,7 +252,7 @@ const JoinMobile = (props: any) => {
                                 <img
                                     src={`${value.length == 10 ? "/images/mverify.png" : "/images/rverify.png"}`}
                                     alt=""
-                                    className="h-[3rem] w-[3rem] mr-[2.5rem] object-contain"
+                                    className="h-[2rem] w-[2rem] mr-[2.5rem] object-contain"
                                 />
                             </button>
                         </div>
@@ -331,7 +349,7 @@ const JoinMobile = (props: any) => {
                         <div className="flex w-full space-x-5  mt-[1rem]">
 
                             <input
-                                className="  text-gray-900 text-[1rem] border-8 px-2 font-[600] focus:outline-none "
+                                className="  text-gray-900 text-[1rem] border-2 px-2 font-[600] focus:outline-none "
                                 type="tel"
                                 value={referrer}
                                 onChange={(e) => setReferrer(e.target.value)}
@@ -352,7 +370,7 @@ const JoinMobile = (props: any) => {
                             )}
                             <button
                                 type="button"
-                                className={`inline-flex justify-center rounded-md border border-transparent ${referrer.length > 0 ? "bg-[#57CC99] hover:bg-[#2bd88d]" : "bg-[#cccccc]"}  px-4 py-2 text-[1rem] font-medium text-white  focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2`}
+                                className={`inline-flex justify-center rounded-md border border-transparent ${referrer.length > 0 ? "bg-[#57CC99] hover:bg-[#2bd88d]" : "bg-[#f0e5e5]"}  px-4 py-2 text-[1rem] font-medium text-white  focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2`}
                                 onClick={verifyInvite}
                                 disabled={referrer.length < 1}
                             >
@@ -400,7 +418,7 @@ const JoinMobile = (props: any) => {
                             leaveFrom="opacity-100 scale-100"
                             leaveTo="opacity-0 scale-95"
                         >
-                            <Dialog.Panel className="w-[54vh] h-[24vh] flex justify-center items-center  transform  rounded-[3rem] bg-white p-6 text-left align-middle shadow-xl transition-all">
+                            <Dialog.Panel className="w-[70vh] h-[32vh] flex justify-center items-center  transform  rounded-[3rem] bg-white p-4 text-left align-middle shadow-xl transition-all">
                                 {renderDialog()}
                             </Dialog.Panel>
 

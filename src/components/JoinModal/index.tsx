@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 import { useGetGoogleOAuthURL } from "../../google";
 import axios from "axios";
 import useStore from "../../../zustand/useStore";
-
+import { enc, AES } from 'crypto-js';
 
 
 let currentOTPIndex: number = 0;
@@ -82,13 +82,20 @@ const JoinModal = (props: any) => {
 
     const goNext = async () => {
         try {
-            //api for otp 
+
+            var phoneCode = AES.encrypt(`${country.dial_code}${value}`, process.env.NEXT_PUBLIC_CRYPTO_SECRET_KEY as string).toString();
+
+
+            //api for otp
             const { data } = await axios({
-                url: `https://2factor.in/API/V1/6961d34a-7b2f-11eb-a9bc-0200cd936042/SMS/${country.dial_code}${value}/AUTOGEN/OTP1`,
-                method: "GET",
+                url: `${process.env.NEXT_PUBLIC_BASE_URL}/oauth/requestOtp`,
+                method: "post",
                 headers: {
                     "content-type": "application/json"
-                }
+                },
+                data: JSON.stringify({
+                    phoneCode: phoneCode
+                })
             })
 
             if (data && data.Status === "Success") {
@@ -109,41 +116,52 @@ const JoinModal = (props: any) => {
     }
 
     const otpVerify = async () => {
+
+
         try {
+
+            var phoneCode = AES.encrypt(`${country.dial_code}${value}`, process.env.NEXT_PUBLIC_CRYPTO_SECRET_KEY as string).toString();
+            var otpCode = AES.encrypt(`${otp.join('')}`, process.env.NEXT_PUBLIC_CRYPTO_SECRET_KEY as string).toString();
+
+
             //api verify otp api call
-            axios({
-                url: `https://2factor.in/API/V1/6961d34a-7b2f-11eb-a9bc-0200cd936042/SMS/VERIFY3/${country.dial_code}${value}/${otp.join('')}`,
-                method: "GET",
+            const { data } = await axios({
+                url: `${process.env.NEXT_PUBLIC_BASE_URL}/oauth/verifyOtp`,
+                method: "post",
                 headers: {
                     "content-type": "application/json"
-                }
-            }).then(async ({ data }) => {
-                if (data && data.Status !== "Error") {
-                    const { data } = await axios({
-                        url: `${process.env.NEXT_PUBLIC_BASE_URL}/oauth/verify/${country.dial_code}${value}`,
-                        method: "GET",
-                        headers: {
-                            "content-type": "application/json"
-                        }
-                    })
-
-
-                    if (data && data.status == 200) {
-                        
-                        window.location.href = data.url;
-                    } else {
-                        setStep(4)
-                    }
-                }
-                else {
-                    setError({
-                        OTP: true
-                    })
-                }
+                },
+                data: JSON.stringify({
+                    "phoneCode": phoneCode,
+                    "otpCode": otpCode
+                })
             })
+
+            if (data && data.Status === "Error") {
+
+                setError({
+                    OTP: true
+                })
+
+
+            }
+            else {
+
+
+                if (data && data.status == 200) {
+
+                    window.location.href = data.url;
+                } else {
+                    setStep(4)
+                }
+            }
+
+
         } catch (error) {
             console.log(error)
         }
+
+
     }
 
     const skipInvite = async () => {
@@ -212,7 +230,7 @@ const JoinModal = (props: any) => {
                             enter your phone number to join
                         </Dialog.Title >
 
-                        <div className="bg-white border border-gray-400 pr-5 py-1 inline-flex rounded-[3rem] mx-[5rem] space-x-6 h-12   ">
+                        <div className="bg-white border border-gray-400 pr-5 py-1 inline-flex rounded-[3rem] mx-[5rem] space-x-6 h-18   ">
                             <CountryCode
                                 country={country}
                                 setCountry={setCountry}
@@ -226,16 +244,19 @@ const JoinModal = (props: any) => {
                                 placeholder=""
                             />
 
+
+                        </div>
+
+                        <div className="mt-[2rem]  flex justify-end px-[5rem] space-x-[0.5rem]">
                             <button
                                 type="button"
                                 disabled={value.length < 10 ? true : false}
                                 onClick={goNext}
-                                className={`"className="text-[1rem] text-white ${value.length == 10 ? "cursor-pointer bg-[#57CC99] hover:bg-[#44df9c]" : " bg-[#cccccc]"} rounded-[0.5rem] p-2  "`}
+                                className={`"inline-flex justify-center rounded-md border border-transparent ${value.length == 10 ? "cursor-pointer bg-[#57CC99] hover:bg-[#44df9c]" : " bg-[#cccccc]"} px-4 py-2 text-[1.5rem] font-medium text-white hover:bg-[#2bd88d] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 "`}
                             >
                                 Send
                             </button>
                         </div>
-
 
 
                     </div>

@@ -126,7 +126,7 @@ const Footer = () => {
 
                   {links.map(({ name, href }: { name: string; href: string }) => (
                     <Link
-                      className="font-lettera-regular font-[400] text-[1.1rem] tracking-normal leading-[1rem]   "
+                      className="font-lettera-regular font-[400] text-[1.1rem]  tracking-normal leading-[1.2rem]   "
                       href={href}
                       key={name}
                     >

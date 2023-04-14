@@ -9,13 +9,13 @@ const Cardx = ({ img, title0, title1, title2 }: { img: string, title0: string, t
             <div>
                 <img
                     src={img}
-                    height="120rem"
-                    width="120rem"
+                    height="100rem"
+                    width="100rem"
                     alt=""
                     className="pt-[2rem] object-contain"
                 />
 
-                <p className="text-[2rem]  font-[600]  tracking-normal leading-[2.2rem] text-[#ffffff]">{title0}</p>
+                <p className="text-[1.5rem]  font-[600]  tracking-normal leading-[2.2rem] text-[#ffffff]">{title0}</p>
             </div>
 
 

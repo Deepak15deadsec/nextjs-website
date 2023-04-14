@@ -16,8 +16,8 @@ const GreenCard = ({ content, src }: any) => {
     };
 
     return (
-        <div className="my-[0rem]  w-full xl:px-[35rem] lg:px-[26rem] md:px-[10rem] px-[3rem]  flex justify-center">
-            <div className="rounded-[2.5rem] bg-[#dd245d] px-[5rem] p-8 sm:space-y-5 lg:space-y-5 md:space-y-5 space-y-2 w-auto h-auto">
+        <div className="my-[0rem]  w-full xl:px-[35rem] lg:px-[26rem] md:px-[10rem] px-[2rem]  flex justify-center">
+            <div className="rounded-[2.5rem] bg-[#dd245d] lg:px-[5rem] md:px-[5rem] px-[1.5rem] p-8 sm:space-y-5 lg:space-y-5 md:space-y-5 space-y-2 w-auto h-auto">
 
                 <div className="flex space-x-4 justify-center">
 
@@ -61,37 +61,7 @@ const GreenCard = ({ content, src }: any) => {
 
                 </div>
 
-                {/* <div className="flex md:hidden lg:hidden space-x-3 justify-center">
-
-                    <button
-                        onClick={google}
-                        className="h-[4rem]  flex justify-center items-center text-white shadow-lg  font-[400] text-[1.5rem]  leading-[3rem]"
-                    >
-                        <div className="bg-white h-full flex justify-center items-center px-2 rounded-l">
-                            <FcGoogle size={50} />
-                        </div>
-                        <div className="h-full flex justify-center items-center bg-blue-500 px-2 rounded-r">
-                            <p>Sign in with Google</p>
-                        </div>
-                    </button>
-
-
-{
-                        isOpen == false && (<button
-                            onClick={() => setIsOpen(true)}
-                            className="bg-white  rounded-[3.2rem] px-8 py-4 font-lettera-medium font-[700]  lg:text-[1.5rem]  text-[#333333]"
-                        >
-                            Join Now
-                        </button>)
-                    }
-
-                    <JoinModal
-                        isOpen={isOpen}
-                        onClose={() => setIsOpen(false)}
-
-                    />
-
-                </div> */}
+                
 
             </div>
 
