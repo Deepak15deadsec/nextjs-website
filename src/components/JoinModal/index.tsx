@@ -390,7 +390,7 @@ const JoinModal = (props: any) => {
 
         <Transition appear show={props?.isOpen} as={Fragment}>
             <Dialog as="div" className="relative z-10" onClose={() => {
-                setStep(4)
+                setStep(1)
                 props?.onClose()
                 setOtp(new Array(6).fill(""))
                 setValue("")
