@@ -361,7 +361,7 @@ const JoinMobile = (props: any) => {
                             {referrer.length == 0 && (
                                 <button
                                     type="button"
-                                    className="inline-flex justify-center rounded-md border border-transparent bg-[#cccccc] px-4 py-2 text-[1rem] font-medium text-white hover:bg-[#c2b6b6] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                                    className={`inline-flex justify-center rounded-md border border-transparent  ${referrer.length < 0 ? "bg-[#57CC99] hover:bg-[#2bd88d]" : "bg-[#57CC99] hover:bg-[#2bd88d]"} px-4 py-2 text-[1.5rem] font-medium text-white  focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2`}
                                     onClick={skipInvite}
 
                                 >

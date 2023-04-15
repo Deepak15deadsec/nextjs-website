@@ -230,7 +230,7 @@ const JoinModal = (props: any) => {
                             enter your phone number to join
                         </Dialog.Title >
 
-                        <div className="bg-white border border-gray-400 pr-5 py-1 inline-flex rounded-[3rem] mx-[5rem] space-x-6 h-18   ">
+                        <div className="bg-white border border-gray-400 pr-10 py-0 inline-flex rounded-[3rem] mx-[5rem] space-x-6 h-18   ">
                             <CountryCode
                                 country={country}
                                 setCountry={setCountry}
@@ -349,7 +349,7 @@ const JoinModal = (props: any) => {
                         <div className="flex w-full space-x-5  mt-[2rem]">
 
                             <input
-                                className="  text-gray-900 text-[3rem] border-2 px-2 font-[600] focus:outline-none "
+                                className="  text-gray-900 text-[3rem] w-[40rem] border-2 px-2 font-[600] focus:outline-none "
                                 type="tel"
                                 value={referrer}
                                 onChange={(e) => setReferrer(e.target.value)}
@@ -361,7 +361,7 @@ const JoinModal = (props: any) => {
                             {referrer.length == 0 && (
                                 <button
                                     type="button"
-                                    className="inline-flex justify-center rounded-md border border-transparent bg-[#cccccc] px-4 py-2 text-[1.5rem] font-medium text-white hover:bg-[#c2b6b6] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                                    className={`inline-flex justify-center rounded-md border border-transparent  ${referrer.length < 0 ? "bg-[#57CC99] hover:bg-[#2bd88d]" : "bg-[#57CC99] hover:bg-[#2bd88d]"} px-4 py-2 text-[1.5rem] font-medium text-white  focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2`}
                                     onClick={skipInvite}
 
                                 >
@@ -390,7 +390,7 @@ const JoinModal = (props: any) => {
 
         <Transition appear show={props?.isOpen} as={Fragment}>
             <Dialog as="div" className="relative z-10" onClose={() => {
-                setStep(1)
+                setStep(4)
                 props?.onClose()
                 setOtp(new Array(6).fill(""))
                 setValue("")

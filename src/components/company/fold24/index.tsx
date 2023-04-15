@@ -10,7 +10,7 @@ const index = () => {
 
     return (
 
-        <div className="bg-[#FF6154] py-[15rem] xl:px-[22rem] lg:px-[7rem] md:px-[4rem] px-[2rem] ">
+        <div className="bg-[#FF6154] lg:py-[15rem] md:py-[15rem] py-[5rem] xl:px-[22rem] lg:px-[7rem] md:px-[4rem] px-[2rem] ">
 
             <div className="lg:flex md:flex hidden justify-between lg:px-[7rem] px-[3rem] py-5">
                 <div className="flex flex-col text-left w-[65%] space-y-[3rem] ">

@@ -9,7 +9,7 @@ const Company = () => {
     return (
         <div className='pt-[7rem]'>
             <Head>
-                <title>Company</title>
+                <title>About Us</title>
                 <meta name="description" content="Avni" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
