@@ -53,8 +53,8 @@ const Footer = () => {
     {
       name: "legal",
       links: [
-        { name: "privacy policy", href: "/" },
-        { name: "legal disclosure", href: "/" },
+        { name: "privacy policy", href: "https://avni.club/privacy-policy" },
+        { name: "legal disclosure", href: "https://avni.club/terms-and-conditions" },
       ],
     },
     {
