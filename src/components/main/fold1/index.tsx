@@ -21,21 +21,20 @@ const index = () => {
       </p>
 
 
-      {
-        isOpen == false && (<button
-          onClick={() => setIsOpen(true)}
-          className="bg-white  rounded-[3.2rem] px-8 py-4 font-lettera-medium font-[700]  lg:text-[2.5rem]  text-[#333333]"
-        >
-          Join now
-        </button>)
-      }
-      <p className="lg:pt-[3rem] md:pt-[3rem] pt-[0rem] pb-[1rem] lg:text-[1.75rem] text-center md:text-[1.5rem] text-[0.8rem] font-Open-Sans font-[400] tracking-normal leading-[1.5rem]   text-[#57CC99]">   2k+ members have already reserved their seats in the pre-launch program </p>
-
       <JoinModal
         isOpen={isOpen}
         onClose={() => setIsOpen(false)}
 
-      />
+      >
+        <button className="bg-white  rounded-[3.2rem] px-8 py-4 font-lettera-medium font-[700]  lg:text-[2.5rem]  text-[#333333]">
+          Join now
+        </button>
+      </JoinModal>
+
+
+      <p className="lg:pt-[3rem] md:pt-[3rem] pt-[0rem] pb-[1rem] lg:text-[1.75rem] text-center md:text-[1.5rem] text-[0.8rem] font-Open-Sans font-[400] tracking-normal leading-[1.5rem]   text-[#57CC99]">   2k+ members have already reserved their seats in the pre-launch program </p>
+
+
       {/* <button
         onClick={google}
         className="h-[4rem]  flex justify-center items-center text-white shadow-lg  font-[400] text-[1.5rem]  leading-[3rem]"

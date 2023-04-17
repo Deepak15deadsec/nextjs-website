@@ -80,20 +80,16 @@ const Header = () => {
           </NavLink>
         ))}
 
-        {
-          isOpen == false && (<button
-            onClick={() => setIsOpen(true)}
-            className="bg-white z-[999] rounded-[3.2rem] px-5 py-3 font-lettera-medium font-[700]  lg:text-[1.2rem]  text-[#333333]"
-          >
-            Join now
-          </button>)
-        }
 
         <JoinModal
           isOpen={isOpen}
           onClose={() => setIsOpen(false)}
 
-        />
+        >
+            <button className="bg-white z-[999] rounded-[3.2rem] px-5 py-3 font-lettera-medium font-[700]  lg:text-[1.2rem]  text-[#333333]">
+                    Join Now
+                </button>
+          </JoinModal>
 
         {/* <button
           onClick={google}
