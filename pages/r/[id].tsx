@@ -55,7 +55,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-[#ffffff] overflow-hidden">
+      <main className="bg-[#ffffff] ">
       <div className="lg:flex md:flex hidden">
           <Header />
         </div>

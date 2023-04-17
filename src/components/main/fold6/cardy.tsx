@@ -5,7 +5,7 @@ import Box from "../../../../public/images/reward.png";
 
 const Cardy = ({  title1, title2 }: {  title1: string, title2: string }) => {
   return (
-    <div className="rounded-[1.75rem]  px-[1.5rem] space-y-2 space-x-3 lg:w-[60rem] flex text-left">
+    <div className="rounded-[1.75rem]  px-[1.5rem] space-y-2 space-x-3 lg:w-[50rem] flex text-left">
 
   
 

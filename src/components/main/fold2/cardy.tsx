@@ -3,7 +3,7 @@ import React from "react";
 
 const Cardy = ({ img, title1, title2 }: { img: string, title1: string, title2: string }) => {
   return (
-    <div className="rounded-[1.75rem]  px-[1.5rem] space-y-2 space-x-3 lg:w-[60rem] flex text-left">
+    <div className="rounded-[1.75rem]  px-[1.5rem] space-y-2 space-x-3 lg:w-[20rem] flex text-left">
 
       {/* <div className=" mt-[1rem] items-center">
         <img
