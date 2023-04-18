@@ -29,20 +29,24 @@ const index = () => {
                     Experience it now
                     </button> */}
           <div className="pt-[3rem]">
-            {
+            {/* {
               isOpen == false && (<button
                 onClick={() => setIsOpen(true)}
                 className="bg-white z-[999] rounded-[3.2rem] px-5 py-3 font-lettera-medium font-[700]  lg:text-[2rem]  text-[#333333]"
               >
                 Experience now
               </button>)
-            }
+            } */}
 
             <JoinModal
               isOpen={isOpen}
               onClose={() => setIsOpen(false)}
 
-            />
+            >
+              <button className="bg-white z-[999] rounded-[3.2rem] px-5 py-3 font-lettera-medium font-[700]  lg:text-[2rem]  text-[#333333]">
+                Experience now
+              </button>
+            </JoinModal>
           </div>
 
         </div>

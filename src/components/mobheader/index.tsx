@@ -92,15 +92,15 @@ const Mobile = () => {
       </div>
       <div className="flex items-center">
 
-        {!isOpenn && (
-          <button
-            onClick={() => setIsOpen(true)}
-            className="lg:hidden bg-white z-[999] rounded-[3.2rem] px-5 py-3 font-lettera-medium font-[700] text-[#333333]"
-          >
-            Join now
-          </button>
-        )}
-        <JoinMobile isOpen={isOpen} onClose={() => setIsOpen(false)} />
+      <JoinMobile
+          isOpen={isOpen}
+          onClose={() => setIsOpen(false)}
+
+        >
+            <button className="bg-white z-[999] rounded-[3.2rem] px-5 py-3 font-lettera-medium font-[700]  lg:text-[1.2rem]  text-[#333333]">
+                    Join Now
+                </button>
+          </JoinMobile>
       </div>
     </div>
   );

@@ -435,9 +435,6 @@ const JoinModal = (props: any) => {
 
     return (
 
-
-
-
         <Dialog.Root>
 
             <Dialog.Trigger asChild>

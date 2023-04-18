@@ -22,7 +22,7 @@ const GreenCard = ({ content, src }: any) => {
                 <div className="flex space-x-4 justify-center">
 
                     <div className="space-y-[0.15rem] ">
-                        <p className="lg:text-[3rem] md:text-[3rem] text-[1.5rem] font-[700] text-center tracking-normal lg:leading-[3.5rem] md:leading-[3.5rem] leading-[1.8rem] text-[#FFFFFF]">join  pre-launch program today to <br/>claim your  300+ tokens</p>
+                        <p className="lg:text-[3rem] md:text-[3rem] text-[1.5rem] font-[700] text-center tracking-normal lg:leading-[3.5rem] md:leading-[3.5rem] leading-[1.8rem] text-[#FFFFFF]">join  pre-launch program today to <br />claim your  300+ tokens</p>
                     </div>
                 </div>
 
@@ -43,25 +43,22 @@ const GreenCard = ({ content, src }: any) => {
                             <p>Sign in with Google</p>
                         </div>
                     </button> */}
-                    {
-                        isOpen == false && (<button
-                            onClick={() => setIsOpen(true)}
-                            className="bg-[#30D792] rounded-[3.2rem] px-8 py-4 font-lettera-medium font-[700]  lg:text-[1.5rem]  text-[#333333]"
-                        >
-                            Join Now
-                        </button>)
-                    }
+
 
                     <JoinModal
                         isOpen={isOpen}
                         onClose={() => setIsOpen(false)}
 
-                    />
+                    >
+                        <button className="bg-[#30D792] rounded-[3.2rem] px-8 py-4 font-lettera-medium font-[700]  lg:text-[1.5rem]  text-[#333333]">
+                            Join Now
+                        </button>
+                    </JoinModal>
 
 
                 </div>
 
-                
+
 
             </div>
 

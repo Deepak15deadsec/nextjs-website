@@ -9,7 +9,7 @@ import NavLink from "../ActiveLink"
 import Image from 'next/image'
 import { addSyntheticLeadingComment } from "typescript";
 import { useState } from "react";
-import JoinModal from "../JoinModal";
+
 
 
 const Adheader = () => {

@@ -1,5 +1,5 @@
 import { Fragment, useState, useRef, useEffect } from "react";
-import { Dialog, Transition } from '@headlessui/react'
+// import { Dialog, Transition } from '@headlessui/react'
 // import countries from "../../../lib/countries.json"
 import countries from "../../../lib/countryflag.json"
 import CountryCode from "../dropdowns/CountryDropdown"
@@ -9,6 +9,8 @@ import { useGetGoogleOAuthURL } from "../../google";
 import axios from "axios";
 import useStore from "../../../zustand/useStore";
 import { enc, AES } from 'crypto-js';
+import * as Dialog from '@radix-ui/react-dialog';
+import { Cross2Icon } from '@radix-ui/react-icons';
 
 
 let currentOTPIndex: number = 0;
@@ -210,7 +212,7 @@ const JoinMobile = (props: any) => {
 
         window.location.href = signup.url;
 
-       
+
 
     }
 
@@ -223,14 +225,14 @@ const JoinMobile = (props: any) => {
         switch (step) {
             case 1:
                 return (
-                    <div className="flex z-[10000] flex-col space-y-4 px-[5rem]">
+                    <div className="flex z-[10000] p-4 flex-col space-y-4">
                         <Dialog.Title
-                            className="text-[#333333] text-[1rem] pl-[5rem] font-[600]"
+                            className="text-[#333333] text-[1rem] font-[600]"
                         >
                             enter your phone number to join
                         </Dialog.Title >
 
-                        <div className="bg-white border border-gray-400  inline-flex rounded-[3rem] mx-[5rem] space-x-3 h-12   ">
+                        <div className="bg-white border border-gray-400  inline-flex rounded-[3rem] space-x-3 h-12   ">
                             <CountryCode
                                 country={country}
                                 setCountry={setCountry}
@@ -263,13 +265,13 @@ const JoinMobile = (props: any) => {
                 )
             case 2:
                 return (
-                    <div>
+                    <div className="flex z-[10000] p-4 flex-col space-y-4">
                         <Dialog.Title
-                            className="text-[#333333] mt-[3rem] text-[1.5rem] px-[3rem]  font-[600] leading-[1.5rem]"
+                            className="text-[#333333]  text-[1.5rem]   font-[600] leading-[1.5rem]"
                         >
                             Enter your otp
                         </Dialog.Title >
-                        <div className="flex w-full space-x-5 px-[3rem] mt-[1rem]">
+                        <div className="flex w-full space-x-5  ">
                             {otp.map((_, index) => {
                                 return (
                                     <Fragment key={index}>
@@ -279,14 +281,14 @@ const JoinMobile = (props: any) => {
                                             onChange={handleOnChange}
                                             onKeyDown={(e) => handleOnKeyDown(e, index)}
                                             value={otp[index]}
-                                            className="w-full border border-black rounded-lg text-center font-600 text-[1.5rem]  opacity-60"
+                                            className="w-8 border border-black rounded-lg text-center font-600 text-[1.5rem]  opacity-60"
                                         />
                                     </Fragment>
                                 )
                             })}
                         </div>
 
-                        <div className="mt-[1rem] px-[3rem] flex justify-between space-x-[0.5rem]">
+                        <div className=" flex justify-between space-x-[0.5rem]">
                             <div>
                                 {
                                     error.OTP && (
@@ -340,16 +342,16 @@ const JoinMobile = (props: any) => {
 
             case 4:
                 return (
-                    <div>
+                    <div className="flex z-[10000] p-4 flex-col space-y-4">
                         <Dialog.Title
-                            className="text-[#333333] mt-[1rem] text-[1rem] font-[600] leading-[3rem]"
+                            className="text-[#333333] text-[1rem] font-[600] leading-[3rem]"
                         >
                             Invite Code
                         </Dialog.Title >
-                        <div className="flex w-full space-x-5  mt-[1rem]">
+                        <div className="flex w-full space-x-5  ">
 
                             <input
-                                className="  text-gray-900 text-[1rem] border-2 px-2 font-[600] focus:outline-none "
+                                className="  text-gray-900 text-[1.2rem] border-2 px-2 font-[600] focus:outline-none "
                                 type="tel"
                                 value={referrer}
                                 onChange={(e) => setReferrer(e.target.value)}
@@ -357,11 +359,11 @@ const JoinMobile = (props: any) => {
                                 placeholder=""
                             />
                         </div>
-                        <div className="mt-[1rem]  flex justify-end space-x-[0.5rem]">
+                        <div className="  flex justify-end space-x-[0.5rem]">
                             {referrer.length == 0 && (
                                 <button
                                     type="button"
-                                    className={`inline-flex justify-center rounded-md border border-transparent  ${referrer.length < 0 ? "bg-[#57CC99] hover:bg-[#2bd88d]" : "bg-[#57CC99] hover:bg-[#2bd88d]"} px-4 py-2 text-[1.5rem] font-medium text-white  focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2`}
+                                    className={`inline-flex justify-center rounded-md border border-transparent  ${referrer.length < 0 ? "bg-[#57CC99] hover:bg-[#2bd88d]" : "bg-[#57CC99] hover:bg-[#2bd88d]"} px-4 py-2 text-[1rem] font-medium text-white  focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2`}
                                     onClick={skipInvite}
 
                                 >
@@ -380,7 +382,48 @@ const JoinMobile = (props: any) => {
                     </div>
                 )
             default:
-                return (<></>)
+                return (<>
+                    <Dialog.Title className="text-mauve12 m-0 text-[17px] font-medium">
+                        Edit profile
+                    </Dialog.Title>
+                    <Dialog.Description className="text-mauve11 mt-[10px] mb-5 text-[15px] leading-normal">
+                        Make changes to your profile here. Click save when you're done.
+                    </Dialog.Description>
+                    <fieldset className="mb-[15px] flex items-center gap-5">
+                        <label className="text-violet11 w-[90px] text-right text-[15px]" htmlFor="name">
+                            Name
+                        </label>
+                        <input
+                            className="text-violet11 shadow-violet7 focus:shadow-violet8 inline-flex h-[35px] w-full flex-1 items-center justify-center rounded-[4px] px-[10px] text-[15px] leading-none shadow-[0_0_0_1px] outline-none focus:shadow-[0_0_0_2px]"
+                            id="name"
+                            defaultValue="Pedro Duarte"
+                        />
+                    </fieldset>
+                    <fieldset className="mb-[15px] flex items-center gap-5">
+                        <label className="text-violet11 w-[90px] text-right text-[15px]" htmlFor="username">
+                            Username
+                        </label>
+                        <input
+                            className="text-violet11 shadow-violet7 focus:shadow-violet8 inline-flex h-[35px] w-full flex-1 items-center justify-center rounded-[4px] px-[10px] text-[15px] leading-none shadow-[0_0_0_1px] outline-none focus:shadow-[0_0_0_2px]"
+                            id="username"
+                            defaultValue="@peduarte"
+                        />
+                    </fieldset>
+                    <div className="mt-[25px] flex justify-end">
+                        <Dialog.Close asChild>
+                            <button className="bg-green4 text-green11 hover:bg-green5 focus:shadow-green7 inline-flex h-[35px] items-center justify-center rounded-[4px] px-[15px] font-medium leading-none focus:shadow-[0_0_0_2px] focus:outline-none">
+                                Save changes
+                            </button>
+                        </Dialog.Close>
+                    </div>
+                    <Dialog.Close asChild>
+                        <button
+                            className="text-violet11 hover:bg-violet4 focus:shadow-violet7 absolute top-[10px] right-[10px] inline-flex h-[25px] w-[25px] appearance-none items-center justify-center rounded-full focus:shadow-[0_0_0_2px] focus:outline-none"
+                            aria-label="Close"
+                        >
+                            <Cross2Icon />
+                        </button>
+                    </Dialog.Close></>)
         }
     }
 
@@ -388,45 +431,19 @@ const JoinMobile = (props: any) => {
 
     return (
 
-        <Transition appear show={props?.isOpen} as={Fragment}>
-            <Dialog as="div" className="relative z-10" onClose={() => {
-                setStep(1)
-                props?.onClose()
-                setOtp(new Array(6).fill(""))
-                setValue("")
-            }}>
-                <Transition.Child
-                    as={Fragment}
-                    enter="ease-out duration-300"
-                    enterFrom="opacity-0"
-                    enterTo="opacity-100"
-                    leave="ease-in duration-200"
-                    leaveFrom="opacity-100"
-                    leaveTo="opacity-0"
-                >
-                    <div className="fixed inset-0 bg-black bg-opacity-25" />
-                </Transition.Child>
+        <Dialog.Root>
 
-                <div className="fixed inset-0 overflow-y-auto">
-                    <div className="flex min-h-full items-center justify-center p-4 text-center">
-                        <Transition.Child
-                            as={Fragment}
-                            enter="ease-out duration-300"
-                            enterFrom="opacity-0 scale-95"
-                            enterTo="opacity-100 scale-100"
-                            leave="ease-in duration-200"
-                            leaveFrom="opacity-100 scale-100"
-                            leaveTo="opacity-0 scale-95"
-                        >
-                            <Dialog.Panel className="w-[70vh] h-[32vh] flex justify-center items-center  transform  rounded-[3rem] bg-white p-4 text-left align-middle shadow-xl transition-all">
-                                {renderDialog()}
-                            </Dialog.Panel>
+            <Dialog.Trigger asChild>
+                {props.children}
 
-                        </Transition.Child>
-                    </div>
-                </div>
-            </Dialog>
-        </Transition>
+            </Dialog.Trigger>
+            <Dialog.Portal>
+                <Dialog.Overlay className="bg-black opacity-60 data-[state=open]:animate-overlayShow fixed inset-0" />
+                <Dialog.Content className="data-[state=open]:animate-contentShow fixed top-[50%] left-[50%]   translate-x-[-50%] translate-y-[-50%] rounded-2xl bg-white shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none">
+                    {renderDialog()}
+                </Dialog.Content>
+            </Dialog.Portal>
+        </Dialog.Root>
 
     )
 }

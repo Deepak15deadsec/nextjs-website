@@ -2,6 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import JoinModal from "../../JoinModal";
+import JoinMobile from "../../JoinMobile";
 
 
 const index = () => {
@@ -20,16 +21,30 @@ const index = () => {
         tokens, digital collectibles, exclusive offers, coupons & cashbacks <br /><br /><br />
       </p>
 
+      <div className="lg:flex md:flex hidden">
+        <JoinModal
+          isOpen={isOpen}
+          onClose={() => setIsOpen(false)}
 
-      <JoinModal
-        isOpen={isOpen}
-        onClose={() => setIsOpen(false)}
+        >
+          <button className="bg-white  rounded-[3.2rem] px-8 py-4 font-lettera-medium font-[700]  lg:text-[2.5rem]  text-[#333333]">
+            Join now
+          </button>
+        </JoinModal>
+      </div>
 
-      >
-        <button className="bg-white  rounded-[3.2rem] px-8 py-4 font-lettera-medium font-[700]  lg:text-[2.5rem]  text-[#333333]">
-          Join now
-        </button>
-      </JoinModal>
+      <div className="lg:hidden md:hidden flex">
+        <JoinMobile
+          isOpen={isOpen}
+          onClose={() => setIsOpen(false)}
+
+        >
+          <button className="bg-white  rounded-[3.2rem] px-8 py-4 font-lettera-medium font-[700]  lg:text-[2.5rem]  text-[#333333]">
+            Join now
+          </button>
+        </JoinMobile>
+      </div>
+
 
 
       <p className="lg:pt-[3rem] md:pt-[3rem] pt-[0rem] pb-[1rem] lg:text-[1.75rem] text-center md:text-[1.5rem] text-[0.8rem] font-Open-Sans font-[400] tracking-normal leading-[1.5rem]   text-[#57CC99]">   2k+ members have already reserved their seats in the pre-launch program </p>
