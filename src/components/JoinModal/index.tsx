@@ -257,7 +257,7 @@ const JoinModal = (props: any) => {
                                 onClick={goNext}
                                 className={`"inline-flex justify-center rounded-md border border-transparent ${value.length == 10 ? "cursor-pointer bg-[#57CC99] hover:bg-[#44df9c]" : " bg-[#cccccc]"} px-4 py-2 text-[1.5rem] font-medium text-white hover:bg-[#2bd88d] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 "`}
                             >
-                                Send
+                                Next
                             </button>
                         </div>
 

@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from '../../../../public/images/google.svg';
 import Videoo from '../../../../public/images/video.svg'
 import GreenCard from "../../GreenCard"
+import JoinMobile from "../../JoinMobile";
+import JoinModal from "../../JoinModal";
 import Video from "../../video"
 
 const index = () => {
+  let [isOpen, setIsOpen] = useState(false)
+
   return (
     <div className="w-full bg-[#0169ff] pb-[10rem]">
 
@@ -19,10 +23,30 @@ const index = () => {
             we are changing the way companies are using user's privacy and data for their benefit to generate billions
           </p>
 
+          <div className="lg:flex md:flex hidden">
+            <JoinModal
+              isOpen={isOpen}
+              onClose={() => setIsOpen(false)}
 
-          <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] lg:p-10 md:p-6 p-3 font-lettera-medium font-[700] px-[4rem] lg:text-[2.5rem] md:text-[2rem] text-[#333333] tracking-normal leading-[1.33rem]">
-            Join the change
-          </button>
+            >
+              <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] lg:p-10 md:p-6 p-3 font-lettera-medium font-[700] px-[4rem] lg:text-[2.5rem] md:text-[2rem] text-[#333333] tracking-normal leading-[1.33rem]">
+                Join the change
+              </button>
+            </JoinModal>
+          </div>
+
+          <div className="lg:hidden md:hidden flex">
+            <JoinMobile
+              isOpen={isOpen}
+              onClose={() => setIsOpen(false)}
+
+            >
+              <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] lg:p-10 md:p-6 p-3 font-lettera-medium font-[700] px-[4rem] lg:text-[2.5rem] md:text-[2rem] text-[#333333] tracking-normal leading-[1.33rem]">
+                Join the change
+              </button>
+            </JoinMobile>
+          </div>
+
         </div>
 
 
@@ -52,9 +76,30 @@ const index = () => {
           </p>
 
 
-          <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] lg:p-10 md:p-6 p-3 font-lettera-medium font-[700] px-[4rem] lg:text-[2.5rem] md:text-[2rem] text-[#333333] tracking-normal leading-[1.33rem]">
-            Join the change
-          </button>
+
+          <div className="lg:flex md:flex hidden">
+            <JoinModal
+              isOpen={isOpen}
+              onClose={() => setIsOpen(false)}
+
+            >
+              <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] lg:p-10 md:p-6 p-3 font-lettera-medium font-[700] px-[4rem] lg:text-[2.5rem] md:text-[2rem] text-[#333333] tracking-normal leading-[1.33rem]">
+                Join the change
+              </button>
+            </JoinModal>
+          </div>
+
+          <div className="lg:hidden md:hidden flex">
+            <JoinMobile
+              isOpen={isOpen}
+              onClose={() => setIsOpen(false)}
+
+            >
+              <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] lg:p-10 md:p-6 p-3 font-lettera-medium font-[700] px-[4rem] lg:text-[2.5rem] md:text-[2rem] text-[#333333] tracking-normal leading-[1.33rem]">
+                Join the change
+              </button>
+            </JoinMobile>
+          </div>
         </div>
 
 

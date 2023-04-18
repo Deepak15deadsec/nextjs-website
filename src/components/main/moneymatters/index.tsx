@@ -4,6 +4,7 @@ import shapes from '../../../../public/images/deserve-more-bg.png'
 import { useRouter } from "next/router";
 import { useState } from "react";
 import JoinModal from "../../JoinModal";
+import JoinMobile from "../../JoinMobile";
 
 const index = () => {
   const router = useRouter();
@@ -37,22 +38,36 @@ const index = () => {
                 Experience now
               </button>)
             } */}
+            <div className="lg:flex md:flex hidden">
+              <JoinModal
+                isOpen={isOpen}
+                onClose={() => setIsOpen(false)}
 
-            <JoinModal
-              isOpen={isOpen}
-              onClose={() => setIsOpen(false)}
+              >
+                <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] lg:p-10 md:p-6 p-3 font-lettera-medium font-[700] px-[4rem] lg:text-[2.5rem] md:text-[2rem] text-[#333333] tracking-normal leading-[1.33rem]">
+                  Experience now
+                </button>
+              </JoinModal>
+            </div>
 
-            >
-              <button className="bg-white z-[999] rounded-[3.2rem] px-5 py-3 font-lettera-medium font-[700]  lg:text-[2rem]  text-[#333333]">
-                Experience now
-              </button>
-            </JoinModal>
+            <div className="lg:hidden md:hidden flex">
+              <JoinMobile
+                isOpen={isOpen}
+                onClose={() => setIsOpen(false)}
+
+              >
+                <button className="bg-[#FFFFFF] mt-[3rem] rounded-[3.2rem] lg:p-10 md:p-6 p-3 font-lettera-medium font-[700] px-[4rem] lg:text-[2.5rem] md:text-[2rem] text-[#333333] tracking-normal leading-[1.33rem]">
+                  Experience now
+                </button>
+              </JoinMobile>
+            </div>
+
           </div>
 
         </div>
       </div>
 
-    </div>
+    </div >
 
   );
 };
